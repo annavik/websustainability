@@ -1,10 +1,10 @@
 import { Level } from "./level";
 
 export interface ServerGuideline {
-  Id: string;
-  Title: string;
-  Impact: string;
-  Effort: string;
+  id: string;
+  title: string;
+  impact: string;
+  effort: string;
 }
 
 export interface Guideline {
