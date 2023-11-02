@@ -7,22 +7,25 @@ const guidelineColumns: TableColumn<Guideline>[] = [
   {
     id: "id",
     name: "Id",
-    renderCell: (item) => <span>{item.Id}</span>,
+    renderCell: (item) => <span>{item.id}</span>,
   },
   {
     id: "title",
     name: "Title",
-    renderCell: (item) => <span>{item.Title}</span>,
+    sortField: "title",
+    renderCell: (item) => <span>{item.title}</span>,
   },
   {
     id: "effort",
     name: "Effort",
-    renderCell: (item) => <span>{item.Effort}</span>,
+    sortField: "effort",
+    renderCell: (item) => <span>{item.effortLabel}</span>,
   },
   {
     id: "impact",
     name: "Impact",
-    renderCell: (item) => <span>{item.Impact}</span>,
+    sortField: "impact",
+    renderCell: (item) => <span>{item.impactLabel}</span>,
   },
 ];
 

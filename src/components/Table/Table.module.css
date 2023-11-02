@@ -2,6 +2,31 @@
   text-align: left;
   padding: 16px;
 }
+.tableHeader:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px black;
+}
+.tableHeader.sortable {
+  user-select: none;
+}
+.tableHeader.sortable:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.tableHeaderContent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.sortIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+}
 
 .tableData {
   text-align: left;
