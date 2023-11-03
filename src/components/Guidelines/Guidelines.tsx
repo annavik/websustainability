@@ -1,48 +1,50 @@
-import { Guideline } from "../../models/guideline";
+import Fuse from "fuse.js";
+import { useMemo, useState } from "react";
 import { useGuidelines } from "../../utils/useGuidelines";
 import { Table } from "../Table/Table";
-import { TableColumn } from "../Table/types";
-
-const guidelineColumns: TableColumn<Guideline>[] = [
-  {
-    id: "id",
-    name: "Id",
-    renderCell: (item) => <span>{item.id}</span>,
-  },
-  {
-    id: "title",
-    name: "Title",
-    sortField: "title",
-    renderCell: (item) => <span>{item.title}</span>,
-  },
-  {
-    id: "effort",
-    name: "Effort",
-    sortField: "effort",
-    renderCell: (item) => <span>{item.effortLabel}</span>,
-  },
-  {
-    id: "impact",
-    name: "Impact",
-    sortField: "impact",
-    renderCell: (item) => <span>{item.impactLabel}</span>,
-  },
-];
+import styles from "./Guidelines.module.css";
+import { guidelineColumns } from "./guidelineColumns";
 
 export const Guidelines = () => {
-  const { guidelines, isLoading, isError } = useGuidelines();
+  const { guidelines = [], isLoading, isError } = useGuidelines();
+  const [searchString, setSearchString] = useState("");
+
+  const fuse = useMemo(
+    () =>
+      new Fuse(guidelines ?? [], {
+        keys: [
+          {
+            name: "title",
+            weight: 1,
+          },
+        ],
+        threshold: 0.5,
+        shouldSort: false,
+      }),
+    [guidelines]
+  );
 
   if (isError) {
     return <span>Something went wrong!</span>;
   }
 
-  if (isLoading || !guidelines) {
+  if (isLoading) {
     return <span>Loading...</span>;
   }
 
+  const filteredGuidelines =
+    searchString.length > 1
+      ? fuse.search(searchString).map((result) => result.item)
+      : guidelines;
+
   return (
-    <div>
-      <Table items={guidelines} columns={guidelineColumns} />
+    <div className={styles.wrapper}>
+      <input
+        className={styles.input}
+        value={searchString}
+        onChange={(e) => setSearchString(e.target.value)}
+      />
+      <Table items={filteredGuidelines} columns={guidelineColumns} />
     </div>
   );
 };

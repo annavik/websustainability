@@ -1,1 +1,10 @@
+.wrapper {
+  min-height: 100vh;
+  text-align: left;
+}
 
+.input {
+  padding: 8px 16px;
+  width: 320px;
+  margin: 0 16px 16px;
+}

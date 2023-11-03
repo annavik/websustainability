@@ -12,7 +12,8 @@ export const useGuidelines = () => {
     queryFn: () =>
       axios.get<ServerGuideline[]>(URL).then((res) =>
         res.data.map((serverGuideline, index) => ({
-          id: serverGuideline.id ?? `${index}`,
+          id: `guideline-${index}`,
+          index,
           title: serverGuideline.title,
           impact: valueToLevel(serverGuideline.impact),
           impactLabel: serverGuideline.impact,
