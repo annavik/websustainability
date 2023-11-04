@@ -1,5 +1,6 @@
-import { ChevronDownIcon, Cross2Icon } from "@radix-ui/react-icons";
+import { ChevronDownIcon } from "@radix-ui/react-icons";
 import * as Popover from "@radix-ui/react-popover";
+import { CSSProperties } from "react";
 import { Filter } from "../../models/filter";
 import { Checkbox } from "../Checkbox/Checkbox";
 import styles from "./FilterPicker.module.css";
@@ -8,12 +9,14 @@ export const FilterPicker = ({
   activeFilters,
   filters,
   label,
+  style,
   addFilter,
   removeFilter,
 }: {
   activeFilters: Filter[];
   filters: Filter[];
   label: string;
+  style?: CSSProperties;
   addFilter: (filter: Filter) => void;
   removeFilter: (filter: Filter) => void;
 }) => (
@@ -29,6 +32,7 @@ export const FilterPicker = ({
         className={styles.popoverContent}
         align="end"
         sideOffset={8}
+        style={style}
       >
         {filters.map((filter) => (
           <Checkbox
@@ -37,7 +41,7 @@ export const FilterPicker = ({
                 filter.type === activeFilter.type &&
                 filter.value === activeFilter.value
             )}
-            id={filter.value}
+            id={`${filter.value}`}
             label={filter.label}
             onCheckedChange={(checked) => {
               if (checked) {
@@ -48,9 +52,6 @@ export const FilterPicker = ({
             }}
           />
         ))}
-        <Popover.Close aria-label="Close" className={styles.popoverClose}>
-          <Cross2Icon />
-        </Popover.Close>
       </Popover.Content>
     </Popover.Portal>
   </Popover.Root>

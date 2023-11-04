@@ -1,10 +1,41 @@
-.wrapper {
-  min-height: 100vh;
-  text-align: left;
+.settings {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 32px;
+  margin-bottom: 32px;
 }
 
-.input {
-  padding: 8px 16px;
-  width: 320px;
-  margin: 0 16px 16px;
+.activeFilters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.activeFiltersLabel {
+  display: block;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.category {
+  display: inline-block;
+  color: var(--neutral-11);
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.guideline {
+  margin-bottom: 16px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 480px;
 }

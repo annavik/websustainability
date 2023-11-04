@@ -1,5 +1,6 @@
 import Fuse from "fuse.js";
-import { Filter } from "../../models/filter";
+import _ from "lodash";
+import { Filter, FilterType } from "../../models/filter";
 import { Guideline } from "../../models/guideline";
 
 export const useFilteredGuidelines = ({
@@ -29,16 +30,44 @@ export const useFilteredGuidelines = ({
     filteredGudelines = fuse.search(searchString).map((result) => result.item);
   }
 
-  // Filter based on tags
-  if (activeFilters.length) {
-    filteredGudelines = filteredGudelines.filter((guideline) => {
-      return guideline.tags.some((tag) =>
-        activeFilters.some(
-          (filter) => filter.type === "tags" && filter.value === tag
-        )
-      );
-    });
-  }
+  // Filter based on category, effort, impact and tag
+  const filterGroups = _.groupBy(activeFilters, (filter) => filter.type);
+  Object.entries(filterGroups).forEach(([filterType, filterGroup]) => {
+    if (!filterGroup.length) {
+      return;
+    }
+
+    switch (filterType as FilterType) {
+      case "category": {
+        filteredGudelines = filteredGudelines.filter((guideline) =>
+          filterGroup.some(
+            (filter) => filter.value === guideline.category.value
+          )
+        );
+        break;
+      }
+      case "effort": {
+        filteredGudelines = filteredGudelines.filter((guideline) =>
+          filterGroup.some((filter) => filter.value === guideline.effort)
+        );
+        break;
+      }
+      case "impact": {
+        filteredGudelines = filteredGudelines.filter((guideline) =>
+          filterGroup.some((filter) => filter.value === guideline.impact)
+        );
+        break;
+      }
+      case "tag": {
+        filteredGudelines = filteredGudelines.filter((guideline) =>
+          filterGroup.some((filter) =>
+            guideline.tags.some((tag) => filter.value === tag)
+          )
+        );
+        break;
+      }
+    }
+  });
 
   return filteredGudelines;
 };

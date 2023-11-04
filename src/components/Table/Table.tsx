@@ -46,7 +46,7 @@ export const Table = <T extends { id: string }>({
                 key={column.id}
                 tabIndex={0}
                 className={classNames(styles.tableHeader, styles.sortable)}
-                style={column.styles}
+                style={column.style}
                 onClick={() => onHeaderClick(column)}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" || e.key === " ") {
@@ -71,7 +71,7 @@ export const Table = <T extends { id: string }>({
               <th
                 key={column.id}
                 className={styles.tableHeader}
-                style={column.styles}
+                style={column.style}
               >
                 {column.name}
               </th>
