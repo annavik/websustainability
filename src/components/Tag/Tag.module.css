@@ -1,0 +1,27 @@
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  background-color: var(--neutral-3);
+  border: 1px solid var(--neutral-7);
+  font-size: 0.8em;
+  line-height: 1;
+}
+
+.tag span {
+  padding: 0 8px;
+}
+
+.tag.active {
+  background-color: var(--brand-3);
+  border: 1px solid var(--brand-7);
+}
+
+.removeButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+}

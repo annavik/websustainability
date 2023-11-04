@@ -1,69 +1,82 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --neutral-1: #fbfdfc;
+  --neutral-2: #f7f9f8;
+  --neutral-3: #eef1f0;
+  --neutral-4: #e6e9e8;
+  --neutral-5: #dfe2e0;
+  --neutral-6: #d7dad9;
+  --neutral-7: #cbcfcd;
+  --neutral-8: #b8bcba;
+  --neutral-9: #868e8b;
+  --neutral-10: #7c8481;
+  --neutral-11: #5f6563;
+  --neutral-12: #1a211e;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --brand-1: #fbfefd;
+  --brand-2: #f4fbf7;
+  --brand-3: #e6f7ed;
+  --brand-4: #d6f1e3;
+  --brand-5: #c3e9d7;
+  --brand-6: #acdec8;
+  --brand-7: #8bceb6;
+  --brand-8: #56ba9f;
+  --brand-9: #29a383;
+  --brand-10: #26997b;
+  --brand-11: #208368;
+  --brand-12: #1d3b31;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+  color: var(--neutral-12);
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+}
+
+#root {
+  width: 1024px;
   min-height: 100vh;
+  margin: 0 auto;
+  padding: 64px;
+  box-sizing: border-box;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2.4em;
+  font-weight: 600;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 400;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+button:hover {
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--neutral-12);
 }

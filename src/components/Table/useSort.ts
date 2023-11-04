@@ -1,6 +1,6 @@
 import _ from "lodash";
 import { useEffect, useState } from "react";
-import { TableSortSettings } from "../components/Table/types";
+import { TableSortSettings } from "./types";
 
 export const useSort = <T>({ items = [] }: { items?: T[] }) => {
   const [sortedItems, setSortedItems] = useState(items);

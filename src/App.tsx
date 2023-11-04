@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import "./App.css";
+import styles from "./App.module.css";
 import { Guidelines } from "./components/Guidelines/Guidelines";
 
 const queryClient = new QueryClient();
@@ -7,8 +7,13 @@ const queryClient = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <h1>🌱 Welcome to WSG renderer 🌱</h1>
-      <Guidelines />
+      <header className={styles.header}>
+        <h1>Web Sustainability Guidelines</h1>
+        <h2>An interactive version of WSG 1.0</h2>
+      </header>
+      <main>
+        <Guidelines />
+      </main>
     </QueryClientProvider>
   );
 }

@@ -1,8 +1,8 @@
 import { ChevronDownIcon, ChevronUpIcon } from "@radix-ui/react-icons";
 import classNames from "classnames";
-import { useSort } from "../../utils/useSort";
 import styles from "./Table.module.css";
 import { TableColumn } from "./types";
+import { useSort } from "./useSort";
 
 interface TableProps<T> {
   items?: T[];
@@ -46,6 +46,7 @@ export const Table = <T extends { id: string }>({
                 key={column.id}
                 tabIndex={0}
                 className={classNames(styles.tableHeader, styles.sortable)}
+                style={column.styles}
                 onClick={() => onHeaderClick(column)}
                 onKeyDown={(e) => {
                   if (e.key === "Enter" || e.key === " ") {
@@ -67,23 +68,25 @@ export const Table = <T extends { id: string }>({
                 </div>
               </th>
             ) : (
-              <th key={column.id} className={styles.tableHeader}>
+              <th
+                key={column.id}
+                className={styles.tableHeader}
+                style={column.styles}
+              >
                 {column.name}
               </th>
             )
           )}
-          <th aria-hidden="true" style={{ width: "100%" }} />
         </tr>
       </thead>
       <tbody>
         {sortedItems.map((item) => (
-          <tr key={item.id}>
+          <tr key={item.id} className={styles.tableRow}>
             {columns.map((column) => (
               <td key={column.id} className={styles.tableData}>
                 {column.renderCell(item)}
               </td>
             ))}
-            <td aria-hidden="true" />
           </tr>
         ))}
       </tbody>

@@ -1,0 +1,23 @@
+.input {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 0;
+  box-sizing: border-box;
+  background: transparent;
+  border: 1px solid var(--neutral-6);
+}
+
+.input::placeholder {
+  color: var(--neutral-11);
+  opacity: 1; /* Firefox */
+}
+
+.input:hover,
+.input:focus {
+  background-color: var(--brand-2);
+  border-color: var(--brand-8);
+}
+
+.input:focus {
+  outline: 1px solid var(--brand-7);
+}

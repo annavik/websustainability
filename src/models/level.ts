@@ -1,6 +1,6 @@
 export enum Level {
-  Low,
-  Medium,
-  High,
-  Unknown,
+  Low = 1,
+  Medium = 2,
+  High = 3,
+  Unknown = -1,
 }

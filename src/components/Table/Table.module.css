@@ -1,14 +1,20 @@
+.table {
+  width: 100%;
+  border-spacing: 0;
+}
+
 .tableHeader {
-  text-align: left;
-  padding: 16px;
+  padding: 16px 32px;
 }
+
 .tableHeader:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 2px black;
+  outline: 2px solid var(--neutral-12);
 }
+
 .tableHeader.sortable {
   user-select: none;
 }
+
 .tableHeader.sortable:hover {
   cursor: pointer;
   opacity: 0.7;
@@ -28,8 +34,15 @@
   width: 15px;
 }
 
+.tableRow:nth-child(odd) {
+  background-color: var(--neutral-2);
+}
+
 .tableData {
-  text-align: left;
-  padding: 16px;
-  white-space: nowrap;
+  padding: 32px;
+  border-top: 1px solid var(--neutral-3);
+}
+
+.tableRow:last-child .tableData {
+  border-bottom: 1px solid var(--neutral-3);
 }
