@@ -4,7 +4,9 @@
   margin: 0;
   box-sizing: border-box;
   background: transparent;
+  color: var(--neutral-12);
   border: 1px solid var(--neutral-6);
+  border-radius: 4px;
 }
 
 .input::placeholder {

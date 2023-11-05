@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Filter } from "../../models/filter";
 import { Level } from "../../models/level";
 import { useGuidelines } from "../../utils/useGuidelines";
-import { Divider } from "../Divider/Divider";
 import { FilterPicker } from "../FilterPicker/FilterPicker";
 import { Table } from "../Table/Table";
 import { Tag } from "../Tag/Tag";
@@ -13,12 +12,12 @@ import { useFilteredGuidelines } from "./useFilteredGuidelines";
 import { useFilters } from "./useFilters";
 
 export const filters: Filter[] = [
-  { label: "Effort: High", value: Level.High, type: "effort" },
-  { label: "Effort: Medium", value: Level.Medium, type: "effort" },
-  { label: "Effort: Low", value: Level.Low, type: "effort" },
-  { label: "Impact: High", value: Level.High, type: "impact" },
-  { label: "Impact: Medium", value: Level.Medium, type: "impact" },
-  { label: "Impact: Low", value: Level.Low, type: "impact" },
+  { label: "Low Effort", value: Level.Low, type: "effort" },
+  { label: "Medium Effort", value: Level.Medium, type: "effort" },
+  { label: "High Effort", value: Level.High, type: "effort" },
+  { label: "High Impact", value: Level.High, type: "impact" },
+  { label: "Medium Impact", value: Level.Medium, type: "impact" },
+  { label: "Low Impact", value: Level.Low, type: "impact" },
 ];
 
 export const Guidelines = () => {
@@ -66,7 +65,7 @@ export const Guidelines = () => {
         />
         <FilterPicker
           activeFilters={activeFilters}
-          label="Effort and impact"
+          label="Effort and Impact"
           filters={filters}
           style={{ gridTemplateRows: "1fr 1fr 1fr", gridAutoFlow: "column" }}
           addFilter={addFilter}
@@ -97,7 +96,9 @@ export const Guidelines = () => {
           ))}
         </div>
       )}
-      <Divider />
+      <span className={styles.info}>
+        Showing {filteredGuidelines.length} guidelines:
+      </span>
       <Table items={filteredGuidelines} columns={guidelineColumns} />
     </div>
   );

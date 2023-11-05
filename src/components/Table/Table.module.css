@@ -5,6 +5,7 @@
 
 .tableHeader {
   padding: 16px 32px;
+  border-bottom: 1px solid var(--neutral-3);
 }
 
 .tableHeader:focus-visible {
@@ -40,9 +41,5 @@
 
 .tableData {
   padding: 32px;
-  border-top: 1px solid var(--neutral-3);
-}
-
-.tableRow:last-child .tableData {
   border-bottom: 1px solid var(--neutral-3);
 }

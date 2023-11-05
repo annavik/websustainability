@@ -1,17 +1,16 @@
-:root {
-  --neutral-1: #fbfdfc;
-  --neutral-2: #f7f9f8;
-  --neutral-3: #eef1f0;
-  --neutral-4: #e6e9e8;
-  --neutral-5: #dfe2e0;
-  --neutral-6: #d7dad9;
-  --neutral-7: #cbcfcd;
-  --neutral-8: #b8bcba;
-  --neutral-9: #868e8b;
-  --neutral-10: #7c8481;
-  --neutral-11: #5f6563;
-  --neutral-12: #1a211e;
-
+body {
+  --neutral-1: #fcfcfc;
+  --neutral-2: #f9f9f9;
+  --neutral-3: #f0f0f0;
+  --neutral-4: #e8e8e8;
+  --neutral-5: #e0e0e0;
+  --neutral-6: #d9d9d9;
+  --neutral-7: #cecece;
+  --neutral-8: #bbbbbb;
+  --neutral-9: #8d8d8d;
+  --neutral-10: #838383;
+  --neutral-11: #646464;
+  --neutral-12: #202020;
   --brand-1: #fbfefd;
   --brand-2: #f4fbf7;
   --brand-3: #e6f7ed;
@@ -24,7 +23,43 @@
   --brand-10: #26997b;
   --brand-11: #208368;
   --brand-12: #1d3b31;
+}
 
+body[data-theme="dark"] {
+  --neutral-1: #111111;
+  --neutral-2: #191919;
+  --neutral-3: #222222;
+  --neutral-4: #2a2a2a;
+  --neutral-5: #313131;
+  --neutral-6: #3a3a3a;
+  --neutral-7: #484848;
+  --neutral-8: #606060;
+  --neutral-9: #6e6e6e;
+  --neutral-10: #7b7b7b;
+  --neutral-11: #b4b4b4;
+  --neutral-12: #eeeeee;
+  --brand-1: #0d1512;
+  --brand-2: #121c18;
+  --brand-3: #0f2e22;
+  --brand-4: #0b3b2c;
+  --brand-5: #114837;
+  --brand-6: #1b5745;
+  --brand-7: #246854;
+  --brand-8: #2a7e68;
+  --brand-9: #29a383;
+  --brand-10: #27b08b;
+  --brand-11: #1fd8a4;
+  --brand-12: #adf0d4;
+}
+
+body {
+  background-color: var(--neutral-1);
+  color: var(--neutral-12);
+  margin: 0;
+}
+
+:root {
+  min-width: fit-content;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -34,18 +69,6 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-}
-
-body {
-  margin: 0;
-}
-
-#root {
-  width: 1024px;
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 64px;
-  box-sizing: border-box;
 }
 
 h1 {
@@ -71,6 +94,7 @@ button {
   border: none;
   border-radius: 0;
   padding: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 button:hover {

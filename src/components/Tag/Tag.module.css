@@ -3,8 +3,9 @@
   align-items: center;
   justify-content: center;
   height: 24px;
-  background-color: var(--neutral-3);
-  border: 1px solid var(--neutral-7);
+  background-color: var(--brand-3);
+  border: 1px solid var(--brand-7);
+  border-radius: 2px;
   font-size: 0.8em;
   line-height: 1;
 }
@@ -14,8 +15,9 @@
 }
 
 .tag.active {
-  background-color: var(--brand-3);
-  border: 1px solid var(--brand-7);
+  color: var(--brand-1);
+  background-color: var(--brand-9);
+  border-color: var(--brand-9);
 }
 
 .removeButton {
@@ -24,4 +26,5 @@
   justify-content: center;
   height: 24px;
   width: 24px;
+  color: var(--brand-1);
 }

@@ -20,6 +20,13 @@
   margin-right: 4px;
 }
 
+.info {
+  display: block;
+  margin-bottom: 16px;
+  font-style: italic;
+  color: var(--neutral-11);
+}
+
 .category {
   display: inline-block;
   color: var(--neutral-11);
@@ -30,12 +37,11 @@
 }
 
 .guideline {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  max-width: 480px;
 }
