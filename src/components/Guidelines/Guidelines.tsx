@@ -3,11 +3,10 @@ import { Filter } from "../../models/filter";
 import { Level } from "../../models/level";
 import { useGuidelines } from "../../utils/useGuidelines";
 import { FilterPicker } from "../FilterPicker/FilterPicker";
-import { Table } from "../Table/Table";
+import { GuidelineCard } from "../Guideline/GuidelineCard";
 import { Tag } from "../Tag/Tag";
 import { TextInput } from "../TextInput/TextInput";
 import styles from "./Guidelines.module.css";
-import { guidelineColumns } from "./guidelineColumns";
 import { useFilteredGuidelines } from "./useFilteredGuidelines";
 import { useFilters } from "./useFilters";
 
@@ -49,6 +48,7 @@ export const Guidelines = () => {
       <div className={styles.settings}>
         <TextInput
           placeholder="Search"
+          style={{ gridColumn: "span 3" }}
           value={searchString}
           onChange={setSearchString}
         />
@@ -99,7 +99,11 @@ export const Guidelines = () => {
       <span className={styles.info}>
         Showing {filteredGuidelines.length} guidelines:
       </span>
-      <Table items={filteredGuidelines} columns={guidelineColumns} />
+      <div className={styles.guidelines}>
+        {filteredGuidelines.map((guideline) => (
+          <GuidelineCard key={guideline.id} guideline={guideline} />
+        ))}
+      </div>
     </div>
   );
 };

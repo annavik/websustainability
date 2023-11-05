@@ -1,0 +1,38 @@
+.wrapper {
+  padding: 32px;
+  background-color: var(--neutral-2);
+  border: 1px solid var(--neutral-3);
+  border-radius: 4px;
+  position: relative;
+}
+
+.category {
+  display: inline-block;
+  color: var(--neutral-11);
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.title {
+  margin-bottom: 16px;
+}
+
+.description {
+  margin-bottom: 32px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.extra {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  gap: 8px;
+}

@@ -6,6 +6,7 @@ export interface ServerGuideline {
     id: string;
     title: string;
   };
+  description: string;
   impact: string;
   effort: string;
   tags: string[];
@@ -19,6 +20,7 @@ export interface Guideline {
     label: string;
     value: string;
   };
+  description: string;
   impact: Level;
   impactLabel: string;
   effort: Level;

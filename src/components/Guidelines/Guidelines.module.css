@@ -1,6 +1,6 @@
 .settings {
   display: grid;
-  grid-template-columns: 1fr auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 32px;
   margin-bottom: 32px;
 }
@@ -27,21 +27,7 @@
   color: var(--neutral-11);
 }
 
-.category {
-  display: inline-block;
-  color: var(--neutral-11);
-  font-size: 0.8em;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-
-.guideline {
-  margin-bottom: 32px;
-}
-
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+.guidelines {
+  display: grid;
+  gap: 32px;
 }

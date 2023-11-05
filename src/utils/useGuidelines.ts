@@ -22,6 +22,7 @@ export const useGuidelines = (): {
           id: `guideline-${index}`,
           index,
           title: serverGuideline.title,
+          description: serverGuideline.description,
           category: {
             label: serverGuideline.category.title,
             value: serverGuideline.category.id,

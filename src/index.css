@@ -1,4 +1,6 @@
 body {
+  --base-font: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
   --neutral-1: #fcfcfc;
   --neutral-2: #f9f9f9;
   --neutral-3: #f0f0f0;
@@ -53,22 +55,21 @@ body[data-theme="dark"] {
 }
 
 body {
+  margin: 0;
   background-color: var(--neutral-1);
   color: var(--neutral-12);
-  margin: 0;
-}
-
-:root {
-  min-width: fit-content;
+  font-family: var(--base-font);
+  line-height: 1.5;
+  font-weight: 400;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  color: var(--neutral-12);
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+}
+
+:root {
+  min-width: fit-content;
 }
 
 h1 {
@@ -85,8 +86,12 @@ h2 {
 
 h3 {
   font-size: 1.2em;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0;
+}
+
+input {
+  font-family: var(--base-font);
 }
 
 button {
@@ -94,7 +99,7 @@ button {
   border: none;
   border-radius: 0;
   padding: 0;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--base-font);
 }
 
 button:hover {

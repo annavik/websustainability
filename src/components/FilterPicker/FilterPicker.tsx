@@ -30,7 +30,7 @@ export const FilterPicker = ({
     <Popover.Portal>
       <Popover.Content
         className={styles.popoverContent}
-        align="end"
+        align="start"
         sideOffset={8}
         style={style}
       >
