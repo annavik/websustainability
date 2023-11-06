@@ -5,6 +5,13 @@
   position: relative;
 }
 
+.header .content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
 .header h2 {
   color: var(--neutral-11);
 }
@@ -14,7 +21,7 @@
 }
 
 .content {
-  width: 640px;
+  width: 720px;
   margin: 0 auto;
   box-sizing: border-box;
 }

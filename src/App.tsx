@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import styles from "./App.module.css";
 import { Guidelines } from "./components/Guidelines/Guidelines";
 import { ThemeToggle } from "./components/Switch/ThemeToggle";
+import globe from "./globe.svg";
 import { useThemePreference } from "./utils/useThemePreference";
 
 const queryClient = new QueryClient();
@@ -18,11 +19,17 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <header className={styles.header}>
         <div className={styles.content}>
-          <h1>Web Sustainability Guidelines</h1>
-          <h2>An interactive version of WSG 1.0</h2>
-          <div className={styles.themeToggleWrapper}>
-            <ThemeToggle theme={theme} onThemeChange={setTheme} />
+          <img src={globe} alt="" />
+          <div>
+            <h1>Web Sustainability Guidelines</h1>
+            <h2>
+              An interactive version of{" "}
+              <a href="https://w3c.github.io/sustyweb/">WSG 1.0</a>
+            </h2>
           </div>
+        </div>
+        <div className={styles.themeToggleWrapper}>
+          <ThemeToggle theme={theme} onThemeChange={setTheme} />
         </div>
       </header>
       <main className={styles.main}>
