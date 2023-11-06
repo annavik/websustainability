@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
+import _ from "lodash";
 import { useMemo } from "react";
 import { Guideline, ServerGuideline } from "../models/guideline";
 import { valueToLevel } from "./valueToLevel";
@@ -31,7 +32,7 @@ export const useGuidelines = (): {
           impactLabel: serverGuideline.impact,
           effort: valueToLevel(serverGuideline.effort),
           effortLabel: serverGuideline.effort,
-          tags: serverGuideline.tags,
+          tags: _.uniq(serverGuideline.tags),
         }))
       ),
   });

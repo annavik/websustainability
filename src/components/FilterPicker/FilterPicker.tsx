@@ -36,6 +36,7 @@ export const FilterPicker = ({
       >
         {filters.map((filter) => (
           <Checkbox
+            key={filter.value}
             checked={activeFilters.some(
               (activeFilter) =>
                 filter.type === activeFilter.type &&

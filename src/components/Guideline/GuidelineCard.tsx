@@ -9,7 +9,7 @@ export const GuidelineCard = ({ guideline }: { guideline: Guideline }) => (
     <p className={styles.description}>{guideline.description}</p>
     <div className={styles.tags}>
       {guideline.tags.map((tag) => (
-        <Tag label={tag} />
+        <Tag key={tag} label={tag} />
       ))}
     </div>
     <div className={styles.extra}>
