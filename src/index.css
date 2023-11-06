@@ -92,6 +92,7 @@ h3 {
 
 input {
   font-family: var(--base-font);
+  font-size: 0.8em;
 }
 
 button {
@@ -100,6 +101,7 @@ button {
   border-radius: 0;
   padding: 0;
   font-family: var(--base-font);
+  font-size: 0.8em;
 }
 
 button:hover {
