@@ -2,7 +2,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useEffect } from "react";
 import styles from "./App.module.css";
 import { Guidelines } from "./components/Guidelines/Guidelines";
-import { ThemeToggle } from "./components/Switch/ThemeToggle";
+import { ThemeToggle } from "./components/ThemeToggle/ThemeToggle";
 import globe from "./globe.svg";
 import { useThemePreference } from "./utils/useThemePreference";
 

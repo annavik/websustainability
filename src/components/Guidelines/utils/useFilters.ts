@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Filter } from "../../models/filter";
+import { Filter } from "../../../models/filter";
 
 export const useFilters = () => {
   const [activeFilters, setActiveFilters] = useState<Filter[]>([]);

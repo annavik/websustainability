@@ -1,8 +1,8 @@
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import * as Popover from "@radix-ui/react-popover";
 import { CSSProperties } from "react";
-import { Filter } from "../../models/filter";
-import { Checkbox } from "../Checkbox/Checkbox";
+import { Filter } from "../../../models/filter";
+import { Checkbox } from "../../Checkbox/Checkbox";
 import styles from "./FilterPicker.module.css";
 
 export const FilterPicker = ({
@@ -21,11 +21,9 @@ export const FilterPicker = ({
   removeFilter: (filter: Filter) => void;
 }) => (
   <Popover.Root>
-    <Popover.Trigger asChild>
-      <button className={styles.popoverTrigger}>
-        <span>{label}</span>
-        <ChevronDownIcon />
-      </button>
+    <Popover.Trigger className={styles.popoverTrigger}>
+      <span>{label}</span>
+      <ChevronDownIcon />
     </Popover.Trigger>
     <Popover.Portal>
       <Popover.Content
@@ -43,7 +41,7 @@ export const FilterPicker = ({
                 filter.value === activeFilter.value
             )}
             id={`${filter.value}`}
-            label={filter.label}
+            label={filter.labelShort ?? filter.label}
             onCheckedChange={(checked) => {
               if (checked) {
                 addFilter(filter);

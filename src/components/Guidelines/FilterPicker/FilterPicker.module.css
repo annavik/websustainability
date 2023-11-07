@@ -4,6 +4,7 @@
   box-sizing: border-box;
   background: transparent;
   color: var(--neutral-12);
+  white-space: nowrap;
   border: 1px solid var(--neutral-6);
   border-radius: 4px;
   display: flex;

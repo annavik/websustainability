@@ -1,7 +1,7 @@
 import Fuse from "fuse.js";
 import _ from "lodash";
-import { Filter, FilterType } from "../../models/filter";
-import { Guideline } from "../../models/guideline";
+import { Filter, FilterType } from "../../../models/filter";
+import { Guideline } from "../../../models/guideline";
 
 export const useFilteredGuidelines = ({
   activeFilters,
@@ -16,21 +16,16 @@ export const useFilteredGuidelines = ({
 
   // Filter based on search search string
   const fuse = new Fuse(guidelines ?? [], {
-    keys: [
-      {
-        name: "title",
-        weight: 1,
-      },
-    ],
+    keys: ["title", "description"],
     threshold: 0.5,
-    shouldSort: false,
+    shouldSort: true,
   });
 
   if (searchString.length) {
     filteredGudelines = fuse.search(searchString).map((result) => result.item);
   }
 
-  // Filter based on category, effort, impact and tag
+  // Filter based on category, tag, effort and impact
   const filterGroups = _.groupBy(activeFilters, (filter) => filter.type);
   Object.entries(filterGroups).forEach(([filterType, filterGroup]) => {
     if (!filterGroup.length) {
@@ -46,6 +41,14 @@ export const useFilteredGuidelines = ({
         );
         break;
       }
+      case "tag": {
+        filteredGudelines = filteredGudelines.filter((guideline) =>
+          filterGroup.some((filter) =>
+            guideline.tags.some((tag) => filter.value === tag)
+          )
+        );
+        break;
+      }
       case "effort": {
         filteredGudelines = filteredGudelines.filter((guideline) =>
           filterGroup.some((filter) => filter.value === guideline.effort)
@@ -55,14 +58,6 @@ export const useFilteredGuidelines = ({
       case "impact": {
         filteredGudelines = filteredGudelines.filter((guideline) =>
           filterGroup.some((filter) => filter.value === guideline.impact)
-        );
-        break;
-      }
-      case "tag": {
-        filteredGudelines = filteredGudelines.filter((guideline) =>
-          filterGroup.some((filter) =>
-            guideline.tags.some((tag) => filter.value === tag)
-          )
         );
         break;
       }

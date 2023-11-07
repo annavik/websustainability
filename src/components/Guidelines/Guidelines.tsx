@@ -1,23 +1,13 @@
 import { useState } from "react";
-import { Filter } from "../../models/filter";
-import { Level } from "../../models/level";
 import { useGuidelines } from "../../utils/useGuidelines";
-import { FilterPicker } from "../FilterPicker/FilterPicker";
 import { GuidelineCard } from "../Guideline/GuidelineCard";
 import { Tag } from "../Tag/Tag";
 import { TextInput } from "../TextInput/TextInput";
+import { FilterSettings } from "./FilterSettings/FilterSettings";
 import styles from "./Guidelines.module.css";
-import { useFilteredGuidelines } from "./useFilteredGuidelines";
-import { useFilters } from "./useFilters";
-
-export const filters: Filter[] = [
-  { label: "Low Effort", value: Level.Low, type: "effort" },
-  { label: "Medium Effort", value: Level.Medium, type: "effort" },
-  { label: "High Effort", value: Level.High, type: "effort" },
-  { label: "High Impact", value: Level.High, type: "impact" },
-  { label: "Medium Impact", value: Level.Medium, type: "impact" },
-  { label: "Low Impact", value: Level.Low, type: "impact" },
-];
+import { getSettings } from "./utils/getSettings";
+import { useFilteredGuidelines } from "./utils/useFilteredGuidelines";
+import { useFilters } from "./utils/useFilters";
 
 export const Guidelines = () => {
   const {
@@ -44,58 +34,37 @@ export const Guidelines = () => {
   }
 
   return (
-    <div>
+    <>
       <div className={styles.settings}>
         <TextInput
           placeholder="Search"
-          style={{ gridColumn: "span 3" }}
+          style={{ gridColumn: "span 4" }}
           value={searchString}
           onChange={setSearchString}
         />
-        <FilterPicker
+        <FilterSettings
           activeFilters={activeFilters}
-          label="Category"
-          filters={categories.map((category) => ({
-            ...category,
-            type: "category",
-          }))}
-          style={{ gridTemplateColumns: "1fr" }}
           addFilter={addFilter}
+          settings={getSettings({ categories, tags })}
           removeFilter={removeFilter}
         />
-        <FilterPicker
-          activeFilters={activeFilters}
-          label="Effort and Impact"
-          filters={filters}
-          style={{ gridTemplateRows: "1fr 1fr 1fr", gridAutoFlow: "column" }}
-          addFilter={addFilter}
-          removeFilter={removeFilter}
-        />
-        <FilterPicker
-          activeFilters={activeFilters}
-          label="Tags"
-          filters={tags.map((tag) => ({
-            label: tag,
-            value: tag,
-            type: "tag",
-          }))}
-          style={{ gridTemplateColumns: "1fr 1fr 1fr" }}
-          addFilter={addFilter}
-          removeFilter={removeFilter}
-        />
+        {activeFilters.length > 0 && (
+          <div
+            className={styles.activeFilters}
+            style={{ gridColumn: "span 4" }}
+          >
+            <span className={styles.activeFiltersLabel}>Active filters:</span>
+            {activeFilters.map((filter) => (
+              <Tag
+                key={filter.value}
+                label={filter.label}
+                active
+                onRemove={() => removeFilter(filter)}
+              />
+            ))}
+          </div>
+        )}
       </div>
-      {!!activeFilters.length && (
-        <div className={styles.activeFilters}>
-          <span className={styles.activeFiltersLabel}>Active filters:</span>
-          {activeFilters.map((filter) => (
-            <Tag
-              label={filter.label}
-              active
-              onRemove={() => removeFilter(filter)}
-            />
-          ))}
-        </div>
-      )}
       <span className={styles.info}>
         Showing {filteredGuidelines.length} guidelines:
       </span>
@@ -104,6 +73,6 @@ export const Guidelines = () => {
           <GuidelineCard key={guideline.id} guideline={guideline} />
         ))}
       </div>
-    </div>
+    </>
   );
 };
