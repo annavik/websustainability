@@ -7,9 +7,9 @@
   align-items: center;
   justify-content: center;
   padding: 8px;
+  margin-left: -1px;
   border: 1px solid var(--neutral-6);
   color: var(--neutral-12);
-  margin-left: -1px;
 }
 
 .toggleGroupItem[data-state="on"] {

@@ -36,6 +36,6 @@
 .label {
   display: block;
   color: var(--neutral-12);
-  font-size: 0.8em;
+  font-size: var(--font-size-x-small);
   line-height: 1;
 }

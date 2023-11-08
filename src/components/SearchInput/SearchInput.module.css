@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 48px 12px 40px;
+  margin: 0;
+  background: transparent;
+  color: var(--neutral-12);
+  border: 1px solid var(--neutral-6);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input::placeholder {
+  color: var(--neutral-11);
+  opacity: 1; /* Firefox */
+}
+
+.input:hover,
+.input:focus {
+  background-color: var(--brand-2);
+  border-color: var(--brand-8);
+}
+
+.input:focus {
+  outline: 1px solid var(--brand-7);
+}
+
+.searchIconWrapper {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clearButtonWrapper {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}

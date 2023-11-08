@@ -9,14 +9,28 @@
 .category {
   display: inline-block;
   color: var(--neutral-11);
-  font-size: 0.8em;
+  font-size: var(--font-size-x-small);
   text-transform: uppercase;
   margin-bottom: 8px;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
 }
 
 .title {
   margin-bottom: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.extra {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  gap: 8px;
 }
 
 .description {
@@ -26,13 +40,5 @@
 .tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-}
-
-.extra {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  display: flex;
   gap: 8px;
 }

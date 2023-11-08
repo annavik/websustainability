@@ -1,0 +1,26 @@
+.header {
+  padding: 48px 64px;
+  background-color: var(--neutral-2);
+  border-bottom: 1px solid var(--neutral-3);
+  position: relative;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+  width: 720px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.header h2 {
+  color: var(--neutral-11);
+}
+
+.themeToggleWrapper {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}

@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { useGuidelines } from "../../utils/useGuidelines";
-import { GuidelineCard } from "../Guideline/GuidelineCard";
-import { Tag } from "../Tag/Tag";
-import { TextInput } from "../TextInput/TextInput";
-import { FilterSettings } from "./FilterSettings/FilterSettings";
+import { Button } from "../Button/Button";
+import { FilterPicker } from "../FilterPicker/FilterPicker";
+import { GuidelineCard } from "../GuidelineCard/GuidelineCard";
+import { SearchInput } from "../SearchInput/SearchInput";
+import { ActiveFilters } from "./ActiveFilters/ActiveFilters";
 import styles from "./Guidelines.module.css";
-import { getSettings } from "./utils/getSettings";
+import { getFilterPickerConfig } from "./utils/getFilterPickerConfig";
+import { getInfoLabel } from "./utils/getInfoLabel";
 import { useFilteredGuidelines } from "./utils/useFilteredGuidelines";
 import { useFilters } from "./utils/useFilters";
 
@@ -18,7 +20,8 @@ export const Guidelines = () => {
     isError,
   } = useGuidelines();
   const [searchString, setSearchString] = useState("");
-  const { activeFilters, addFilter, removeFilter } = useFilters();
+  const { activeFilters, addFilter, removeFilter, removeAllFilters } =
+    useFilters();
   const filteredGuidelines = useFilteredGuidelines({
     activeFilters,
     guidelines,
@@ -36,43 +39,69 @@ export const Guidelines = () => {
   return (
     <>
       <div className={styles.settings}>
-        <TextInput
+        <SearchInput
+          clearLabel="Clear search"
           placeholder="Search"
-          style={{ gridColumn: "span 4" }}
           value={searchString}
           onChange={setSearchString}
         />
-        <FilterSettings
-          activeFilters={activeFilters}
-          addFilter={addFilter}
-          settings={getSettings({ categories, tags })}
-          removeFilter={removeFilter}
-        />
+        <div className={styles.filterPickers}>
+          {getFilterPickerConfig({ categories, tags }).map(
+            ({ contentStyle, filters, label, type }) => {
+              const numActiveFilters = activeFilters.filter(
+                (filter) => filter.type === type
+              ).length;
+
+              return (
+                <FilterPicker
+                  key={type}
+                  activeFilters={activeFilters}
+                  contentStyle={contentStyle}
+                  filters={filters.map((filter) => ({
+                    ...filter,
+                    type,
+                  }))}
+                  label={
+                    numActiveFilters ? `${label} (${numActiveFilters})` : label
+                  }
+                  addFilter={addFilter}
+                  removeFilter={removeFilter}
+                />
+              );
+            }
+          )}
+        </div>
         {activeFilters.length > 0 && (
-          <div
-            className={styles.activeFilters}
-            style={{ gridColumn: "span 4" }}
-          >
-            <span className={styles.activeFiltersLabel}>Active filters:</span>
-            {activeFilters.map((filter) => (
-              <Tag
-                key={filter.value}
-                label={filter.label}
-                active
-                onRemove={() => removeFilter(filter)}
-              />
-            ))}
-          </div>
+          <ActiveFilters
+            activeFilters={activeFilters}
+            removeFilter={removeFilter}
+            removeAllFilters={removeAllFilters}
+          />
         )}
       </div>
-      <span className={styles.info}>
-        Showing {filteredGuidelines.length} guidelines:
+
+      <span className={styles.infoLabel}>
+        {getInfoLabel(filteredGuidelines.length)}
       </span>
-      <div className={styles.guidelines}>
-        {filteredGuidelines.map((guideline) => (
-          <GuidelineCard key={guideline.id} guideline={guideline} />
-        ))}
-      </div>
+
+      {filteredGuidelines.length ? (
+        <div className={styles.guidelines}>
+          {filteredGuidelines.map((guideline) => (
+            <GuidelineCard key={guideline.id} guideline={guideline} />
+          ))}
+        </div>
+      ) : (
+        <Button
+          theme="outline"
+          style={{ marginTop: "16px" }}
+          onClick={() => {
+            setSearchString("");
+            removeAllFilters();
+          }}
+        >
+          Clear settings
+        </Button>
+      )}
     </>
   );
 };

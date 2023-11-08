@@ -15,5 +15,10 @@ export const useFilters = () => {
       )
     );
 
-  return { activeFilters, addFilter, removeFilter };
+  return {
+    activeFilters,
+    addFilter,
+    removeFilter,
+    removeAllFilters: () => setActiveFilters([]),
+  };
 };

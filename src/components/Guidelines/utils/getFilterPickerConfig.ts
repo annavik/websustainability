@@ -1,17 +1,25 @@
+import { CSSProperties } from "react";
+import { Filter, FilterType } from "../../../models/filter";
 import { Level } from "../../../models/level";
-import { Settings } from "../types";
 
-export const getSettings = ({
+interface FilterPickerConfig {
+  contentStyle?: CSSProperties;
+  label: string;
+  filters: Omit<Filter, "type">[];
+  type: FilterType;
+}
+
+export const getFilterPickerConfig = ({
   categories,
   tags,
 }: {
-  categories: { label: string; value: string }[];
+  categories: { id: string; title: string }[];
   tags: string[];
-}): Settings => [
+}): FilterPickerConfig[] => [
   {
     label: "Categories",
     type: "category",
-    filters: categories,
+    filters: categories.map((c) => ({ label: c.title, value: c.id })),
   },
   {
     label: "Tags",
@@ -20,7 +28,11 @@ export const getSettings = ({
       label: tag,
       value: tag,
     })),
-    containerStyle: { gridTemplateColumns: "1fr 1fr 1fr" },
+    contentStyle: {
+      gridTemplateColumns: "1fr 1fr 1fr",
+      gridTemplateRows: "repeat(10, 1fr)",
+      gridAutoFlow: "column",
+    },
   },
   {
     label: "Effort",

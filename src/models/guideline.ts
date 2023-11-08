@@ -10,20 +10,18 @@ export interface ServerGuideline {
   impact: string;
   effort: string;
   tags: string[];
+  url: string;
 }
 
-export interface Guideline {
+export type Guideline = Omit<ServerGuideline, "impact" | "effort"> & {
   id: string;
   index: number;
-  title: string;
-  category: {
-    label: string;
-    value: string;
+  impact: {
+    level: Level;
+    title: string;
   };
-  description: string;
-  impact: Level;
-  impactLabel: string;
-  effort: Level;
-  effortLabel: string;
-  tags: string[];
-}
+  effort: {
+    level: Level;
+    title: string;
+  };
+};

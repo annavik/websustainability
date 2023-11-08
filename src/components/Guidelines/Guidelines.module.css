@@ -1,25 +1,17 @@
 .settings {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 16px;
   margin-bottom: 48px;
 }
 
-.activeFilters {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
+.filterPickers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
 }
 
-.activeFiltersLabel {
-  display: block;
-  font-size: 0.8em;
-  font-weight: 600;
-  margin-right: 4px;
-}
-
-.info {
+.infoLabel {
   display: block;
   margin-bottom: 16px;
   font-style: italic;
