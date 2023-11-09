@@ -42,8 +42,8 @@ export const useGuidelines = (): {
                   title: serverGuideline.impact,
                 },
                 effort: {
-                  level: valueToLevel(serverGuideline.impact),
-                  title: serverGuideline.impact,
+                  level: valueToLevel(serverGuideline.effort),
+                  title: serverGuideline.effort,
                 },
                 tags: _.uniq(serverGuideline.tags),
                 url: serverGuideline.url,
