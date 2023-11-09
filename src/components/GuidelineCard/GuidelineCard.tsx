@@ -20,12 +20,12 @@ export const GuidelineCard = ({ guideline }: { guideline: Guideline }) => (
     <div className={styles.tags}>
       <div className={styles.extra}>
         <Tag
-          label={`Effort ${[...Array(guideline.effort)]
+          label={`Effort ${[...Array(guideline.effort.level)]
             .map(() => "🌱")
             .join(" ")}`}
         />
         <Tag
-          label={`Impact ${[...Array(guideline.impact)]
+          label={`Impact ${[...Array(guideline.impact.level)]
             .map(() => "🌍")
             .join(" ")}`}
         />
