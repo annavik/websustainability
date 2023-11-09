@@ -80,9 +80,9 @@ export const Guidelines = () => {
         )}
       </div>
 
-      <span className={styles.infoLabel}>
+      <p className={styles.infoLabel}>
         {getInfoLabel(filteredGuidelines.length)}
-      </span>
+      </p>
 
       {filteredGuidelines.length ? (
         <div className={styles.guidelines}>

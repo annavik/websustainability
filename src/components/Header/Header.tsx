@@ -14,7 +14,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.content}>
-        <img src={globe} alt="" />
+        <img src={globe} alt="" className={styles.globe} />
         <div>
           <h1>Web Sustainability Guidelines</h1>
           <h2>

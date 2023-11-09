@@ -1,35 +1,37 @@
 import classNames from "classnames";
-import { CSSProperties, ReactNode } from "react";
+import { ReactNode } from "react";
 import styles from "./Button.module.css";
 
 export const Button = ({
   children,
+  className: customClassName,
   href,
-  style,
+
   theme = "outline",
   onClick,
 }: {
   children: ReactNode;
+  className?: string;
   href?: string;
-  style?: CSSProperties;
   theme?: "outline" | "ghost";
   onClick?: () => void;
 }) => {
   const className = classNames(styles.button, {
     [styles.outline]: theme === "outline",
     [styles.ghost]: theme === "ghost",
+    ...(customClassName ? { [customClassName]: true } : {}),
   });
 
   if (href) {
     return (
-      <a className={className} href={href} style={style}>
+      <a className={className} href={href}>
         {children}
       </a>
     );
   }
 
   return (
-    <button className={className} style={style} onClick={onClick}>
+    <button className={className} onClick={onClick}>
       {children}
     </button>
   );

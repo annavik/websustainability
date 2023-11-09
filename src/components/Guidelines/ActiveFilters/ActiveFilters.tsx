@@ -23,8 +23,8 @@ export const ActiveFilters = ({
       />
     ))}
     <Button
+      className={styles.clearButton}
       theme="ghost"
-      style={{ padding: "0 8px", height: "24px" }}
       onClick={removeAllFilters}
     >
       Clear filters

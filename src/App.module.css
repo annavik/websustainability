@@ -8,8 +8,12 @@
   box-sizing: border-box;
 }
 
-.themeToggleWrapper {
-  position: absolute;
-  top: 16px;
-  right: 16px;
+@media only screen and (max-width: 960px) {
+  .main {
+    padding: 16px;
+  }
+
+  .content {
+    width: auto;
+  }
 }

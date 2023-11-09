@@ -18,21 +18,21 @@ export const GuidelineCard = ({ guideline }: { guideline: Guideline }) => (
     </div>
     <p className={styles.description}>{guideline.description}</p>
     <div className={styles.tags}>
+      <div className={styles.extra}>
+        <Tag
+          label={`Effort ${[...Array(guideline.effort)]
+            .map(() => "🌱")
+            .join(" ")}`}
+        />
+        <Tag
+          label={`Impact ${[...Array(guideline.impact)]
+            .map(() => "🌍")
+            .join(" ")}`}
+        />
+      </div>
       {guideline.tags.map((tag) => (
         <Tag key={tag} label={tag} />
       ))}
-    </div>
-    <div className={styles.extra}>
-      <Tag
-        label={`Effort ${[...Array(guideline.effort)]
-          .map(() => "🌱")
-          .join(" ")}`}
-      />
-      <Tag
-        label={`Impact ${[...Array(guideline.impact)]
-          .map(() => "🌍")
-          .join(" ")}`}
-      />
     </div>
   </div>
 );

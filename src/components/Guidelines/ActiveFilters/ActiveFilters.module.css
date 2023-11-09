@@ -11,3 +11,9 @@
   font-weight: var(--font-weight-bold);
   margin-right: 4px;
 }
+
+.clearButton {
+  padding: 0 8px;
+  height: 24px;
+  font-size: var(--font-size-xx-small);
+}

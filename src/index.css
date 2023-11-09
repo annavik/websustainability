@@ -3,15 +3,16 @@ body {
   --base-font: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   /* Font sizes */
+  --font-size-xx-small: 0.8em;
   --font-size-x-small: 0.8em;
   --font-size-small: 1em;
-  --font-size-medium: 1.2em;
-  --font-size-large: 1.6em;
-  --font-size-x-large: 2.4em;
+  --font-size-medium: 1.25em;
+  --font-size-large: 1.563em;
+  --font-size-x-large: 2.441em;
 
   /* Font weights */
   --font-weight-normal: 400;
-  --font-weight-bold: 500;
+  --font-weight-bold: 600;
 
   /* Colors */
   --neutral-1: #fbfdfc;
@@ -84,7 +85,14 @@ body {
 }
 
 :root {
-  min-width: fit-content;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  min-width: 320px;
+  overflow: auto;
 }
 
 p {
@@ -124,6 +132,7 @@ a:focus-visible {
 input {
   font-family: var(--base-font);
   font-size: var(--font-size-x-small);
+  line-height: 1;
 }
 
 button {
@@ -132,8 +141,20 @@ button {
   font-size: var(--font-size-x-small);
   font-weight: var(--font-weight-normal);
   cursor: pointer;
+  line-height: 1;
 }
 
 button:focus-visible {
   outline: 2px solid var(--neutral-12);
+}
+
+@media only screen and (max-width: 960px) {
+  body {
+    --font-size-xx-small: 10.24px;
+    --font-size-x-small: 12.8px;
+    --font-size-small: 12.8px;
+    --font-size-medium: 16px;
+    --font-size-large: 20px;
+    --font-size-x-large: 25px;
+  }
 }

@@ -29,9 +29,7 @@ export const getFilterPickerConfig = ({
       value: tag,
     })),
     contentStyle: {
-      gridTemplateColumns: "1fr 1fr 1fr",
-      gridTemplateRows: "repeat(10, 1fr)",
-      gridAutoFlow: "column",
+      gridTemplateColumns: "1fr 1fr",
     },
   },
   {

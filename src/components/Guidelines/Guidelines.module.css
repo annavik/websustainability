@@ -12,7 +12,6 @@
 }
 
 .infoLabel {
-  display: block;
   margin-bottom: 16px;
   font-style: italic;
   color: var(--neutral-11);
@@ -21,4 +20,18 @@
 .guidelines {
   display: grid;
   gap: 32px;
+}
+
+@media only screen and (max-width: 960px) {
+  .settings {
+    margin-bottom: 32px;
+  }
+
+  .filterPickers {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .guidelines {
+    gap: 16px;
+  }
 }
