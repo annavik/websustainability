@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useThemePreference } from "../../utils/useThemePreference";
 import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 import styles from "./Header.module.css";
-import globe from "./globe.svg";
 
 export const Header = () => {
   const { theme, setTheme } = useThemePreference();
@@ -14,7 +13,7 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.content}>
-        <img src={globe} alt="" className={styles.globe} />
+        <img src="./globe.svg" alt="" className={styles.globe} />
         <div>
           <h1>Web Sustainability Guidelines</h1>
           <h2>
