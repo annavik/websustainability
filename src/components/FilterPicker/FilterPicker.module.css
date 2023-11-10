@@ -28,7 +28,7 @@
 .popoverContent {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 8px 32px;
+  gap: 12px 32px;
   min-width: var(--radix-popover-trigger-width);
   padding: 16px;
   border-radius: 4px;
