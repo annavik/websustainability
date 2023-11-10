@@ -15,10 +15,16 @@ export const Header = () => {
       <div className={styles.content}>
         <img src="./globe.svg" alt="" className={styles.globe} />
         <div>
-          <h1>Web Sustainability Guidelines</h1>
+          <h1>Web Sustainability 4U</h1>
           <h2>
             An interactive version of{" "}
-            <a href="https://w3c.github.io/sustyweb/">WSG 1.0</a>
+            <a
+              href="https://w3c.github.io/sustyweb/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              WSG 1.0
+            </a>
           </h2>
         </div>
       </div>
