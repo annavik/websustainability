@@ -3,6 +3,7 @@ import { Filter, FilterType } from "../../../models/filter";
 import { Level } from "../../../models/level";
 
 interface FilterPickerConfig {
+  align?: "start" | "end";
   contentStyle?: CSSProperties;
   label: string;
   filters: Omit<Filter, "type">[];
@@ -22,6 +23,7 @@ export const getFilterPickerConfig = ({
     filters: categories.map((c) => ({ label: c.title, value: c.id })),
   },
   {
+    align: screen.width > 960 ? "start" : "end",
     label: "Tags",
     type: "tag",
     filters: tags.map((tag) => ({
@@ -33,6 +35,7 @@ export const getFilterPickerConfig = ({
     },
   },
   {
+    align: screen.width > 960 ? "start" : "end",
     label: "Effort",
     type: "effort",
     filters: [

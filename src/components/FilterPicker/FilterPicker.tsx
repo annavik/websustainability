@@ -7,6 +7,7 @@ import styles from "./FilterPicker.module.css";
 
 export const FilterPicker = ({
   activeFilters,
+  align = "start",
   contentStyle,
   filters,
   label,
@@ -14,6 +15,7 @@ export const FilterPicker = ({
   removeFilter,
 }: {
   activeFilters: Filter[];
+  align?: "start" | "end";
   contentStyle?: CSSProperties;
   filters: Filter[];
   label: string;
@@ -28,7 +30,9 @@ export const FilterPicker = ({
     <Popover.Portal>
       <Popover.Content
         className={styles.popoverContent}
-        align="start"
+        align={align}
+        avoidCollisions={false}
+        side="bottom"
         sideOffset={8}
         style={contentStyle}
       >

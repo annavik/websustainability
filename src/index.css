@@ -90,6 +90,8 @@ body {
 
 #root {
   height: 100vh;
+  height: 100dvh;
+  max-height: -webkit-fill-available;
   width: 100vw;
   min-width: 320px;
   overflow: auto;

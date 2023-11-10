@@ -47,7 +47,7 @@ export const Guidelines = () => {
         />
         <div className={styles.filterPickers}>
           {getFilterPickerConfig({ categories, tags }).map(
-            ({ contentStyle, filters, label, type }) => {
+            ({ align, contentStyle, filters, label, type }) => {
               const numActiveFilters = activeFilters.filter(
                 (filter) => filter.type === type
               ).length;
@@ -55,6 +55,7 @@ export const Guidelines = () => {
               return (
                 <FilterPicker
                   key={type}
+                  align={align}
                   activeFilters={activeFilters}
                   contentStyle={contentStyle}
                   filters={filters.map((filter) => ({
