@@ -93,7 +93,6 @@ export const Guidelines = () => {
       ) : (
         <Button
           theme="outline"
-          style={{ marginTop: "16px" }}
           onClick={() => {
             setSearchString("");
             removeAllFilters();
