@@ -24,7 +24,7 @@ export const Button = ({
 
   if (href) {
     return (
-      <a className={className} href={href}>
+      <a className={className} href={href} rel="noreferrer" target="_blank">
         {children}
       </a>
     );
