@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useThemePreference } from "../../utils/useThemePreference";
 import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 import styles from "./Header.module.css";
+import { AboutDialog } from "../AboutDialog/AboutDialog";
 
 export const Header = () => {
   const { theme, setTheme } = useThemePreference();
@@ -14,6 +15,7 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles.content}>
         <div className={styles.topBar}>
+          <AboutDialog />
           <ThemeToggle theme={theme} onThemeChange={setTheme} />
         </div>
         <img src="./globe.svg" alt="" width={96} height={96} />
