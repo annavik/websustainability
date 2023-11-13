@@ -21,7 +21,7 @@ export const Checkbox = ({
       onCheckedChange={onCheckedChange}
     >
       <_Checkbox.Indicator className={styles.checkboxIndicator}>
-        <CheckIcon width={16} height={16} />
+        <CheckIcon />
       </_Checkbox.Indicator>
     </_Checkbox.Root>
     <label className={styles.label} htmlFor={id}>

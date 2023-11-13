@@ -1,6 +1,6 @@
-import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
+import { Cross2Icon, MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import { CSSProperties } from "react";
-import { ClearButton } from "../ClearButton/ClearButton";
+import { IconButton } from "../IconButton/IconButton";
 import styles from "./SearchInput.module.css";
 
 export const SearchInput = ({
@@ -25,11 +25,17 @@ export const SearchInput = ({
       onChange={(e) => onChange(e.target.value)}
     />
     <div className={styles.searchIconWrapper}>
-      <MagnifyingGlassIcon width={16} height={16} />
+      <MagnifyingGlassIcon />
     </div>
     {value.length > 0 && (
       <div className={styles.clearButtonWrapper}>
-        <ClearButton label={clearLabel} onClick={() => onChange("")} />
+        <IconButton
+          label={clearLabel}
+          onClick={() => onChange("")}
+          type="reset"
+        >
+          <Cross2Icon />
+        </IconButton>
       </div>
     )}
   </div>

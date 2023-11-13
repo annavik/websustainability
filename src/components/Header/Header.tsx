@@ -13,23 +13,17 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.content}>
-        <img src="./globe.svg" alt="" className={styles.globe} />
+        <div className={styles.topBar}>
+          <ThemeToggle theme={theme} onThemeChange={setTheme} />
+        </div>
+        <img src="./globe.svg" alt="" width={96} height={96} />
         <div>
           <h1>Web Sustainability 4U</h1>
           <h2>
             An interactive version of{" "}
-            <a
-              href="https://w3c.github.io/sustyweb/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              WSG 1.0
-            </a>
+            <a href="https://w3c.github.io/sustyweb/">WSG 1.0</a>
           </h2>
         </div>
-      </div>
-      <div className={styles.themeToggleWrapper}>
-        <ThemeToggle theme={theme} onThemeChange={setTheme} />
       </div>
     </header>
   );

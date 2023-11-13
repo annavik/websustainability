@@ -1,5 +1,5 @@
 .main {
-  padding: 48px 64px;
+  margin: 48px 64px;
 }
 
 .content {
@@ -10,7 +10,7 @@
 
 @media only screen and (max-width: 960px) {
   .main {
-    padding: 16px;
+    margin: 16px;
   }
 
   .content {

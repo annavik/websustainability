@@ -25,7 +25,7 @@ export const FilterPicker = ({
   <Popover.Root>
     <Popover.Trigger className={styles.popoverTrigger}>
       <span>{label}</span>
-      <ChevronDownIcon width={16} height={16} />
+      <ChevronDownIcon />
     </Popover.Trigger>
     <Popover.Portal>
       <Popover.Content

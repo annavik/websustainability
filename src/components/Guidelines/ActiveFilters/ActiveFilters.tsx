@@ -17,8 +17,8 @@ export const ActiveFilters = ({
     {activeFilters.map((filter) => (
       <Tag
         key={`${filter.type}-${filter.value}`}
-        label={filter.label}
         active
+        label={filter.label}
         onRemove={() => removeFilter(filter)}
       />
     ))}

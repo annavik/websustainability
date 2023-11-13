@@ -1,38 +1,57 @@
 import classNames from "classnames";
-import { ReactNode } from "react";
+import { ReactNode, forwardRef } from "react";
 import styles from "./Button.module.css";
 
-export const Button = ({
-  children,
-  className: customClassName,
-  href,
-
-  theme = "outline",
-  onClick,
-}: {
+interface ButtonProps {
   children: ReactNode;
   className?: string;
-  href?: string;
   theme?: "outline" | "ghost";
   onClick?: () => void;
-}) => {
-  const className = classNames(styles.button, {
-    [styles.outline]: theme === "outline",
-    [styles.ghost]: theme === "ghost",
-    ...(customClassName ? { [customClassName]: true } : {}),
-  });
+}
 
-  if (href) {
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ ...props }, forwardedRef) => {
+    const { children, className, theme = "outline", onClick, ...rest } = props;
+
     return (
-      <a className={className} href={href} rel="noreferrer" target="_blank">
+      <button
+        ref={forwardedRef}
+        className={classNames(
+          styles.button,
+          {
+            [styles.outline]: theme === "outline",
+            [styles.ghost]: theme === "ghost",
+          },
+          className
+        )}
+        onClick={onClick}
+        {...rest}
+      >
         {children}
-      </a>
+      </button>
     );
   }
+);
 
-  return (
-    <button className={className} onClick={onClick}>
-      {children}
-    </button>
-  );
-};
+export const LinkButton = ({
+  children,
+  className,
+  to,
+  theme = "outline",
+}: Omit<ButtonProps, "onClick"> & { to: string }) => (
+  <a
+    className={classNames(
+      styles.button,
+      {
+        [styles.outline]: theme === "outline",
+        [styles.ghost]: theme === "ghost",
+      },
+      className
+    )}
+    href={to}
+    rel="noreferrer"
+    target="_blank"
+  >
+    {children}
+  </a>
+);

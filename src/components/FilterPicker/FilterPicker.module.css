@@ -32,7 +32,7 @@
   min-width: var(--radix-popover-trigger-width);
   padding: 16px;
   border-radius: 4px;
-  background-color: var(--neutral-2);
+  background-color: var(--popover-background);
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }

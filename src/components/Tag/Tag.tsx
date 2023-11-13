@@ -1,5 +1,6 @@
+import { Cross2Icon } from "@radix-ui/react-icons";
 import classNames from "classnames";
-import { ClearButton } from "../ClearButton/ClearButton";
+import { IconButton } from "../IconButton/IconButton";
 import styles from "./Tag.module.css";
 
 export const Tag = ({
@@ -14,7 +15,9 @@ export const Tag = ({
   <span className={classNames(styles.tag, { [styles.active]: active })}>
     <span>{label}</span>
     {onRemove && (
-      <ClearButton label="Remove tag" theme="step-1" onClick={onRemove} />
+      <IconButton label="Remove tag" onClick={onRemove}>
+        <Cross2Icon />
+      </IconButton>
     )}
   </span>
 );

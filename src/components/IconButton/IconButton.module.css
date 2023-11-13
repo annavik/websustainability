@@ -1,0 +1,21 @@
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.iconButton.plain:hover {
+  opacity: 0.7;
+}
+
+.iconButton.ghost {
+  color: var(--brand-11);
+}
+
+.iconButton.ghost:hover {
+  background-color: var(--brand-3);
+}
