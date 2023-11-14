@@ -2,10 +2,9 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import _ from "lodash";
 import { Guideline, ServerGuideline } from "../models/guideline";
-import { valueToLevel } from "./valueToLevel";
 
 const QUERY_KEY = "guidelines";
-const URL = "https://c0ldbear.github.io/data/wsg-info.json";
+const URL = "https://c0ldbear.github.io/data/v1/wsg-info.json";
 
 export const useGuidelines = (): {
   guidelines?: Guideline[];
@@ -38,12 +37,12 @@ export const useGuidelines = (): {
                 id: `guideline-${index}`,
                 index,
                 impact: {
-                  level: valueToLevel(serverGuideline.impact),
-                  title: serverGuideline.impact,
+                  level: serverGuideline.impact.value,
+                  title: serverGuideline.impact.title,
                 },
                 effort: {
-                  level: valueToLevel(serverGuideline.effort),
-                  title: serverGuideline.effort,
+                  level: serverGuideline.effort.value,
+                  title: serverGuideline.effort.title,
                 },
                 tags: _.uniq(serverGuideline.tags),
                 url: serverGuideline.url,
