@@ -62,7 +62,7 @@ export const AboutDialog = () => (
               Come visit us on GitHub!
             </p>
             <p className={styles.gitHubLinks}>
-              <LinkButton to="https://github.com/annavik/wsg-renderer">
+              <LinkButton to="https://github.com/annavik/ws4u">
                 GitHub project <GitHubLogoIcon />
               </LinkButton>
             </p>
