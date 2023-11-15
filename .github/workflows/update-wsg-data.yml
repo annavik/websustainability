@@ -1,0 +1,45 @@
+name: Update WSG Data
+
+on: 
+  push:
+    branches:
+      - 'main'
+  schedule:
+    - cron:  '32 5 17 * *' # runs at 05:32 on day-of-month 17 
+
+
+jobs:
+  Scheduled-Update-WSG-Data:
+      runs-on: ubuntu-latest
+      steps:
+          - name: Checkout repository
+            uses: actions/checkout@v4
+
+          - name: Install bundler
+            run: | 
+              sudo gem install bundler
+              sudo chmod -R 777 /var/lib/gems/
+
+          - name: Install gems via bundle
+            run: bundle install
+
+          - name: Change to 'src/scripts' directory and run 'save.rb'
+            run: |
+              cd src/scripts
+              ruby ./save.rb
+
+          - name: Check git diff after fetching WSG and parsing it
+            run: |
+              {
+                echo 'GITHUB_DIFF<<EOF'
+                git diff | grep diff | head -1
+                echo EOF
+              } >> "$GITHUB_ENV"
+
+          - name: Commit updated file
+            run: |
+              git config --global user.name 'github action runner'
+              git config --global user.email 'gitb0ten@gmail.com'
+              git commit -am "Automated update of WSG Data"
+              git push origin HEAD:main
+            if: ${{ env.GITHUB_ENV != '' || env.GITHUB_DIFF != '' }}
