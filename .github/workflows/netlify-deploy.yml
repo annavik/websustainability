@@ -1,0 +1,21 @@
+name: "Netlify Deploy"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: "Deploy"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: jsmrcaga/action-netlify-deploy@v2.1.0
+        with:
+          build_directory: "dist"
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NETLIFY_DEPLOY_MESSAGE: "Deployed v${{ github.ref }}"
+          NETLIFY_DEPLOY_TO_PROD: true
