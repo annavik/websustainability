@@ -1,0 +1,2283 @@
+{
+  "categories": [
+    {
+      "id": "2",
+      "title": "User-Experience Design"
+    },
+    {
+      "id": "3",
+      "title": "Web Development"
+    },
+    {
+      "id": "4",
+      "title": "Hosting, Infrastructure And Systems"
+    },
+    {
+      "id": "5",
+      "title": "Business Strategy And Product Management"
+    }
+  ],
+  "tags": [
+    "Accessibility",
+    "Assets",
+    "CSS",
+    "Compatibility",
+    "Content",
+    "E-Waste",
+    "Education",
+    "Governance",
+    "HTML",
+    "Hardware",
+    "Ideation",
+    "JavaScript",
+    "KPIs",
+    "Marketing",
+    "Networking",
+    "Patterns",
+    "Performance",
+    "Privacy",
+    "Reporting",
+    "Research",
+    "Security",
+    "Social Equity",
+    "Software",
+    "Strategy",
+    "UI",
+    "Usability"
+  ],
+  "data": [
+    {
+      "title": "2.1 Undertake Systemic Impacts Mapping",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "There are many variables which can impact the user-experience, and a bunch of these can impact how sustainable your website will be. Attempting to identify where you can make a difference to the visitor and give them a more sustainable experience will be beneficial.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Accessibility",
+        "Ideation",
+        "Research",
+        "Compatibility",
+        "Performance",
+        "Hardware",
+        "Software",
+        "Networking",
+        "Reporting"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#undertake-systemic-impacts-mapping"
+    },
+    {
+      "title": "2.2 Assess and Research Visitor Needs",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "When creating a product or service, identifying your target audience through user-research, analytics, data collected using ethical anonymous methods, or feedback from and with visitors is important in being able to create a customized service for and with them which is tailor-made for their specific preferences, adapted for any needs they may have, and particularly useful in helping a website or application evolve its service to meet sustainability targets.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "High",
+        "value": 3
+      },
+      "tags": [
+        "Social Equity",
+        "Accessibility",
+        "UI",
+        "Patterns",
+        "Ideation",
+        "Research",
+        "Usability",
+        "Compatibility",
+        "Reporting",
+        "KPIs"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#assess-and-research-visitor-needs"
+    },
+    {
+      "title": "2.3 Research Non-Visitor's Needs",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "If you provide physical goods or services, you may also have to account for the sustainability impact of delivery services. This can often be tricky, but courier companies may provide useful tooling to help you identify emissions data for routing.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Ideation",
+        "Research",
+        "Usability",
+        "Hardware",
+        "E-Waste",
+        "Reporting",
+        "KPIs",
+        "Marketing"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#research-non-visitor-s-needs"
+    },
+    {
+      "title": "2.4 Consider Sustainability in Early Ideation",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "While some things require the use of electricity, during the early ideation phase you could consider wireframing or rapid prototyping (using paper) among other offline tools to reduce energy consumption. Even the electronic versions of these may have a lower carbon cost than committing to building a full-blown experience for each idea.",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "UI",
+        "Ideation",
+        "Research",
+        "Software",
+        "Strategy"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#consider-sustainability-in-early-ideation"
+    },
+    {
+      "title": "2.5 Account for Stakeholder Issues",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Brainstorming allows you to flush out ideas before you commit to pursuing a path. Being considerate of not just your visitors but other individuals who may be affected by your product or service (including non-humans, like the environment!) is a useful practical exercise as it may influence your decisions in how you scope your project.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Accessibility",
+        "Ideation",
+        "Research",
+        "Strategy",
+        "KPIs"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#account-for-stakeholder-issues"
+    },
+    {
+      "title": "2.6 Create a Frictionless Lightweight Experience by Default",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "When providing the option to download, save, print, or access anything online, defaulting to the most lightweight, least featureful version will reduce emissions through passive browsing; with non-essential information removed from the screen either to be shown when it's required or eliminated.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Content",
+        "UI",
+        "Patterns",
+        "Usability",
+        "Performance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#create-a-frictionless-lightweight-experience-by-default"
+    },
+    {
+      "title": "2.7 Avoid Unnecessary or an Overabundance of Assets",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "It's great to have a pretty looking website or application, but to ensure a sustainable design, it's important to avoid cluttering up the interface with too many visuals (which aren't necessary to the content). Keeping a clean design will reduce data transfer, and thereby emissions.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "UI",
+        "Usability",
+        "Assets",
+        "Performance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#avoid-unnecessary-or-an-overabundance-of-assets"
+    },
+    {
+      "title": "2.8 Ensure Navigation and Way-Finding Are Well-Structured",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Information architecture is a central part of the Web development process, and how you structure a website ensures that people can way-find your content easily. Having appropriately marked-up links within your product or service allows visitors, search engines and social networks to identify key information quickly.",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Accessibility",
+        "UI",
+        "Usability",
+        "HTML",
+        "Marketing"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#ensure-navigation-and-way-finding-are-well-structured"
+    },
+    {
+      "title": "2.9 Respect the Visitor's Attention",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Time is precious, wasting a visitor's will cause frustration and lead to abandonment or resentment. Additionally, the more time a visitor spends in front of a screen, the more energy they utilize. As such, throwing stuff in front of the visitor vying for their attention might sound like good business (even though we know due to banner blindness it rarely works), but it mostly damages the environment and dissuades the visitor.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "UI",
+        "Patterns",
+        "Usability",
+        "Assets"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#respect-the-visitor-s-attention"
+    },
+    {
+      "title": "2.10 Use Recognized Design Patterns",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Visitors can identify patterns fairly easily, and they like browsing websites and apps and feeling as if they know what they are dealing with. As such, focusing your efforts on producing a product or service that is clean and has key components in easy-to-recognize locations (and visuals) will allow faster user-experiences and fewer emissions.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "UI",
+        "Patterns",
+        "Usability",
+        "Assets",
+        "CSS"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#use-recognized-design-patterns"
+    },
+    {
+      "title": "2.11 Avoid Manipulative Patterns",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Manipulating the visitor into doing things you want them to is a short-term gain, long-term loss tactic tool. It's ethically bad, unsustainable, and should be avoided at all costs.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Accessibility",
+        "UI",
+        "Patterns",
+        "Usability",
+        "Compatibility",
+        "Assets",
+        "JavaScript",
+        "Security",
+        "JavaScript",
+        "Security",
+        "Privacy"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#avoid-manipulative-patterns"
+    },
+    {
+      "title": "2.12 Document and Share Project Outputs",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Everything produced by designers, developers, writers and those involved with a project should be in an open format, well maintained, and curated in a common format (so everyone is working from the same model).",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "High",
+        "value": 3
+      },
+      "tags": [
+        "Content",
+        "Patterns",
+        "Education",
+        "Assets",
+        "Software"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#document-and-share-project-outputs"
+    },
+    {
+      "title": "2.13 Use a Design System To Prioritize Interface Consistency",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Design systems allow common components and patterns to be formalized and managed within a website or application. By using such a tool, designers and developers can avoid reinventing existing tooling and thereby reduce wasted time (and emissions).",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "UI",
+        "Patterns",
+        "Education",
+        "Usability",
+        "Assets",
+        "Strategy"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#use-a-design-system-to-prioritize-interface-consistency"
+    },
+    {
+      "title": "2.14 Write With Purpose, in an Accessible, Easy To Understand Format",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Everyone should be able to understand what you've written without wasting time staring at a screen or jumping from page-to-page looking for answers, whether they have accessibility requirements or not. This also means avoiding using technical language (without explanations) and including enough information to help direct people (and search engines) from page to page.",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Social Equity",
+        "Accessibility",
+        "Content",
+        "UI",
+        "Usability"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#write-with-purpose-in-an-accessible-easy-to-understand-format"
+    },
+    {
+      "title": "2.15 Take a More Sustainable Approach to Image Assets",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Of all the data which comprises the largest over-the-wire transfer rates within the average website or application, images are usually those which are responsible due to their quantity and usefulness. As such, doing all you can to reduce their size and unnecessary loading will be beneficial for reducing emissions.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Content",
+        "UI",
+        "Usability",
+        "Assets",
+        "HTML",
+        "Performance",
+        "Software"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#take-a-more-sustainable-approach-to-image-assets"
+    },
+    {
+      "title": "2.16 Take a More Sustainable Approach to Media Assets",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Video and audio-heavy websites are often those which can have the highest emissions costs in terms of data transfer, storage usage, and carbon intensity for viewers who have to process the media with their devices to watch them (draining batteries). Optimizing such assets as much as possible is critical for a sustainable product or service.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Content",
+        "UI",
+        "Usability",
+        "Assets",
+        "HTML",
+        "Performance",
+        "Software"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#take-a-more-sustainable-approach-to-media-assets"
+    },
+    {
+      "title": "2.17 Take a More Sustainable Approach to Animation",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Animation can be both CPU and GPU intensive and have implications for accessibility. While visually appealing and useful in certain situations, care and attention should be taken when considering the use of a high emissions' technology.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Accessibility",
+        "UI",
+        "Usability",
+        "CSS",
+        "JavaScript",
+        "Performance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#take-a-more-sustainable-approach-to-animation"
+    },
+    {
+      "title": "2.18 Take a More Sustainable Approach to Typefaces",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Since the advent of the modern web, the ability to include embedded fonts and provide a more customized experience has seen their use explode. They aren't always the most performant option (which poses emissions hazards) and come with a few issues such as Flash Of Unstyled Content (FOUC) / Flash Of Unstyled Text (FOUT) which should be addressed.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "UI",
+        "Usability",
+        "CSS",
+        "Performance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#take-a-more-sustainable-approach-to-typefaces"
+    },
+    {
+      "title": "2.19 Provide Suitable Alternatives to Web Assets",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Media, images, fonts, and documents enrich the Internet. The problem is that people may not want to watch a video, listen to an audio file, look at an image, or use a specific application. By providing alternative formats to anything you embed, you ensure the widest possible audience can benefit from it (and reduced carbon output will occur as alternative text uses far less data than its rich media alternative).",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Accessibility",
+        "Content",
+        "UI",
+        "Usability",
+        "Compatibility",
+        "Assets",
+        "HTML",
+        "Performance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#provide-suitable-alternatives-to-web-assets"
+    },
+    {
+      "title": "2.20 Provide Accessible, Usable, Minimal Web Forms",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "It's understandable that businesses want to know more about their customers, but a key part of sustainability is being ethical towards visitors and as such, the right to privacy is considered paramount. Don't demand information when it's not required and not only will this help visitors complete transactions quicker (reducing emissions), it will help with legal compliance such as GDPR.",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Social Equity",
+        "Accessibility",
+        "UI",
+        "Usability",
+        "HTML",
+        "Privacy"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#provide-accessible-usable-minimal-web-forms"
+    },
+    {
+      "title": "2.21 Support Non-Graphic Ways To Interact With Content",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Certain visitors such as those with visual disabilities or speech agents (like Amazon Alexa) may rely on an experience without the graphical part of an interface. As such, they potentially may use less data or may have a different carbon impact on the Web.",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Accessibility",
+        "Content",
+        "UI",
+        "Usability",
+        "Compatibility",
+        "HTML",
+        "Performance",
+        "Software"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#support-non-graphic-ways-to-interact-with-content"
+    },
+    {
+      "title": "2.22 Give Useful Notifications To Improve The Visitor's Journey",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Notifications whether through the browser or messaging can be potentially useful, but only used in moderation. Spam and the lack of control are contributing sources of Internet emissions and as such, businesses should aim to reduce such actions.",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "UI",
+        "Usability",
+        "JavaScript",
+        "Privacy"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#give-useful-notifications-to-improve-the-visitor-s-journey"
+    },
+    {
+      "title": "2.23 Reduce the Impact of Downloadable or Physical Documents",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Printing or downloading documents can both be a net benefit and a net cost in terms of sustainability as it can reduce repeat requests to websites, but the act of printing (especially when unoptimized) wastes valuable ink and paper.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Content",
+        "UI",
+        "Usability",
+        "Compatibility",
+        "Assets",
+        "Performance",
+        "Hardware",
+        "Software",
+        "E-Waste"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#reduce-the-impact-of-downloadable-or-physical-documents"
+    },
+    {
+      "title": "2.24 Create a Stakeholder-Focused Testing & Prototyping Policy",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "The organization has policies and practices in place to incorporate stakeholder-focused testing and prototyping into its product development cycles.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Accessibility",
+        "UI",
+        "Ideation",
+        "Research",
+        "Education",
+        "Usability",
+        "Governance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#create-a-stakeholder-focused-testing-&-prototyping-policy"
+    },
+    {
+      "title": "2.25 Conduct Regular Audits, Regression, and Non-Regression Tests",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Products and services at any stage of a project can suffer bugs or issues which need to be resolved. Fixing these regressions also generates additional development and environmental costs. By resolving such issues, you can reduce the chances of a visitor giving up on a session and thereby reduce the amount of wasted energy your website emits overall.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Accessibility",
+        "UI",
+        "Research",
+        "Usability",
+        "Compatibility",
+        "Performance",
+        "Security",
+        "Privacy",
+        "Reporting",
+        "KPIs"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#conduct-regular-audits-regression-and-non-regression-tests"
+    },
+    {
+      "title": "2.26 Analyze the Performance of the Visitor Journey",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Try to ethically measure how efficient a visitor's experience is, by doing so you might be able to reduce any issues they may have encountered previously and reduce the energy burden of loading unnecessary pages.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Accessibility",
+        "Research",
+        "Usability",
+        "Performance",
+        "Networking",
+        "Strategy",
+        "KPIs"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#analyze-the-performance-of-the-visitor-journey"
+    },
+    {
+      "title": "2.27 Incorporate Value Testing Into Each Major Release-Cycle",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Occasionally, you may find that features you have developed for a product or service have little to no active users or could be better implemented to bring better value. Undertaking research to identify redundancy allows you to optimize your codebase (and reduce emissions).",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Research",
+        "Usability",
+        "Strategy",
+        "KPIs"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#incorporate-value-testing-into-each-major-release-cycle"
+    },
+    {
+      "title": "2.28 Incorporate Usability Testing Into Each Minor Release-Cycle",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Researching a product or service and how it is used over time allows you to iterate and ensure the features and functionality being offered match how user-needs change over time. Doing so will help you reduce code redundancy further and reduce emissions through optimization.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Accessibility",
+        "UI",
+        "Research",
+        "Usability",
+        "Strategy",
+        "KPIs"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#incorporate-usability-testing-into-each-minor-release-cycle"
+    },
+    {
+      "title": "2.29 Incorporate Compatibility Testing Into Each Release-Cycle",
+      "category": {
+        "id": "2",
+        "title": "User-Experience Design"
+      },
+      "description": "Compatibility is a critical part of the sustainability mindset and should be prioritized through all products and services. If individuals wish to use older devices (or cannot upgrade due to cost), or do not wish to upgrade as frequently, it will reduce the amount of e-waste which enters the system. If something doesn't work, it's also likely to result in visitors suffering a wasted effort or are refused access to your service (and thereby emitting further emissions).",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Accessibility",
+        "UI",
+        "Research",
+        "Usability",
+        "Compatibility",
+        "Software",
+        "Security",
+        "Strategy",
+        "KPIs"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#incorporate-compatibility-testing-into-each-release-cycle"
+    },
+    {
+      "title": "3.1 Identify Relevant Technical Indicators",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "Performance is a key part of the sustainability mindset as reductions in loading times can have a considerable impact on energy loads within CPU, GPU, RAM and hard drive caching (among other variables), as such ensuring a performant product is essential.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Research",
+        "Performance",
+        "Networking",
+        "Strategy",
+        "KPIs"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#identify-relevant-technical-indicators"
+    },
+    {
+      "title": "3.2 Minify Your HTML, CSS, and JavaScript",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "Whitespace holds no value when it's being presented to the visitor (unless they view the source code), by using minification, valuable data savings can be made which will reduce loading times.",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Performance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#minify-your-html-css-and-javascript"
+    },
+    {
+      "title": "3.3 Use Code-Splitting Within Projects",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "When dealing with heavy components (such as JavaScript), the ability to modularize them into smaller pieces which can be loaded as and when required reduces the amount of redundancy and serves as a great way to make your scripts more sustainable.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "CSS",
+        "JavaScript",
+        "Performance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#use-code-splitting-within-projects"
+    },
+    {
+      "title": "3.4 Apply Tree Shaking To Code",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "Often when coding, projects can accumulate clutter and functions which are no longer used (due to newer, more effective features being developed). By utilizing tree shaking techniques, all the \"dead wood\" will be automatically dropped upon compilation, reducing a file's size.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "CSS",
+        "JavaScript",
+        "Performance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#apply-tree-shaking-to-code"
+    },
+    {
+      "title": "3.5 Ensure Your Solutions Are Accessible",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "Not everyone can access services equally, being sustainable is also about being accessible, fair, ethical, and ensuring that your product or service doesn't discriminate. As such, ensuring your website complies with best-practices and relevant laws whilst meeting the needs of your visitors is critical as well as good business.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Accessibility",
+        "Content",
+        "UI",
+        "Research",
+        "Usability",
+        "Compatibility",
+        "Software",
+        "KPIs"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#ensure-your-solutions-are-accessible"
+    },
+    {
+      "title": "3.6 Avoid Code Duplication",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "Redundancy is the enemy of sustainability. Having systems in place to ensure that everyone can work from established patterns, the website or application remains clean and easy to use, and iteration over redesign is firmly in the mindset that will help promote sustainable practices. It's also worth being wary of abstracting code too early (see AHA methodology) or incorrectly, as while good abstractions can be more efficient, poor ones can waste effort and introduce complexity, bloat, and bugs to your codebase which can lead to emissions.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Patterns",
+        "CSS",
+        "JavaScript",
+        "Performance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#avoid-code-duplication"
+    },
+    {
+      "title": "3.7 Rigorously Assess Third-Party Services",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "Whether advertising, chatbots, maps, or other tooling; outsourcing your service to a third-party provider may be potentially useful in certain scenarios in reducing design or development time and redundancy (which can be a win for sustainability). Third-party services, however, come with issues, such as the lack of control over emissions, and they often can potentially suffer from latency and large file sizes which may not exist if you self-hosted or created the material.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "UI",
+        "Usability",
+        "JavaScript",
+        "Performance",
+        "Software",
+        "Security",
+        "Privacy"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#rigorously-assess-third-party-services"
+    },
+    {
+      "title": "3.8 Use HTML Elements Correctly",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "HTML semantics are important. They don't just play a key role in making the Web look the way it does, they have a function in accessibility, in SEO, and even in sustainability. Ensuring that you markup your content correctly and avoid cluttering your markup wastefully will reduce emissions.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Accessibility",
+        "Content",
+        "Usability",
+        "Compatibility",
+        "HTML"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#use-html-elements-correctly"
+    },
+    {
+      "title": "3.9 Resolve Render Blocking Content",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "The ability to work around render-blocking issues is a great addition to the web. From deferring code, to lazy loading, to asynchronous loading, each has its own use-case and each can have the potential to reduce or give performance benefits to a website or application.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Assets",
+        "CSS",
+        "JavaScript",
+        "Performance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#resolve-render-blocking-content"
+    },
+    {
+      "title": "3.10 Provide Code-Based Way-Finding Mechanisms",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "Helping visitors avoid wasting their time can reduce the number of emissions from time spent in front of a screen. As such, by using existing technologies like metadata, robots files, and accessibility-friendly aids within the page, improvements to the experience can be made.",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Accessibility",
+        "UI",
+        "Usability",
+        "HTML",
+        "Marketing"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#provide-code-based-way-finding-mechanisms"
+    },
+    {
+      "title": "3.11 Validate Form Errors and External Input",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "Entering information on a page can lead to problems. If a visitor makes a mistake along the way, it makes good sense to have systems in place to guide them through resolving the typos, confusion, and glitches that can occur which lead to abandonment and extra emissions.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Accessibility",
+        "UI",
+        "Usability",
+        "Compatibility",
+        "HTML",
+        "Security"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#validate-form-errors-and-external-input"
+    },
+    {
+      "title": "3.12 Use Metadata Correctly",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "Search engines and social networks make use of the content within a website, by ensuring that your metadata is correctly marked up, you can reduce emissions by improving way-finding.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Accessibility",
+        "Usability",
+        "HTML",
+        "Marketing"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#use-metadata-correctly"
+    },
+    {
+      "title": "3.13 Adapt to User Preferences",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "Sustainability benefits can be generated in numerous ways, by making sure that your website adheres to the requests made by a browser for specific conditions to be taken into account (such as CSS media and preference queries), you can unlock benefits for the visitor, and as a by-product reduce your emissions. It's worth noting that the introduction of user preferences and API's has increased the risk of visitor fingerprinting and privacy issues.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Accessibility",
+        "UI",
+        "Usability",
+        "Assets",
+        "CSS"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#adapt-to-user-preferences"
+    },
+    {
+      "title": "3.14 Develop a Mobile-First Layout",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "Visitors approach our products and services on a wide variety of devices these days. Ensuring that your device works on the widest range of devices and differing screen resolutions ensures that you will have a compatible website or application. As such, visitors can actively choose to browse on devices which emit less carbon if they wish.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "UI",
+        "Usability",
+        "Compatibility",
+        "CSS",
+        "Performance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#develop-a-mobile-first-layout"
+    },
+    {
+      "title": "3.15 Use Beneficial JavaScript and Its API's",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "When new best practices or if beneficial scripting guidance exists which will improve the visitor experience, following it should be of the highest priority (only using scripts ethically should be promoted).",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Accessibility",
+        "JavaScript",
+        "Security"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#use-beneficial-javascript-and-its-api-s"
+    },
+    {
+      "title": "3.16 Ensure Your Scripts Are Secure",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "The dangers of scripting are well known, and vulnerabilities are discovered with increasing regularity. As such, it's of ethical benefit for authors to ensure all code used regularly passes security processes.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "JavaScript",
+        "Security",
+        "Privacy"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#ensure-your-scripts-are-secure"
+    },
+    {
+      "title": "3.17 Manage Dependencies Appropriately",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "While JavaScript may not cause the most website bloat, it can cause very high emissions in terms of CPU load due to the rendering process, thereby it makes sense to consider the use of dependencies and third-party code carefully.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Patterns",
+        "JavaScript",
+        "Performance",
+        "Software",
+        "Security"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#manage-dependencies-appropriately"
+    },
+    {
+      "title": "3.18 Include Files That Are Automatically Expected",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "Search engines and browsers regularly examine websites, requesting specific files by default (they expect them to exist). If the files don't exist, this will lead to potential errors and emissions being caused when they could be created, especially as the files offer SEO, user-experience, and other benefits to visitors.",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "UI",
+        "Patterns",
+        "Compatibility",
+        "Assets",
+        "Marketing"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#include-files-that-are-automatically-expected"
+    },
+    {
+      "title": "3.19 Use Plaintext Formats When Appropriate",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "There are several small assets which can be included within a website, conferring a range of benefits upon the website or application that utilizes them. They each have a low carbon footprint, so while they do create emissions, it's worth including them for the benefits they provide.",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Patterns",
+        "Security"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#use-plaintext-formats-when-appropriate"
+    },
+    {
+      "title": "3.20 Avoid Using Deprecated or Proprietary Code",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "The Web is full of dead, often proprietary code, created using standards which have been superseded or by groups which aren't recognized. By following recognized coding standards, you ensure that your code will be rendered properly by browsers (and reduce the potential for added emissions occurring from unmaintained rendering processes).",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Accessibility",
+        "Compatibility",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Performance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#avoid-using-deprecated-or-proprietary-code"
+    },
+    {
+      "title": "3.21 Align Technical Requirements With Sustainability Goals",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "Every product or service is different, and each will require a different set of tooling to accomplish the most sustainable result. Deciding whether to go with a bulky framework, Static Site Generator (SSG) or a Content Management System (CMS) takes careful planning based on client or service requirements.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Ideation",
+        "Compatibility",
+        "Performance",
+        "Strategy"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#align-technical-requirements-with-sustainability-goals"
+    },
+    {
+      "title": "3.22 Use the Latest Stable Language Version",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "Languages evolve regularly, and it's important for security and performance reasons to keep on-top of the technology stack you are using.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Compatibility",
+        "Performance",
+        "Security"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#use-the-latest-stable-language-version"
+    },
+    {
+      "title": "3.23 Take Advantage of Native Features",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "Ensuring that your code is free of redundancy by using pre-existing functionality provided by the web browser is important as it will help you to reduce the amount of time wasted, re-creating the same components, this offers obvious sustainability benefits in terms of time in front of the screen.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "UI",
+        "Patterns",
+        "Compatibility",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#take-advantage-of-native-features"
+    },
+    {
+      "title": "3.24 Run Fewer, Simpler Queries As Possible",
+      "category": {
+        "id": "3",
+        "title": "Web Development"
+      },
+      "description": "Making multiple requests whether HTTP or within a database has a carbon cost as infrastructure has to send that information back and forth. As such, managing how you store and use data locally for a visitor will help reduce wasted cycles.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Performance",
+        "Networking"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#run-fewer-simpler-queries-as-possible"
+    },
+    {
+      "title": "4.1 Choose a Sustainable Hosting Provider",
+      "category": {
+        "id": "4",
+        "title": "Hosting, Infrastructure And Systems"
+      },
+      "description": "In addition to reducing the environmental impacts of a website, choose a hosting service that mitigates the remaining impacts. To make sure of this, there are many criteria to look for.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Hardware",
+        "Networking"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#choose-a-sustainable-hosting-provider"
+    },
+    {
+      "title": "4.2 Optimize Browser Caching",
+      "category": {
+        "id": "4",
+        "title": "Hosting, Infrastructure And Systems"
+      },
+      "description": "Browser caching reduces the requirement for files to need to be constantly reloaded from the server, and in certain situations, it can even allow for files to be viewed offline (or in the case of a reverse-proxy, send immediate recurring requests without additional calculation or computation from the server). As such, this will have emissions savings and performance benefits (for instance by greatly reducing Time-To-First-Byte).",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "High",
+        "value": 3
+      },
+      "tags": [
+        "Assets",
+        "HTML",
+        "JavaScript",
+        "Performance",
+        "Networking"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#optimize-browser-caching"
+    },
+    {
+      "title": "4.3 Compress Your Files",
+      "category": {
+        "id": "4",
+        "title": "Hosting, Infrastructure And Systems"
+      },
+      "description": "Every file will take up a certain amount of room on a server's hard drive, and this data will need to be sent across-the-wire to each visitor. Doing so will consume resources, but by using compression algorithms you can shrink each file to make its journey less ecologically impactful.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Assets",
+        "Performance",
+        "Networking"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#compress-your-files"
+    },
+    {
+      "title": "4.4 Use Error Pages and Redirects Carefully",
+      "category": {
+        "id": "4",
+        "title": "Hosting, Infrastructure And Systems"
+      },
+      "description": "Navigation errors lead to mistakes, which lead to visitors wasting time trying to resolve them, or abandoning a website altogether. Anything that can be done to interject, predict, and way-find around potential problems will reduce emissions over time.",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Content",
+        "UI",
+        "Usability",
+        "Compatibility",
+        "Networking",
+        "Marketing"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#use-error-pages-and-redirects-carefully"
+    },
+    {
+      "title": "4.5 Limit Usage of Additional Environments",
+      "category": {
+        "id": "4",
+        "title": "Hosting, Infrastructure And Systems"
+      },
+      "description": "Decommission or switch off additional environments, such as testing / Quality Assurance QA) / re-production and other such environments when they are not useful.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Performance",
+        "Hardware",
+        "Software",
+        "Networking"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#limit-usage-of-additional-environments"
+    },
+    {
+      "title": "4.6 Automate To Fit the Needs",
+      "category": {
+        "id": "4",
+        "title": "Hosting, Infrastructure And Systems"
+      },
+      "description": "Any tasks, especially repetitive, that can be automated should be automated (compilation, deployment, tests, etc.) to reduce time at the computer being wasted by people.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Performance",
+        "Software"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#automate-to-fit-the-needs"
+    },
+    {
+      "title": "4.7 Maintain a Relevant Refresh Frequency",
+      "category": {
+        "id": "4",
+        "title": "Hosting, Infrastructure And Systems"
+      },
+      "description": "Only send data from the server when the visitor needs it. As much as possible, you can rely on client-side or server-side cache and client-side / local storage. Rather than refreshing data on a given frequency, it might be up to the visitor to manually ask for a refresh.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Usability",
+        "JavaScript",
+        "Performance",
+        "Networking"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#maintain-a-relevant-refresh-frequency"
+    },
+    {
+      "title": "4.8 Be Mindful of Duplicate Data",
+      "category": {
+        "id": "4",
+        "title": "Hosting, Infrastructure And Systems"
+      },
+      "description": "For security reasons and in accordance with an SLA (Service-Level Agreement), it is often recommended to duplicate data to make sure it remains available if a problem occurs. This should be balanced with the cost of such duplication. Not all data is critical and, rather than overcompensating with multiple saves, duplication should be designed with efficiency in mind.",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Performance",
+        "Hardware"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#be-mindful-of-duplicate-data"
+    },
+    {
+      "title": "4.9 Enable Asynchronous Processing and Communication",
+      "category": {
+        "id": "4",
+        "title": "Hosting, Infrastructure And Systems"
+      },
+      "description": "Depending on carbon-intensity, some processes and communications should be delayed and sometimes batched. This could also be a way to reduce the workload on a server or Virtual Machine (VM). In such cases, visitors should be warned that the process is asynchronous and notified when it is over.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "JavaScript",
+        "Performance",
+        "Networking"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#enable-asynchronous-processing-and-communication"
+    },
+    {
+      "title": "4.10 Consider CDN's and Edge Caching",
+      "category": {
+        "id": "4",
+        "title": "Hosting, Infrastructure And Systems"
+      },
+      "description": "Edge caching and CDN delivery can help optimize energy usage by reducing the amount of traffic transferred over the internet.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Content",
+        "Performance",
+        "Hardware",
+        "Networking"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#consider-cdn-s-and-edge-caching"
+    },
+    {
+      "title": "4.11 Use the Lowest Infrastructure Tier Meeting Business Requirements",
+      "category": {
+        "id": "4",
+        "title": "Hosting, Infrastructure And Systems"
+      },
+      "description": "Select infrastructure with minimal specifications meeting business requirements of performance, availability, etc.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Performance",
+        "Hardware",
+        "E-Waste"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#use-the-lowest-infrastructure-tier-meeting-business-requirements"
+    },
+    {
+      "title": "4.12 Store Data According to Visitor Needs",
+      "category": {
+        "id": "4",
+        "title": "Hosting, Infrastructure And Systems"
+      },
+      "description": "Optimize storage of data according to what is most important, relevant, and required in service to visitors. This will help to avoid unnecessary storage of data that may not be useful or valuable, which will reduce required infrastructure, power, and data transfer.",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Content",
+        "Performance",
+        "Hardware",
+        "E-Waste",
+        "Privacy"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#store-data-according-to-visitor-needs"
+    },
+    {
+      "title": "5.1 Have an Ethical and Sustainability Product Strategy",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "Create a publicly available statement in an easy-to-find location on your website that outlines a clear commitment to prioritize ethics and sustainability ESG standards which align with the organization's mission, vision, and values and includes statements specific to digital products, services, policies, and programs. This should be done while actively promoting such efforts (with evidence) using social channels.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "High",
+        "value": 3
+      },
+      "tags": [
+        "Social Equity",
+        "Ideation",
+        "Research",
+        "Education",
+        "Strategy",
+        "KPIs"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#have-an-ethical-and-sustainability-product-strategy"
+    },
+    {
+      "title": "5.2 Assign a Sustainability Representative",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "Having someone within an organization who represents sustainability as a core agenda makes good sense due to the accessibility, performance, financial, and other benefits which can occur from following best practices.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Social Equity",
+        "Ideation",
+        "Education",
+        "Marketing"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#assign-a-sustainability-representative"
+    },
+    {
+      "title": "5.3 Raise Awareness and Inform",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "Businesses should not only reference their own materials showcasing how they are working towards becoming sustainable, but cite existing sustainability best practices to help others looking to make similar changes within their own work or personal environments.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Content",
+        "Education",
+        "Reporting",
+        "Marketing"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#raise-awareness-and-inform"
+    },
+    {
+      "title": "5.4 Communicate the Ecological Impact of User Choices",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "Allowing the visitor to take action to reduce their emissions is key to helping them play a part in becoming more sustainable. By helping them identify when choices they make could have an environmental impact (and by how much) and then providing them with the tooling choices to reduce their footprint, you can empower them to make a lasting difference.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Content",
+        "Education",
+        "Reporting"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#communicate-the-ecological-impact-of-user-choices"
+    },
+    {
+      "title": "5.5 Estimate a Product or Service's Environmental Impact",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "Being able to identify key issues with your website or application is essential, and while not a foolproof method, using tooling can help you achieve an overall idea about the state of your product or service's environmental state (as such tools can do for accessibility).",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Ideation",
+        "Research",
+        "Strategy",
+        "KPIs"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#estimate-a-product-or-service-s-environmental-impact"
+    },
+    {
+      "title": "5.6 Define Clear Organizational Sustainability Goals and Metrics",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "Define sustainability goals for the organization to meet and incorporate into its business model. Pair each goal with at least one clear, achievable metric or Key Performance Indicator (KPI).",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Ideation",
+        "Research",
+        "Governance",
+        "KPIs"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#define-clear-organizational-sustainability-goals-and-metrics"
+    },
+    {
+      "title": "5.7 Verify Your Efforts Using Established Third-Party Business Certifications",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "Business certifications can fill the gaps left by incomplete sustainability legislation. Ensuring a business complies with third-party certifications will help verify and apply an objective level of rigor to an organization's sustainability efforts.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Governance",
+        "KPIs"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#verify-your-efforts-using-established-third-party-business-certifications"
+    },
+    {
+      "title": "5.8 Implement Sustainability Onboarding Guidelines",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "The organization has clear onboarding and training processes that include ESG policies and practices with explicit references to digital sustainability and responsibility. Ensure that onboarding utilizes a \"green by default\" process and avoids being an opt-in procedure. This applies equally at an organizational level and to visitors and consumers of your products and services.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Education",
+        "Strategy"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#implement-sustainability-onboarding-guidelines"
+    },
+    {
+      "title": "5.9 Support Mandatory Disclosures and Reporting",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "The organization discloses and reports its ESG impact on at least an annual basis.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Content",
+        "Reporting",
+        "KPIs"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#support-mandatory-disclosures-and-reporting"
+    },
+    {
+      "title": "5.10 Create One or More Impact Business Models",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "An Impact Business Model enables an organization to incorporate specific impact initiatives into one or more business models for generating revenue, often making them \"green by default\" and folding impact initiatives into the organization's operating system. Moreover, being able to calculate the return on investment in terms of sustainability your product or service will bring is important to identifying whether it poses a net-positive or net-negative effect on the environment.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Content",
+        "Ideation",
+        "Research",
+        "Strategy"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#create-one-or-more-impact-business-models"
+    },
+    {
+      "title": "5.11 Follow a Product Management and Maintenance Strategy",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "The organization has clearly defined governance policies around how it manages and maintains digital products and services over time.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Compatibility",
+        "Strategy"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#follow-a-product-management-and-maintenance-strategy"
+    },
+    {
+      "title": "5.12 Implement Continuous Improvement Procedures",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "The organization has policies and practices in place to embrace experimentation, foster a growth mindset, support organizational agility, and provide continuous improvement. Product creators should iterate, regularly, though never at the cost of getting things done (such as working on larger, long-term features).",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "High",
+        "value": 3
+      },
+      "tags": [
+        "UI",
+        "Compatibility",
+        "Performance",
+        "Security",
+        "Strategy",
+        "KPIs"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#implement-continuous-improvement-procedures"
+    },
+    {
+      "title": "5.13 Document Future Updates and Evolutions",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "Products or services update regularly, ensure that additions, changes, deprecations, removals, fixes, or security patches are documented in an easy-to-read document with details that showcase how such changes affect the visitor (or how they can take advantage of new features).",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Content",
+        "Education",
+        "Usability",
+        "Compatibility"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#document-future-updates-and-evolutions"
+    },
+    {
+      "title": "5.14 Establish if a Digital Product or Service Is Necessary",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "Ensure that the product or service you are creating offers value to visitors and doesn't duplicate existing functionality (without bringing something new to the table) as this redundancy wastes digital and physical resources.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Low",
+        "value": 1
+      },
+      "tags": [
+        "Ideation",
+        "Software",
+        "E-Waste",
+        "Reporting"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#establish-if-a-digital-product-or-service-is-necessary"
+    },
+    {
+      "title": "5.15 Determine the Functional Unit",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "The functional unit of a product is a quantified description of the performance requirements that the product fulfills. Ensure you identify the requirements of your product before development.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Ideation",
+        "Research",
+        "Reporting"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#determine-the-functional-unit"
+    },
+    {
+      "title": "5.16 Create a Supplier Standards of Practice",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "The organization collaborates with suppliers, authors, clients, and other partners on initiatives that are both mutually beneficial and create positive social and environmental outcomes.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "High",
+        "value": 3
+      },
+      "tags": [
+        "Social Equity",
+        "Content",
+        "Ideation",
+        "Hardware",
+        "Governance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#create-a-supplier-standards-of-practice"
+    },
+    {
+      "title": "5.17 Share Economic Benefits",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "The organization shares the economic benefits of its digital products, services, policies, and programs.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Governance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#share-economic-benefits"
+    },
+    {
+      "title": "5.18 Share Decision-Making Power With Appropriate Stakeholders",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "Ensuring that everyone has a seat at the table is important to promoting voices who may not otherwise have their voices heard, and potentially getting useful ideas from fresh sources.",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "High",
+        "value": 3
+      },
+      "tags": [
+        "Social Equity",
+        "Ideation",
+        "Strategy"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#share-decision-making-power-with-appropriate-stakeholders"
+    },
+    {
+      "title": "5.19 Use Justice, Equity, Diversity, Inclusion (JEDI) Practices",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "The organization has public policies and practices supporting racial justice, inclusion, equity, and diversity in hiring and operations.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "High",
+        "value": 3
+      },
+      "tags": [
+        "Social Equity",
+        "Accessibility",
+        "Ideation",
+        "Strategy"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#use-justice-equity-diversity-inclusion-jedi-practices"
+    },
+    {
+      "title": "5.20 Promote Responsible Data Practices",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "The organization has devised and implemented a responsible data strategy that prioritizes data privacy and promotes more ethical uses of data, including disposal and data sustainability practices.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Content",
+        "Privacy",
+        "Governance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#promote-responsible-data-practices"
+    },
+    {
+      "title": "5.21 Implement Appropriate Data Management Procedures",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "Expired or unused data has a cost, it takes up space, and it requires maintenance. As such, the ability for customers to manage their own data and for service providers to manage older website material which no longer applies but might still have use will be a carbon benefit.",
+      "impact": {
+        "title": "Low",
+        "value": 1
+      },
+      "effort": {
+        "title": "High",
+        "value": 3
+      },
+      "tags": [
+        "Social Equity",
+        "Security",
+        "Privacy",
+        "Strategy"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#implement-appropriate-data-management-procedures"
+    },
+    {
+      "title": "5.22 Promote Responsible Emerging Technology Practices",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "The organization has devised and implemented responsible policies related to artificial intelligence, Internet of Things (IoT), blockchain, and related emerging technologies.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Content",
+        "Governance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#promote-responsible-emerging-technology-practices"
+    },
+    {
+      "title": "5.23 Include Responsible Financial Policies",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "The organization implements responsible finance strategies, including divesting from fossil fuels and appropriately resourcing digital products and services to account for long-term care and maintenance.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "High",
+        "value": 3
+      },
+      "tags": [
+        "Social Equity",
+        "Ideation",
+        "Governance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#include-responsible-financial-policies"
+    },
+    {
+      "title": "5.24 Include Organizational Philanthropy Policies",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "For-profit organizations have clear philanthropy policies and practices in place to help non-profit organizations build digital capacity and acumen while also engaging their own teams in meaningful work that promotes shared learning and stretch goals.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Content",
+        "Governance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#include-organizational-philanthropy-policies"
+    },
+    {
+      "title": "5.25 Plan for a Digital Product or Service's Care and End-of-Life",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "Everything ends at some point, planning for if and when a product or service is finalized makes good ethical sense to ensure customers can be transitioned toward a replacement rather than losing access to their data.",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Research",
+        "Compatibility",
+        "Software",
+        "E-Waste",
+        "Strategy"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#plan-for-a-digital-product-or-service-s-care-and-end-of-life"
+    },
+    {
+      "title": "5.26 Include E-Waste, Right-To-Repair, and Recycling Policies",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "The organization addresses e-waste, right-to-repair, recycling, and related practices in its operations.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Social Equity",
+        "Content",
+        "Ideation",
+        "Hardware",
+        "E-Waste",
+        "Governance"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#include-e-waste-right-to-repair-and-recycling-policies"
+    },
+    {
+      "title": "5.27 Define Performance and Environmental Budgets",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "Setting targets and limits regarding your product or service is important for keeping a sustainable mindset. Using budgets, you can declare the remits of which you will work within to ensure your emissions do not fall outside (and monitor your progress through development).",
+      "impact": {
+        "title": "Medium",
+        "value": 2
+      },
+      "effort": {
+        "title": "Medium",
+        "value": 2
+      },
+      "tags": [
+        "Accessibility",
+        "Ideation",
+        "Research",
+        "Usability",
+        "Performance",
+        "KPIs"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#define-performance-and-environmental-budgets"
+    },
+    {
+      "title": "5.28 Use Open Source Tools",
+      "category": {
+        "id": "5",
+        "title": "Business Strategy And Product Management"
+      },
+      "description": "The organization has clear policies about using open source tools, including how it gives back to the community and responsibly manages code repositories to reduce waste.",
+      "impact": {
+        "title": "High",
+        "value": 3
+      },
+      "effort": {
+        "title": "High",
+        "value": 3
+      },
+      "tags": [
+        "Social Equity",
+        "UI",
+        "Ideation",
+        "Assets",
+        "Software"
+      ],
+      "url": "https://w3c.github.io/sustyweb/#use-open-source-tools"
+    }
+  ]
+}
