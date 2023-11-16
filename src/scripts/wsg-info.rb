@@ -84,7 +84,7 @@ end
 def generate_impact_effort_objects(title)
     effort_impact_object = {
         Constant::TITLE => title,
-        Constant::VALUE => convert_title_to_value(title)
+    #     Constant::VALUE => convert_title_to_value(title)
     }
     effort_impact_object
 end

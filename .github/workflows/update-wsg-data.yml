@@ -6,6 +6,8 @@ on:
       - 'main'
   schedule:
     - cron:  '32 5 17 * *' # runs at 05:32 on day-of-month 17 
+permissions: write-all
+
 
 
 jobs:
@@ -26,13 +28,13 @@ jobs:
           - name: Change to 'src/scripts' directory and run 'save.rb'
             run: |
               cd src/scripts
-              ruby ./save.rb
+              ruby save.rb
 
           - name: Check git diff after fetching WSG and parsing it
             run: |
               {
                 echo 'GITHUB_DIFF<<EOF'
-                git diff | grep diff | head -1
+                git diff | head -1
                 echo EOF
               } >> "$GITHUB_ENV"
 
