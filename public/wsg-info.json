@@ -54,12 +54,10 @@
       },
       "description": "There are many variables which can impact the user-experience, and a bunch of these can impact how sustainable your website will be. Attempting to identify where you can make a difference to the visitor and give them a more sustainable experience will be beneficial.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -83,12 +81,10 @@
       },
       "description": "When creating a product or service, identifying your target audience through user-research, analytics, data collected using ethical anonymous methods, or feedback from and with visitors is important in being able to create a customized service for and with them which is tailor-made for their specific preferences, adapted for any needs they may have, and particularly useful in helping a website or application evolve its service to meet sustainability targets.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "tags": [
         "Social Equity",
@@ -112,12 +108,10 @@
       },
       "description": "If you provide physical goods or services, you may also have to account for the sustainability impact of delivery services. This can often be tricky, but courier companies may provide useful tooling to help you identify emissions data for routing.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -140,12 +134,10 @@
       },
       "description": "While some things require the use of electricity, during the early ideation phase you could consider wireframing or rapid prototyping (using paper) among other offline tools to reduce energy consumption. Even the electronic versions of these may have a lower carbon cost than committing to building a full-blown experience for each idea.",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "UI",
@@ -164,12 +156,10 @@
       },
       "description": "Brainstorming allows you to flush out ideas before you commit to pursuing a path. Being considerate of not just your visitors but other individuals who may be affected by your product or service (including non-humans, like the environment!) is a useful practical exercise as it may influence your decisions in how you scope your project.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -189,12 +179,10 @@
       },
       "description": "When providing the option to download, save, print, or access anything online, defaulting to the most lightweight, least featureful version will reduce emissions through passive browsing; with non-essential information removed from the screen either to be shown when it's required or eliminated.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -214,12 +202,10 @@
       },
       "description": "It's great to have a pretty looking website or application, but to ensure a sustainable design, it's important to avoid cluttering up the interface with too many visuals (which aren't necessary to the content). Keeping a clean design will reduce data transfer, and thereby emissions.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "UI",
@@ -237,12 +223,10 @@
       },
       "description": "Information architecture is a central part of the Web development process, and how you structure a website ensures that people can way-find your content easily. Having appropriately marked-up links within your product or service allows visitors, search engines and social networks to identify key information quickly.",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Accessibility",
@@ -261,12 +245,10 @@
       },
       "description": "Time is precious, wasting a visitor's will cause frustration and lead to abandonment or resentment. Additionally, the more time a visitor spends in front of a screen, the more energy they utilize. As such, throwing stuff in front of the visitor vying for their attention might sound like good business (even though we know due to banner blindness it rarely works), but it mostly damages the environment and dissuades the visitor.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "UI",
@@ -284,12 +266,10 @@
       },
       "description": "Visitors can identify patterns fairly easily, and they like browsing websites and apps and feeling as if they know what they are dealing with. As such, focusing your efforts on producing a product or service that is clean and has key components in easy-to-recognize locations (and visuals) will allow faster user-experiences and fewer emissions.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "UI",
@@ -308,12 +288,10 @@
       },
       "description": "Manipulating the visitor into doing things you want them to is a short-term gain, long-term loss tactic tool. It's ethically bad, unsustainable, and should be avoided at all costs.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -339,12 +317,10 @@
       },
       "description": "Everything produced by designers, developers, writers and those involved with a project should be in an open format, well maintained, and curated in a common format (so everyone is working from the same model).",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "tags": [
         "Content",
@@ -363,12 +339,10 @@
       },
       "description": "Design systems allow common components and patterns to be formalized and managed within a website or application. By using such a tool, designers and developers can avoid reinventing existing tooling and thereby reduce wasted time (and emissions).",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "UI",
@@ -388,12 +362,10 @@
       },
       "description": "Everyone should be able to understand what you've written without wasting time staring at a screen or jumping from page-to-page looking for answers, whether they have accessibility requirements or not. This also means avoiding using technical language (without explanations) and including enough information to help direct people (and search engines) from page to page.",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Social Equity",
@@ -412,12 +384,10 @@
       },
       "description": "Of all the data which comprises the largest over-the-wire transfer rates within the average website or application, images are usually those which are responsible due to their quantity and usefulness. As such, doing all you can to reduce their size and unnecessary loading will be beneficial for reducing emissions.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Content",
@@ -438,12 +408,10 @@
       },
       "description": "Video and audio-heavy websites are often those which can have the highest emissions costs in terms of data transfer, storage usage, and carbon intensity for viewers who have to process the media with their devices to watch them (draining batteries). Optimizing such assets as much as possible is critical for a sustainable product or service.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Content",
@@ -464,12 +432,10 @@
       },
       "description": "Animation can be both CPU and GPU intensive and have implications for accessibility. While visually appealing and useful in certain situations, care and attention should be taken when considering the use of a high emissions' technology.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Accessibility",
@@ -489,12 +455,10 @@
       },
       "description": "Since the advent of the modern web, the ability to include embedded fonts and provide a more customized experience has seen their use explode. They aren't always the most performant option (which poses emissions hazards) and come with a few issues such as Flash Of Unstyled Content (FOUC) / Flash Of Unstyled Text (FOUT) which should be addressed.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "UI",
@@ -512,12 +476,10 @@
       },
       "description": "Media, images, fonts, and documents enrich the Internet. The problem is that people may not want to watch a video, listen to an audio file, look at an image, or use a specific application. By providing alternative formats to anything you embed, you ensure the widest possible audience can benefit from it (and reduced carbon output will occur as alternative text uses far less data than its rich media alternative).",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -540,12 +502,10 @@
       },
       "description": "It's understandable that businesses want to know more about their customers, but a key part of sustainability is being ethical towards visitors and as such, the right to privacy is considered paramount. Don't demand information when it's not required and not only will this help visitors complete transactions quicker (reducing emissions), it will help with legal compliance such as GDPR.",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Social Equity",
@@ -565,12 +525,10 @@
       },
       "description": "Certain visitors such as those with visual disabilities or speech agents (like Amazon Alexa) may rely on an experience without the graphical part of an interface. As such, they potentially may use less data or may have a different carbon impact on the Web.",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -593,12 +551,10 @@
       },
       "description": "Notifications whether through the browser or messaging can be potentially useful, but only used in moderation. Spam and the lack of control are contributing sources of Internet emissions and as such, businesses should aim to reduce such actions.",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "UI",
@@ -616,12 +572,10 @@
       },
       "description": "Printing or downloading documents can both be a net benefit and a net cost in terms of sustainability as it can reduce repeat requests to websites, but the act of printing (especially when unoptimized) wastes valuable ink and paper.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Content",
@@ -644,12 +598,10 @@
       },
       "description": "The organization has policies and practices in place to incorporate stakeholder-focused testing and prototyping into its product development cycles.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -671,12 +623,10 @@
       },
       "description": "Products and services at any stage of a project can suffer bugs or issues which need to be resolved. Fixing these regressions also generates additional development and environmental costs. By resolving such issues, you can reduce the chances of a visitor giving up on a session and thereby reduce the amount of wasted energy your website emits overall.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -701,12 +651,10 @@
       },
       "description": "Try to ethically measure how efficient a visitor's experience is, by doing so you might be able to reduce any issues they may have encountered previously and reduce the energy burden of loading unnecessary pages.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Accessibility",
@@ -727,12 +675,10 @@
       },
       "description": "Occasionally, you may find that features you have developed for a product or service have little to no active users or could be better implemented to bring better value. Undertaking research to identify redundancy allows you to optimize your codebase (and reduce emissions).",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Research",
@@ -750,12 +696,10 @@
       },
       "description": "Researching a product or service and how it is used over time allows you to iterate and ensure the features and functionality being offered match how user-needs change over time. Doing so will help you reduce code redundancy further and reduce emissions through optimization.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -776,12 +720,10 @@
       },
       "description": "Compatibility is a critical part of the sustainability mindset and should be prioritized through all products and services. If individuals wish to use older devices (or cannot upgrade due to cost), or do not wish to upgrade as frequently, it will reduce the amount of e-waste which enters the system. If something doesn't work, it's also likely to result in visitors suffering a wasted effort or are refused access to your service (and thereby emitting further emissions).",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -805,12 +747,10 @@
       },
       "description": "Performance is a key part of the sustainability mindset as reductions in loading times can have a considerable impact on energy loads within CPU, GPU, RAM and hard drive caching (among other variables), as such ensuring a performant product is essential.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -830,12 +770,10 @@
       },
       "description": "Whitespace holds no value when it's being presented to the visitor (unless they view the source code), by using minification, valuable data savings can be made which will reduce loading times.",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "HTML",
@@ -853,12 +791,10 @@
       },
       "description": "When dealing with heavy components (such as JavaScript), the ability to modularize them into smaller pieces which can be loaded as and when required reduces the amount of redundancy and serves as a great way to make your scripts more sustainable.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "CSS",
@@ -875,12 +811,10 @@
       },
       "description": "Often when coding, projects can accumulate clutter and functions which are no longer used (due to newer, more effective features being developed). By utilizing tree shaking techniques, all the \"dead wood\" will be automatically dropped upon compilation, reducing a file's size.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "CSS",
@@ -897,12 +831,10 @@
       },
       "description": "Not everyone can access services equally, being sustainable is also about being accessible, fair, ethical, and ensuring that your product or service doesn't discriminate. As such, ensuring your website complies with best-practices and relevant laws whilst meeting the needs of your visitors is critical as well as good business.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -925,12 +857,10 @@
       },
       "description": "Redundancy is the enemy of sustainability. Having systems in place to ensure that everyone can work from established patterns, the website or application remains clean and easy to use, and iteration over redesign is firmly in the mindset that will help promote sustainable practices. It's also worth being wary of abstracting code too early (see AHA methodology) or incorrectly, as while good abstractions can be more efficient, poor ones can waste effort and introduce complexity, bloat, and bugs to your codebase which can lead to emissions.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Patterns",
@@ -948,12 +878,10 @@
       },
       "description": "Whether advertising, chatbots, maps, or other tooling; outsourcing your service to a third-party provider may be potentially useful in certain scenarios in reducing design or development time and redundancy (which can be a win for sustainability). Third-party services, however, come with issues, such as the lack of control over emissions, and they often can potentially suffer from latency and large file sizes which may not exist if you self-hosted or created the material.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "UI",
@@ -974,12 +902,10 @@
       },
       "description": "HTML semantics are important. They don't just play a key role in making the Web look the way it does, they have a function in accessibility, in SEO, and even in sustainability. Ensuring that you markup your content correctly and avoid cluttering your markup wastefully will reduce emissions.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -999,12 +925,10 @@
       },
       "description": "The ability to work around render-blocking issues is a great addition to the web. From deferring code, to lazy loading, to asynchronous loading, each has its own use-case and each can have the potential to reduce or give performance benefits to a website or application.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Assets",
@@ -1022,12 +946,10 @@
       },
       "description": "Helping visitors avoid wasting their time can reduce the number of emissions from time spent in front of a screen. As such, by using existing technologies like metadata, robots files, and accessibility-friendly aids within the page, improvements to the experience can be made.",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Accessibility",
@@ -1046,12 +968,10 @@
       },
       "description": "Entering information on a page can lead to problems. If a visitor makes a mistake along the way, it makes good sense to have systems in place to guide them through resolving the typos, confusion, and glitches that can occur which lead to abandonment and extra emissions.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Accessibility",
@@ -1071,12 +991,10 @@
       },
       "description": "Search engines and social networks make use of the content within a website, by ensuring that your metadata is correctly marked up, you can reduce emissions by improving way-finding.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Accessibility",
@@ -1094,12 +1012,10 @@
       },
       "description": "Sustainability benefits can be generated in numerous ways, by making sure that your website adheres to the requests made by a browser for specific conditions to be taken into account (such as CSS media and preference queries), you can unlock benefits for the visitor, and as a by-product reduce your emissions. It's worth noting that the introduction of user preferences and API's has increased the risk of visitor fingerprinting and privacy issues.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Accessibility",
@@ -1118,12 +1034,10 @@
       },
       "description": "Visitors approach our products and services on a wide variety of devices these days. Ensuring that your device works on the widest range of devices and differing screen resolutions ensures that you will have a compatible website or application. As such, visitors can actively choose to browse on devices which emit less carbon if they wish.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "UI",
@@ -1142,12 +1056,10 @@
       },
       "description": "When new best practices or if beneficial scripting guidance exists which will improve the visitor experience, following it should be of the highest priority (only using scripts ethically should be promoted).",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Accessibility",
@@ -1164,12 +1076,10 @@
       },
       "description": "The dangers of scripting are well known, and vulnerabilities are discovered with increasing regularity. As such, it's of ethical benefit for authors to ensure all code used regularly passes security processes.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -1187,12 +1097,10 @@
       },
       "description": "While JavaScript may not cause the most website bloat, it can cause very high emissions in terms of CPU load due to the rendering process, thereby it makes sense to consider the use of dependencies and third-party code carefully.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Patterns",
@@ -1211,12 +1119,10 @@
       },
       "description": "Search engines and browsers regularly examine websites, requesting specific files by default (they expect them to exist). If the files don't exist, this will lead to potential errors and emissions being caused when they could be created, especially as the files offer SEO, user-experience, and other benefits to visitors.",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "UI",
@@ -1235,12 +1141,10 @@
       },
       "description": "There are several small assets which can be included within a website, conferring a range of benefits upon the website or application that utilizes them. They each have a low carbon footprint, so while they do create emissions, it's worth including them for the benefits they provide.",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Patterns",
@@ -1256,12 +1160,10 @@
       },
       "description": "The Web is full of dead, often proprietary code, created using standards which have been superseded or by groups which aren't recognized. By following recognized coding standards, you ensure that your code will be rendered properly by browsers (and reduce the potential for added emissions occurring from unmaintained rendering processes).",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Accessibility",
@@ -1281,12 +1183,10 @@
       },
       "description": "Every product or service is different, and each will require a different set of tooling to accomplish the most sustainable result. Deciding whether to go with a bulky framework, Static Site Generator (SSG) or a Content Management System (CMS) takes careful planning based on client or service requirements.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Ideation",
@@ -1304,12 +1204,10 @@
       },
       "description": "Languages evolve regularly, and it's important for security and performance reasons to keep on-top of the technology stack you are using.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Compatibility",
@@ -1326,12 +1224,10 @@
       },
       "description": "Ensuring that your code is free of redundancy by using pre-existing functionality provided by the web browser is important as it will help you to reduce the amount of time wasted, re-creating the same components, this offers obvious sustainability benefits in terms of time in front of the screen.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "UI",
@@ -1351,12 +1247,10 @@
       },
       "description": "Making multiple requests whether HTTP or within a database has a carbon cost as infrastructure has to send that information back and forth. As such, managing how you store and use data locally for a visitor will help reduce wasted cycles.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Performance",
@@ -1372,12 +1266,10 @@
       },
       "description": "In addition to reducing the environmental impacts of a website, choose a hosting service that mitigates the remaining impacts. To make sure of this, there are many criteria to look for.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -1394,12 +1286,10 @@
       },
       "description": "Browser caching reduces the requirement for files to need to be constantly reloaded from the server, and in certain situations, it can even allow for files to be viewed offline (or in the case of a reverse-proxy, send immediate recurring requests without additional calculation or computation from the server). As such, this will have emissions savings and performance benefits (for instance by greatly reducing Time-To-First-Byte).",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "tags": [
         "Assets",
@@ -1418,12 +1308,10 @@
       },
       "description": "Every file will take up a certain amount of room on a server's hard drive, and this data will need to be sent across-the-wire to each visitor. Doing so will consume resources, but by using compression algorithms you can shrink each file to make its journey less ecologically impactful.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Assets",
@@ -1440,12 +1328,10 @@
       },
       "description": "Navigation errors lead to mistakes, which lead to visitors wasting time trying to resolve them, or abandoning a website altogether. Anything that can be done to interject, predict, and way-find around potential problems will reduce emissions over time.",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Content",
@@ -1465,12 +1351,10 @@
       },
       "description": "Decommission or switch off additional environments, such as testing / Quality Assurance QA) / re-production and other such environments when they are not useful.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Performance",
@@ -1488,12 +1372,10 @@
       },
       "description": "Any tasks, especially repetitive, that can be automated should be automated (compilation, deployment, tests, etc.) to reduce time at the computer being wasted by people.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Performance",
@@ -1509,12 +1391,10 @@
       },
       "description": "Only send data from the server when the visitor needs it. As much as possible, you can rely on client-side or server-side cache and client-side / local storage. Rather than refreshing data on a given frequency, it might be up to the visitor to manually ask for a refresh.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Usability",
@@ -1532,12 +1412,10 @@
       },
       "description": "For security reasons and in accordance with an SLA (Service-Level Agreement), it is often recommended to duplicate data to make sure it remains available if a problem occurs. This should be balanced with the cost of such duplication. Not all data is critical and, rather than overcompensating with multiple saves, duplication should be designed with efficiency in mind.",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Performance",
@@ -1553,12 +1431,10 @@
       },
       "description": "Depending on carbon-intensity, some processes and communications should be delayed and sometimes batched. This could also be a way to reduce the workload on a server or Virtual Machine (VM). In such cases, visitors should be warned that the process is asynchronous and notified when it is over.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "JavaScript",
@@ -1575,12 +1451,10 @@
       },
       "description": "Edge caching and CDN delivery can help optimize energy usage by reducing the amount of traffic transferred over the internet.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Content",
@@ -1598,12 +1472,10 @@
       },
       "description": "Select infrastructure with minimal specifications meeting business requirements of performance, availability, etc.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Performance",
@@ -1620,12 +1492,10 @@
       },
       "description": "Optimize storage of data according to what is most important, relevant, and required in service to visitors. This will help to avoid unnecessary storage of data that may not be useful or valuable, which will reduce required infrastructure, power, and data transfer.",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Content",
@@ -1644,12 +1514,10 @@
       },
       "description": "Create a publicly available statement in an easy-to-find location on your website that outlines a clear commitment to prioritize ethics and sustainability ESG standards which align with the organization's mission, vision, and values and includes statements specific to digital products, services, policies, and programs. This should be done while actively promoting such efforts (with evidence) using social channels.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "tags": [
         "Social Equity",
@@ -1669,12 +1537,10 @@
       },
       "description": "Having someone within an organization who represents sustainability as a core agenda makes good sense due to the accessibility, performance, financial, and other benefits which can occur from following best practices.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Social Equity",
@@ -1692,12 +1558,10 @@
       },
       "description": "Businesses should not only reference their own materials showcasing how they are working towards becoming sustainable, but cite existing sustainability best practices to help others looking to make similar changes within their own work or personal environments.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Content",
@@ -1715,12 +1579,10 @@
       },
       "description": "Allowing the visitor to take action to reduce their emissions is key to helping them play a part in becoming more sustainable. By helping them identify when choices they make could have an environmental impact (and by how much) and then providing them with the tooling choices to reduce their footprint, you can empower them to make a lasting difference.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Content",
@@ -1737,12 +1599,10 @@
       },
       "description": "Being able to identify key issues with your website or application is essential, and while not a foolproof method, using tooling can help you achieve an overall idea about the state of your product or service's environmental state (as such tools can do for accessibility).",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -1761,12 +1621,10 @@
       },
       "description": "Define sustainability goals for the organization to meet and incorporate into its business model. Pair each goal with at least one clear, achievable metric or Key Performance Indicator (KPI).",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -1785,12 +1643,10 @@
       },
       "description": "Business certifications can fill the gaps left by incomplete sustainability legislation. Ensuring a business complies with third-party certifications will help verify and apply an objective level of rigor to an organization's sustainability efforts.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Governance",
@@ -1806,12 +1662,10 @@
       },
       "description": "The organization has clear onboarding and training processes that include ESG policies and practices with explicit references to digital sustainability and responsibility. Ensure that onboarding utilizes a \"green by default\" process and avoids being an opt-in procedure. This applies equally at an organizational level and to visitors and consumers of your products and services.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Education",
@@ -1827,12 +1681,10 @@
       },
       "description": "The organization discloses and reports its ESG impact on at least an annual basis.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Content",
@@ -1849,12 +1701,10 @@
       },
       "description": "An Impact Business Model enables an organization to incorporate specific impact initiatives into one or more business models for generating revenue, often making them \"green by default\" and folding impact initiatives into the organization's operating system. Moreover, being able to calculate the return on investment in terms of sustainability your product or service will bring is important to identifying whether it poses a net-positive or net-negative effect on the environment.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Content",
@@ -1872,12 +1722,10 @@
       },
       "description": "The organization has clearly defined governance policies around how it manages and maintains digital products and services over time.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Compatibility",
@@ -1893,12 +1741,10 @@
       },
       "description": "The organization has policies and practices in place to embrace experimentation, foster a growth mindset, support organizational agility, and provide continuous improvement. Product creators should iterate, regularly, though never at the cost of getting things done (such as working on larger, long-term features).",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "tags": [
         "UI",
@@ -1918,12 +1764,10 @@
       },
       "description": "Products or services update regularly, ensure that additions, changes, deprecations, removals, fixes, or security patches are documented in an easy-to-read document with details that showcase how such changes affect the visitor (or how they can take advantage of new features).",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Content",
@@ -1941,12 +1785,10 @@
       },
       "description": "Ensure that the product or service you are creating offers value to visitors and doesn't duplicate existing functionality (without bringing something new to the table) as this redundancy wastes digital and physical resources.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "tags": [
         "Ideation",
@@ -1964,12 +1806,10 @@
       },
       "description": "The functional unit of a product is a quantified description of the performance requirements that the product fulfills. Ensure you identify the requirements of your product before development.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Ideation",
@@ -1986,12 +1826,10 @@
       },
       "description": "The organization collaborates with suppliers, authors, clients, and other partners on initiatives that are both mutually beneficial and create positive social and environmental outcomes.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "tags": [
         "Social Equity",
@@ -2010,12 +1848,10 @@
       },
       "description": "The organization shares the economic benefits of its digital products, services, policies, and programs.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -2031,12 +1867,10 @@
       },
       "description": "Ensuring that everyone has a seat at the table is important to promoting voices who may not otherwise have their voices heard, and potentially getting useful ideas from fresh sources.",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "tags": [
         "Social Equity",
@@ -2053,12 +1887,10 @@
       },
       "description": "The organization has public policies and practices supporting racial justice, inclusion, equity, and diversity in hiring and operations.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "tags": [
         "Social Equity",
@@ -2076,12 +1908,10 @@
       },
       "description": "The organization has devised and implemented a responsible data strategy that prioritizes data privacy and promotes more ethical uses of data, including disposal and data sustainability practices.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -2099,12 +1929,10 @@
       },
       "description": "Expired or unused data has a cost, it takes up space, and it requires maintenance. As such, the ability for customers to manage their own data and for service providers to manage older website material which no longer applies but might still have use will be a carbon benefit.",
       "impact": {
-        "title": "Low",
-        "value": 1
+        "title": "Low"
       },
       "effort": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "tags": [
         "Social Equity",
@@ -2122,12 +1950,10 @@
       },
       "description": "The organization has devised and implemented responsible policies related to artificial intelligence, Internet of Things (IoT), blockchain, and related emerging technologies.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -2144,12 +1970,10 @@
       },
       "description": "The organization implements responsible finance strategies, including divesting from fossil fuels and appropriately resourcing digital products and services to account for long-term care and maintenance.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "tags": [
         "Social Equity",
@@ -2166,12 +1990,10 @@
       },
       "description": "For-profit organizations have clear philanthropy policies and practices in place to help non-profit organizations build digital capacity and acumen while also engaging their own teams in meaningful work that promotes shared learning and stretch goals.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -2188,12 +2010,10 @@
       },
       "description": "Everything ends at some point, planning for if and when a product or service is finalized makes good ethical sense to ensure customers can be transitioned toward a replacement rather than losing access to their data.",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -2213,12 +2033,10 @@
       },
       "description": "The organization addresses e-waste, right-to-repair, recycling, and related practices in its operations.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Social Equity",
@@ -2238,12 +2056,10 @@
       },
       "description": "Setting targets and limits regarding your product or service is important for keeping a sustainable mindset. Using budgets, you can declare the remits of which you will work within to ensure your emissions do not fall outside (and monitor your progress through development).",
       "impact": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "effort": {
-        "title": "Medium",
-        "value": 2
+        "title": "Medium"
       },
       "tags": [
         "Accessibility",
@@ -2263,12 +2079,10 @@
       },
       "description": "The organization has clear policies about using open source tools, including how it gives back to the community and responsibly manages code repositories to reduce waste.",
       "impact": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "effort": {
-        "title": "High",
-        "value": 3
+        "title": "High"
       },
       "tags": [
         "Social Equity",
