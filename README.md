@@ -38,7 +38,7 @@ Now you can navigate to the following URL: http://localhost:4173/
 
 ## Deployment
 
-App is auto deployed when changes are pushed to branch `main`.
+App is auto deployed when changes are pushed to branch `main`. We use [Netlify](https://www.netlify.com/) for hosting.
 
 ## Code style
 
