@@ -38,15 +38,7 @@ def create_wsg_json(wsg_json)
                 json_obj[Constant::CATEGORY] = category
                 json_obj[Constant::DESCRIPTION] = guideline[Constant::DESCRIPTION]
 
-                # impact_title = guideline[Constant::IMPACT]
-                # impact = {Constant::TITLE => impact_title, 
-                # Constant::VALUE => convert_title_to_value(impact_title)}
                 json_obj[Constant::IMPACT] = generate_impact_effort_objects(guideline[Constant::IMPACT]) 
-
-                # effort_title = guideline[Constant::EFFORT]
-                # effort = {Constant::TITLE => effort_title,
-                # Constant::VALUE => convert_title_to_value(effort_title)}
-                # json_obj[Constant::EFFORT] = effort
                 json_obj[Constant::EFFORT] = generate_impact_effort_objects(guideline[Constant::EFFORT]) 
 
                 json_obj[Constant::TAGS] = guideline[Constant::TAGS]
@@ -84,7 +76,7 @@ end
 def generate_impact_effort_objects(title)
     effort_impact_object = {
         Constant::TITLE => title,
-    #     Constant::VALUE => convert_title_to_value(title)
+        Constant::VALUE => convert_title_to_value(title)
     }
     effort_impact_object
 end
