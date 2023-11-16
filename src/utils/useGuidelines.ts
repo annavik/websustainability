@@ -4,7 +4,7 @@ import _ from "lodash";
 import { Guideline, ServerGuideline } from "../models/guideline";
 
 const QUERY_KEY = "guidelines";
-const URL = "https://c0ldbear.github.io/data/v1/wsg-info.json";
+const URL = "/wsg-info.json";
 
 export const useGuidelines = (): {
   guidelines?: Guideline[];
