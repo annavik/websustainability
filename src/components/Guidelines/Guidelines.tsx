@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useGuidelines } from "../../utils/useGuidelines";
 import { Button } from "../Button/Button";
 import { FilterPicker } from "../FilterPicker/FilterPicker";
-import { GuidelineCard } from "../GuidelineCard/GuidelineCard";
 import { SearchInput } from "../SearchInput/SearchInput";
 import { ActiveFilters } from "./ActiveFilters/ActiveFilters";
+import { GuidelineList } from "./GuidelineList/GuidelineList";
 import styles from "./Guidelines.module.css";
 import { getFilterPickerConfig } from "./utils/getFilterPickerConfig";
 import { getInfoLabel } from "./utils/getInfoLabel";
@@ -85,13 +85,9 @@ export const Guidelines = () => {
         {getInfoLabel(filteredGuidelines.length)}
       </p>
 
-      {filteredGuidelines.length ? (
-        <div className={styles.guidelines}>
-          {filteredGuidelines.map((guideline) => (
-            <GuidelineCard key={guideline.id} guideline={guideline} />
-          ))}
-        </div>
-      ) : (
+      <GuidelineList guidelines={filteredGuidelines} />
+
+      {filteredGuidelines.length === 0 && (
         <Button
           theme="outline"
           onClick={() => {
