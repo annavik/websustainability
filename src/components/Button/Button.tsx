@@ -46,6 +46,7 @@ export const LinkButton = ({
       {
         [styles.outline]: theme === "outline",
         [styles.ghost]: theme === "ghost",
+        [styles.solid]: theme === "solid",
       },
       className
     )}
