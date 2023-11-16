@@ -38,10 +38,6 @@ body {
   --brand-10: #26997b;
   --brand-11: #208368;
   --brand-12: #1d3b31;
-
-  /* Special colors */
-  --checkbox-border: var(--neutral-7);
-  --popover-background: var(--neutral-1);
 }
 
 body[data-theme="dark"] {
@@ -70,10 +66,6 @@ body[data-theme="dark"] {
   --brand-10: #27b08b;
   --brand-11: #1fd8a4;
   --brand-12: #adf0d4;
-
-  /* Special dark mode colors */
-  --checkbox-border: var(--neutral-8);
-  --popover-background: var(--neutral-3);
 }
 
 /* Basic styles */
