@@ -35,3 +35,12 @@
 .button.ghost:hover {
   background-color: var(--brand-3);
 }
+
+.button.solid {
+  background-color: var(--brand-9);
+  color: var(--neutral-1);
+}
+
+.button.solid:hover {
+  background-color: var(--brand-10);
+}
