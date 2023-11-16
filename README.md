@@ -38,7 +38,7 @@ Now you can navigate to the following URL: http://localhost:4173/
 
 ## Deployment
 
-App is auto deployed when changes are pushed to branch `main`. We use [Firebase](https://firebase.google.com/) for hosting.
+App is auto deployed when changes are pushed to branch `main`.
 
 ## Code style
 
