@@ -13,11 +13,15 @@
   width: 720px;
   height: fit-content;
   padding: 48px;
-  background-color: var(--popover-background);
+  background-color: var(--neutral-1);
   border-radius: 4px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   z-index: 2;
+}
+
+:global(body[data-theme="dark"]) .popoverContent {
+  background-color: var(--neutral-3);
 }
 
 .dialogContent h1 {

@@ -10,8 +10,12 @@
   width: 24px;
   height: 24px;
   border-radius: 2px;
-  border: 1px solid var(--checkbox-border);
+  border: 1px solid var(--neutral-7);
   box-sizing: border-box;
+}
+
+:global(body[data-theme="dark"]) .checkboxRoot {
+  border: 1px solid var(--neutral-8);
 }
 
 .checkboxRoot:hover,

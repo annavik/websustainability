@@ -5,7 +5,7 @@ import styles from "./Button.module.css";
 interface ButtonProps {
   children: ReactNode;
   className?: string;
-  theme?: "outline" | "ghost";
+  theme?: "outline" | "ghost" | "solid";
   onClick?: () => void;
 }
 
@@ -21,6 +21,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           {
             [styles.outline]: theme === "outline",
             [styles.ghost]: theme === "ghost",
+            [styles.solid]: theme === "solid",
           },
           className
         )}
@@ -45,6 +46,7 @@ export const LinkButton = ({
       {
         [styles.outline]: theme === "outline",
         [styles.ghost]: theme === "ghost",
+        [styles.solid]: theme === "solid",
       },
       className
     )}
