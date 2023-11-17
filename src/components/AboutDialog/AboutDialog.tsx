@@ -1,11 +1,13 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { Cross2Icon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import { Theme } from "../../models/theme";
 import { Button, LinkButton } from "../Button/Button";
 import { IconButton } from "../IconButton/IconButton";
 import styles from "./AboutDialog.module.css";
+import { Badges } from "./Badges/Badges";
 import { Contributor } from "./Contributor/Contributor";
 
-export const AboutDialog = () => (
+export const AboutDialog = ({ theme }: { theme: Theme }) => (
   <Dialog.Root>
     <Dialog.Trigger asChild>
       <Button theme="ghost">About</Button>
@@ -43,7 +45,7 @@ export const AboutDialog = () => (
           </p>
         </div>
         <div className={styles.row}>
-          <div>
+          <div className={styles.section}>
             <h2>Contributors</h2>
             <p>
               <Contributor
@@ -81,6 +83,7 @@ export const AboutDialog = () => (
             </p>
           </div>
         </div>
+        <Badges theme={theme} />
         <div className={styles.dialogClose}>
           <Dialog.Close asChild>
             <IconButton label="Close">

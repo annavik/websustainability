@@ -1,0 +1,19 @@
+.badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--neutral-6);
+  padding-top: 32px;
+  gap: 32px;
+}
+
+.badges img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+  .badges {
+    flex-direction: column;
+    margin: 0 -16px;
+  }
+}

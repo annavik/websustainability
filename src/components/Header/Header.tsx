@@ -15,7 +15,7 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles.content}>
         <div className={styles.topBar}>
-          <AboutDialog />
+          <AboutDialog theme={theme} />
           <ThemeToggle theme={theme} onThemeChange={setTheme} />
         </div>
         <img src="./globe.svg" alt="" width={96} height={96} />
