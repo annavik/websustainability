@@ -45,7 +45,9 @@ export const FilterPicker = ({
                 filter.value === activeFilter.value
             )}
             id={`${filter.value}`}
-            label={filter.labelShort ?? filter.label}
+            label={filter.labelShort + ` ${[...Array(filter.value)]
+              .map(() => filter.type == "effort" ? "🌱" : "🌍")
+              .join(" ")}` ?? filter.label}
             onCheckedChange={(checked) => {
               if (checked) {
                 addFilter(filter);
