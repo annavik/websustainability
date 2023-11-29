@@ -21,11 +21,11 @@ export const GuidelineList = ({ guidelines }: { guidelines: Guideline[] }) => {
         {guidelinesToShow.map((guideline) => (
           <GuidelineCard key={guideline.id} guideline={guideline} />
         ))}
-        <div className={styles.showAll}>
+        { guidelines.length <= 10 ? <></> : <div className={styles.showAll}>
           <Button theme="solid" onClick={() => setShowAll(!showAll)}>
             {showAll ? "Show less" : "Show all"}
           </Button>
-        </div>
+        </div> }
       </div>
     </>
   );
