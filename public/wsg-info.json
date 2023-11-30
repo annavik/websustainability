@@ -212,7 +212,7 @@
         "id": "2",
         "title": "User-Experience Design"
       },
-      "description": "It's great to have a pretty looking website or application, but to ensure a sustainable design, it's important to avoid cluttering up the interface with too many visuals (which aren't necessary to the content). Keeping a clean design will reduce data transfer, and thereby emissions.",
+      "description": "It's great to have a pretty looking website or application, but to ensure a sustainable design, it's important to avoid cluttering up the interface with too many visuals (which aren't necessary to the content). Keeping a clean design will reduce website rendering, and thereby emissions.",
       "impact": {
         "title": "High",
         "value": 3
@@ -410,7 +410,7 @@
         "id": "2",
         "title": "User-Experience Design"
       },
-      "description": "Of all the data which comprises the largest over-the-wire transfer rates within the average website or application, images are usually those which are responsible due to their quantity and usefulness. As such, doing all you can to reduce their size and unnecessary loading will be beneficial for reducing emissions.",
+      "description": "Of all the data which comprises the largest over-the-wire transfer rates within the average website or application, images are usually those which are responsible due to their quantity and usefulness. As such, doing all you can to reduce their size and unnecessary loading will be beneficial for sustainability.",
       "impact": {
         "title": "High",
         "value": 3
@@ -436,7 +436,7 @@
         "id": "2",
         "title": "User-Experience Design"
       },
-      "description": "Video and audio-heavy websites are often those which can have the highest emissions costs in terms of data transfer, storage usage, and carbon intensity for viewers who have to process the media with their devices to watch them (draining batteries). Optimizing such assets as much as possible is critical for a sustainable product or service.",
+      "description": "Video and audio-heavy websites are often those which can have significant sustainability costs in terms of storage and carbon intensity for viewers who have to process the media with their devices to watch them (draining batteries). Optimizing such assets as much as possible is critical for a sustainable product or service.",
       "impact": {
         "title": "High",
         "value": 3
@@ -510,7 +510,7 @@
         "id": "2",
         "title": "User-Experience Design"
       },
-      "description": "Media, images, fonts, and documents enrich the Internet. The problem is that people may not want to watch a video, listen to an audio file, look at an image, or use a specific application. By providing alternative formats to anything you embed, you ensure the widest possible audience can benefit from it (and reduced carbon output will occur as alternative text uses far less data than its rich media alternative).",
+      "description": "Media, images, fonts, and documents enrich the Internet. The problem is that people may not want to watch a video, listen to an audio file, look at an image, or use a specific application. By providing alternative formats to anything you embed, you ensure the widest possible audience can benefit from it (and reduced carbon output will occur as alternative text will induce less consumer hardware thrashing than its rich media alternative).",
       "impact": {
         "title": "Medium",
         "value": 2
@@ -586,7 +586,7 @@
       "url": "https://w3c.github.io/sustyweb/#support-non-graphic-ways-to-interact-with-content"
     },
     {
-      "title": "2.22 Give Useful Notifications To Improve The Visitor's Journey",
+      "title": "2.22 Provide Useful Notifications To Improve The Visitor's Journey",
       "category": {
         "id": "2",
         "title": "User-Experience Design"
@@ -606,7 +606,7 @@
         "JavaScript",
         "Privacy"
       ],
-      "url": "https://w3c.github.io/sustyweb/#give-useful-notifications-to-improve-the-visitor-s-journey"
+      "url": "https://w3c.github.io/sustyweb/#provide-useful-notifications-to-improve-the-visitor-s-journey"
     },
     {
       "title": "2.23 Reduce the Impact of Downloadable or Physical Documents",
@@ -699,7 +699,7 @@
         "id": "2",
         "title": "User-Experience Design"
       },
-      "description": "Try to ethically measure how efficient a visitor's experience is, by doing so you might be able to reduce any issues they may have encountered previously and reduce the energy burden of loading unnecessary pages.",
+      "description": "Try to ethically measure how efficient a visitor's experience is, by doing so you might be able to reduce any issues they may have encountered previously and reduce the burden of loading unnecessary pages.",
       "impact": {
         "title": "Medium",
         "value": 2
@@ -1044,7 +1044,7 @@
         "id": "3",
         "title": "Web Development"
       },
-      "description": "Entering information on a page can lead to problems. If a visitor makes a mistake along the way, it makes good sense to have systems in place to guide them through resolving the typos, confusion, and glitches that can occur which lead to abandonment and extra emissions.",
+      "description": "Entering information on a page can lead to problems. If a visitor makes a mistake along the way, it makes good sense to have systems in place to guide them through resolving the typos, confusion, and glitches that can occur which lead to abandonment and extra emissions through wasted device usage.",
       "impact": {
         "title": "Medium",
         "value": 2
@@ -1092,7 +1092,7 @@
         "id": "3",
         "title": "Web Development"
       },
-      "description": "Sustainability benefits can be generated in numerous ways, by making sure that your website adheres to the requests made by a browser for specific conditions to be taken into account (such as CSS media and preference queries), you can unlock benefits for the visitor, and as a by-product reduce your emissions. It's worth noting that the introduction of user preferences and API's has increased the risk of visitor fingerprinting and privacy issues.",
+      "description": "Sustainability benefits can be generated in numerous ways, by making sure that your website adheres to the requests made by a browser for specific conditions to be taken into account (such as CSS media and preference queries), you can unlock benefits for the visitor, and as a by-product reduce your emissions. It's worth noting that the introduction of user preferences and APIs has increased the risk of visitor fingerprinting and privacy issues.",
       "impact": {
         "title": "Medium",
         "value": 2
@@ -1135,7 +1135,7 @@
       "url": "https://w3c.github.io/sustyweb/#develop-a-mobile-first-layout"
     },
     {
-      "title": "3.15 Use Beneficial JavaScript and Its API's",
+      "title": "3.15 Use Beneficial JavaScript and Its APIs",
       "category": {
         "id": "3",
         "title": "Web Development"
@@ -1154,7 +1154,7 @@
         "JavaScript",
         "Security"
       ],
-      "url": "https://w3c.github.io/sustyweb/#use-beneficial-javascript-and-its-api-s"
+      "url": "https://w3c.github.io/sustyweb/#use-beneficial-javascript-and-its-apis"
     },
     {
       "title": "3.16 Ensure Your Scripts Are Secure",
@@ -1392,7 +1392,7 @@
         "id": "4",
         "title": "Hosting, Infrastructure And Systems"
       },
-      "description": "Browser caching reduces the requirement for files to need to be constantly reloaded from the server, and in certain situations, it can even allow for files to be viewed offline (or in the case of a reverse-proxy, send immediate recurring requests without additional calculation or computation from the server). As such, this will have emissions savings and performance benefits (for instance by greatly reducing Time-To-First-Byte).",
+      "description": "Browser caching reduces the requirement for files to need to be constantly reloaded from the server, and in certain situations, it can even allow for files to be viewed offline (or in the case of a reverse-proxy, send immediate recurring requests without additional calculation or computation from the server). As such, this will have sustainability and performance benefits (for instance by greatly reducing Time-To-First-Byte).",
       "impact": {
         "title": "High",
         "value": 3
@@ -1416,7 +1416,7 @@
         "id": "4",
         "title": "Hosting, Infrastructure And Systems"
       },
-      "description": "Every file will take up a certain amount of room on a server's hard drive, and this data will need to be sent across-the-wire to each visitor. Doing so will consume resources, but by using compression algorithms you can shrink each file to make its journey less ecologically impactful.",
+      "description": "Every file will take up a certain amount of room on a server's hard drive, and this data will need to be sent across-the-wire to each visitor. Doing so will consume resources, but by using compression algorithms you can shrink each file to make its journey less impactful.",
       "impact": {
         "title": "High",
         "value": 3
@@ -1530,7 +1530,7 @@
         "id": "4",
         "title": "Hosting, Infrastructure And Systems"
       },
-      "description": "For security reasons and in accordance with an SLA (Service-Level Agreement), it is often recommended to duplicate data to make sure it remains available if a problem occurs. This should be balanced with the cost of such duplication. Not all data is critical and, rather than overcompensating with multiple saves, duplication should be designed with efficiency in mind.",
+      "description": "For security reasons and in accordance with an Service-Level Agreement (SLA), it is often recommended to duplicate data to make sure it remains available if a problem occurs. This should be balanced with the cost of such duplication. Not all data is critical and, rather than overcompensating with multiple saves, duplication should be designed with efficiency in mind.",
       "impact": {
         "title": "Low",
         "value": 1
@@ -1568,12 +1568,12 @@
       "url": "https://w3c.github.io/sustyweb/#enable-asynchronous-processing-and-communication"
     },
     {
-      "title": "4.10 Consider CDN's and Edge Caching",
+      "title": "4.10 Consider CDNs and Edge Caching",
       "category": {
         "id": "4",
         "title": "Hosting, Infrastructure And Systems"
       },
-      "description": "Edge caching and CDN delivery can help optimize energy usage by reducing the amount of traffic transferred over the internet.",
+      "description": "Edge caching and CDN delivery can help optimize sustainable delivery of digital services by optimizing the way in which your websites traffic is transferred over the internet.",
       "impact": {
         "title": "Medium",
         "value": 2
@@ -1588,7 +1588,7 @@
         "Hardware",
         "Networking"
       ],
-      "url": "https://w3c.github.io/sustyweb/#consider-cdn-s-and-edge-caching"
+      "url": "https://w3c.github.io/sustyweb/#consider-cdns-and-edge-caching"
     },
     {
       "title": "4.11 Use the Lowest Infrastructure Tier Meeting Business Requirements",
@@ -2115,7 +2115,7 @@
       "url": "https://w3c.github.io/sustyweb/#implement-appropriate-data-management-procedures"
     },
     {
-      "title": "5.22 Promote Responsible Emerging Technology Practices",
+      "title": "5.22 Promote and Implement Responsible Emerging Technology Practices",
       "category": {
         "id": "5",
         "title": "Business Strategy And Product Management"
@@ -2134,7 +2134,7 @@
         "Content",
         "Governance"
       ],
-      "url": "https://w3c.github.io/sustyweb/#promote-responsible-emerging-technology-practices"
+      "url": "https://w3c.github.io/sustyweb/#promote-and-implement-responsible-emerging-technology-practices"
     },
     {
       "title": "5.23 Include Responsible Financial Policies",
