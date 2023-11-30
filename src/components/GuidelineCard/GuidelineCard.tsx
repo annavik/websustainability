@@ -22,17 +22,17 @@ export const GuidelineCard = ({ guideline }: { guideline: Guideline }) => (
           label={`Effort ${[...Array(guideline.effort.level)]
             .map(() => "🌱")
             .join(" ")}`}
-        level={guideline.effort.title}
+        title={guideline.effort.title}
         />
         <Tag
           label={`Impact ${[...Array(guideline.impact.level)]
             .map(() => "🌍")
             .join(" ")}`}
-            level={guideline.impact.title}
+            title={guideline.impact.title}
         />
       </div>
       {guideline.tags.map((tag) => (
-        <Tag key={tag} label={tag} level={tag}/>
+        <Tag key={tag} label={tag} title={tag}/>
       ))}
     </div>
   </div>
