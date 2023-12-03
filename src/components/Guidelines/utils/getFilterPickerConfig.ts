@@ -39,18 +39,18 @@ export const getFilterPickerConfig = ({
     label: "Effort",
     type: "effort",
     filters: [
-      { label: "Low Effort", labelShort: "Low", value: Level.Low },
-      { label: "Medium Effort", labelShort: "Medium", value: Level.Medium },
-      { label: "High Effort", labelShort: "High", value: Level.High },
+      { label: "Effort Low", labelShort: "Low", value: Level.Low },
+      { label: "Effort Medium", labelShort: "Medium", value: Level.Medium },
+      { label: "Effort High", labelShort: "High", value: Level.High },
     ],
   },
   {
     label: "Impact",
     type: "impact",
     filters: [
-      { label: "Low Impact", labelShort: "Low", value: Level.Low },
-      { label: "Medium Impact", labelShort: "Medium", value: Level.Medium },
-      { label: "High Impact", labelShort: "High", value: Level.High },
+      { label: "Impact Low", labelShort: "Low", value: Level.Low },
+      { label: "Impact Medium", labelShort: "Medium", value: Level.Medium },
+      { label: "Impact High", labelShort: "High", value: Level.High },
     ],
   },
 ];
