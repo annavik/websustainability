@@ -64,7 +64,7 @@ export const AboutDialog = ({ theme }: { theme: Theme }) => (
               Come visit us on GitHub!
             </p>
             <p className={styles.gitHubLinks}>
-              <LinkButton to="https://github.com/annavik/ws4u">
+              <LinkButton to="https://github.com/annavik/websustainability">
                 GitHub project <GitHubLogoIcon />
               </LinkButton>
             </p>

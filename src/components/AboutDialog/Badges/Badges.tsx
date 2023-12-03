@@ -2,10 +2,10 @@ import { WebsiteCarbonBadge } from "react-websitecarbon-badge";
 import { Theme } from "../../../models/theme";
 import styles from "./Badges.module.css";
 
-const SITE_URL = "ws4u.netlify.app";
+const SITE_URL = "websustainability.io";
 const WEBSITE_CARBON = {
-  C02: "0.03",
-  PERCENTAGE: "97",
+  C02: "0.04",
+  PERCENTAGE: "96",
 };
 const GREEN_WEB_CHECK = {
   URL: `https://www.thegreenwebfoundation.org/green-web-check?url=${SITE_URL}`,
