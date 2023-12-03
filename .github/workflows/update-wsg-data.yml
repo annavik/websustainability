@@ -22,8 +22,10 @@ jobs:
               sudo gem install bundler
               sudo chmod -R 777 /var/lib/gems/
 
-          - name: Install gems via bundle
-            run: bundle install
+          - name: Change to 'src/scripts' directory and install gems via bundle
+            run: |
+              cd src/scripts
+              bundle install
 
           - name: Change to 'src/scripts' directory and run 'save.rb'
             run: |
