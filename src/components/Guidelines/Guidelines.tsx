@@ -19,9 +19,10 @@ export const Guidelines = () => {
     isLoading,
     isError,
   } = useGuidelines();
+  const filterPickerConfig = getFilterPickerConfig({ categories, tags });
   const [searchString, setSearchString] = useState("");
   const { activeFilters, addFilter, removeFilter, removeAllFilters } =
-    useFilters();
+    useFilters(filterPickerConfig);
   const filteredGuidelines = useFilteredGuidelines({
     activeFilters,
     guidelines,
@@ -46,7 +47,7 @@ export const Guidelines = () => {
           onChange={setSearchString}
         />
         <div className={styles.filterPickers}>
-          {getFilterPickerConfig({ categories, tags }).map(
+          {filterPickerConfig.map(
             ({ align, contentStyle, filters, label, type }) => {
               const numActiveFilters = activeFilters.filter(
                 (filter) => filter.type === type
