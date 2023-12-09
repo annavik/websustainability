@@ -1,3 +1,4 @@
+import _ from "lodash";
 import { useState } from "react";
 import { Filter } from "../../../models/filter";
 import { FilterGroup } from "./types";
@@ -26,6 +27,8 @@ export const useFilters = (filterPickerConfig: FilterGroup[]) => {
 };
 
 // Help functions to handle filter state as search params
+const DELIMITER = ",";
+
 const useSearchParams = () => {
   const [searchParams, setSearchParams] = useState(
     new URLSearchParams(window.location.search)
@@ -37,7 +40,7 @@ const useSearchParams = () => {
       const url = searchParams.toString().length
         ? `?${searchParams.toString()}`
         : location.pathname;
-      window.history.replaceState(null, "", url);
+      window.history.replaceState(null, "", decodeURIComponent(url));
 
       setSearchParams(new URLSearchParams(searchParams));
     },
@@ -49,7 +52,10 @@ const useActiveFilters = (config: FilterGroup[]) => {
 
   const activeFilters = config
     .map((filterGroup) => {
-      const values = searchParams.getAll(filterGroup.type);
+      const values = searchParams
+        .getAll(filterGroup.type)
+        .map((value) => value.split(DELIMITER))
+        .flat();
 
       const filters = values
         .map((value) => {
@@ -71,14 +77,22 @@ const useActiveFilters = (config: FilterGroup[]) => {
     .flat();
 
   const setActiveFilters = (filters: Filter[]) => {
+    // Clear current filter values
     config.forEach((filterGroup) => {
       searchParams.delete(filterGroup.type);
     });
-    filters
-      .sort((a, b) => a.type.localeCompare(b.type))
-      .forEach((filter) => {
-        searchParams.append(filter.type, `${filter.value}`.toLowerCase());
-      });
+
+    // Add new filter values
+    Object.entries(_.groupBy(filters, (filter) => filter.type)).map(
+      ([type, filterGroup]) => {
+        const values = filterGroup.map((filter) =>
+          `${filter.value}`.toLowerCase()
+        );
+        searchParams.append(type, values.join(DELIMITER));
+      }
+    );
+
+    // Update search params
     setSearchParams(searchParams);
   };
 
