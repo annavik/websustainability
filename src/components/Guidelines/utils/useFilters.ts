@@ -74,9 +74,11 @@ const useActiveFilters = (config: FilterGroup[]) => {
     config.forEach((filterGroup) => {
       searchParams.delete(filterGroup.type);
     });
-    filters.forEach((filter) => {
-      searchParams.append(filter.type, `${filter.value}`.toLowerCase());
-    });
+    filters
+      .sort((a, b) => a.type.localeCompare(b.type))
+      .forEach((filter) => {
+        searchParams.append(filter.type, `${filter.value}`.toLowerCase());
+      });
     setSearchParams(searchParams);
   };
 
