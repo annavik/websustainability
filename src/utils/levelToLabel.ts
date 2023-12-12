@@ -1,14 +1,12 @@
-import { Filter } from "../models/filter";
+import { Filter, FilterType } from "../models/filter";
 
-export const levelToLabel = (
-  filter: Filter
-) => {
-  if (filter.labelShort === undefined) return
+export const levelToEmojis = (value: string | number, type: FilterType) => {
+  return `${[...Array(value)]
+    .map(() => (type === "effort" ? "🌱" : "🌍"))
+    .join(" ")}`;
+};
 
-  return (
-    filter.labelShort +
-    ` (${[...Array(filter.value)]
-      .map(() => (filter.type == "effort" ? "🌱" : "🌍"))
-      .join(" ")})`
-  );
+export const levelToLabel = (filter: Filter) => {
+  if (filter.labelShort === undefined) return;
+  return filter.labelShort + ` (` + levelToEmojis(filter.value, filter.type) + `)`;
 };
