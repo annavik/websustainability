@@ -3,6 +3,7 @@ import * as Popover from "@radix-ui/react-popover";
 import { CSSProperties } from "react";
 import { Filter } from "../../models/filter";
 import { Checkbox } from "../Checkbox/Checkbox";
+import { levelToLabel } from "../../utils/levelToLabel";
 import styles from "./FilterPicker.module.css";
 
 export const FilterPicker = ({
@@ -45,9 +46,7 @@ export const FilterPicker = ({
                 filter.value === activeFilter.value
             )}
             id={`${filter.value}`}
-            label={filter.labelShort + ` ${[...Array(filter.value)]
-              .map(() => filter.type == "effort" ? "🌱" : "🌍")
-              .join(" ")}` ?? filter.label}
+            label={levelToLabel(filter) ?? filter.label}
             onCheckedChange={(checked) => {
               if (checked) {
                 addFilter(filter);
