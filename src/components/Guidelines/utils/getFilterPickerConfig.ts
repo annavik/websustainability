@@ -1,14 +1,5 @@
-import { CSSProperties } from "react";
-import { Filter, FilterType } from "../../../models/filter";
 import { Level } from "../../../models/level";
-
-interface FilterPickerConfig {
-  align?: "start" | "end";
-  contentStyle?: CSSProperties;
-  label: string;
-  filters: Omit<Filter, "type">[];
-  type: FilterType;
-}
+import { FilterGroup } from "./types";
 
 export const getFilterPickerConfig = ({
   categories,
@@ -16,7 +7,7 @@ export const getFilterPickerConfig = ({
 }: {
   categories: { id: string; title: string }[];
   tags: string[];
-}): FilterPickerConfig[] => [
+}): FilterGroup[] => [
   {
     label: "Categories",
     type: "category",
