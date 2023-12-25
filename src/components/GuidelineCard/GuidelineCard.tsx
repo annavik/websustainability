@@ -2,6 +2,7 @@ import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { Guideline } from "../../models/guideline";
 import { LinkButton } from "../Button/Button";
 import { Tag } from "../Tag/Tag";
+import { levelToEmojis } from "../../utils/levelToLabel";
 import styles from "./GuidelineCard.module.css";
 
 export const GuidelineCard = ({ guideline }: { guideline: Guideline }) => (
@@ -19,18 +20,16 @@ export const GuidelineCard = ({ guideline }: { guideline: Guideline }) => (
     <div className={styles.tags}>
       <div className={styles.extra}>
         <Tag
-          label={`Effort ${[...Array(guideline.effort.level)]
-            .map(() => "🌱")
-            .join(" ")}`}
+          label={`Effort ${levelToEmojis(guideline.effort.level, "effort")}`}
+          title={guideline.effort.title}
         />
         <Tag
-          label={`Impact ${[...Array(guideline.impact.level)]
-            .map(() => "🌍")
-            .join(" ")}`}
+          label={`Impact ${levelToEmojis(guideline.impact.level, "impact")}`}
+          title={guideline.impact.title}
         />
       </div>
       {guideline.tags.map((tag) => (
-        <Tag key={tag} label={tag} />
+        <Tag key={tag} label={tag} title={tag} />
       ))}
     </div>
   </div>
