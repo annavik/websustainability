@@ -38,6 +38,9 @@ def create_wsg_json(wsg_json)
                 json_obj[Constant::CATEGORY] = category
                 json_obj[Constant::DESCRIPTION] = guideline[Constant::DESCRIPTION]
 
+
+                json_obj[Constant::CRITERIA] = guideline[Constant::CRITERIA]
+
                 json_obj[Constant::IMPACT] = generate_impact_effort_objects(guideline[Constant::IMPACT]) 
                 json_obj[Constant::EFFORT] = generate_impact_effort_objects(guideline[Constant::EFFORT]) 
 
@@ -110,4 +113,5 @@ class Constant
     BASEURL = "https://w3c.github.io/sustyweb/"
     URL = "url"
     VALUE = "value"
+    CRITERIA = "criteria"
 end
