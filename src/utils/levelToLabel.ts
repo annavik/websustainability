@@ -8,5 +8,5 @@ export const levelToEmojis = (value: string | number, type: FilterType) => {
 
 export const levelToLabel = (filter: Filter) => {
   if (filter.labelShort === undefined) return;
-  return filter.labelShort + ` (` + levelToEmojis(filter.value, filter.type) + `)`;
+  return filter.labelShort + " " + levelToEmojis(filter.value, filter.type);
 };

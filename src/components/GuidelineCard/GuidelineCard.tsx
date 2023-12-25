@@ -21,15 +21,15 @@ export const GuidelineCard = ({ guideline }: { guideline: Guideline }) => (
       <div className={styles.extra}>
         <Tag
           label={`Effort ${levelToEmojis(guideline.effort.level, "effort")}`}
-        title={guideline.effort.title}
+          title={guideline.effort.title}
         />
         <Tag
           label={`Impact ${levelToEmojis(guideline.impact.level, "impact")}`}
-            title={guideline.impact.title}
+          title={guideline.impact.title}
         />
       </div>
       {guideline.tags.map((tag) => (
-        <Tag key={tag} label={tag} title={tag}/>
+        <Tag key={tag} label={tag} title={tag} />
       ))}
     </div>
   </div>
