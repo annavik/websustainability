@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 8px 16px;
+  padding: 12px 16px;
   margin-top: -1px;
   box-sizing: border-box;
   border: 1px solid var(--neutral-6);
@@ -36,7 +36,6 @@
 
 .accordionTriggerTitle {
   font-size: var(--font-size-x-small);
-  line-height: 1.5;
 }
 
 .accordionTrigger[data-state="open"] .plus {
