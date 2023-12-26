@@ -29,6 +29,18 @@
   margin-bottom: 32px;
 }
 
+.details {
+  margin-bottom: 32px;
+}
+
+.criterion h4 {
+  margin-bottom: 4px;
+}
+
+.criterion:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;

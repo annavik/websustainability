@@ -7,13 +7,17 @@ export interface ServerGuideline {
     title: string;
   };
   description: string;
+  criteria: {
+    title: string;
+    description: string;
+  }[];
   impact: {
     title: string;
     value: number;
   };
   effort: {
     title: string;
-    value: number
+    value: number;
   };
   tags: string[];
   url: string;
