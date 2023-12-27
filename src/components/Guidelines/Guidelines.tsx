@@ -1,13 +1,14 @@
+import { TabsContent } from "@radix-ui/react-tabs";
 import { useState } from "react";
+import { useBookmarks } from "../../utils/bookmarks/useBookmarks";
 import { useGuidelines } from "../../utils/useGuidelines";
-import { Button } from "../Button/Button";
 import { FilterPicker } from "../FilterPicker/FilterPicker";
 import { SearchInput } from "../SearchInput/SearchInput";
+import { TabsList, TabsRoot, TabsTrigger } from "../Tabs/Tabs";
 import { ActiveFilters } from "./ActiveFilters/ActiveFilters";
 import { GuidelineList } from "./GuidelineList/GuidelineList";
 import styles from "./Guidelines.module.css";
 import { getFilterPickerConfig } from "./utils/getFilterPickerConfig";
-import { getInfoLabel } from "./utils/getInfoLabel";
 import { useFilteredGuidelines } from "./utils/useFilteredGuidelines";
 import { useFilters } from "./utils/useFilters";
 
@@ -19,6 +20,7 @@ export const Guidelines = () => {
     isLoading,
     isError,
   } = useGuidelines();
+  const { bookmarks } = useBookmarks();
   const filterPickerConfig = getFilterPickerConfig({ categories, tags });
   const [searchString, setSearchString] = useState("");
   const { activeFilters, addFilter, removeFilter, removeAllFilters } =
@@ -28,6 +30,9 @@ export const Guidelines = () => {
     guidelines,
     searchString,
   });
+  const bookmarkGuidelines = filteredGuidelines.filter((guideline) =>
+    bookmarks.includes(guideline.id)
+  );
 
   if (isError) {
     return <span>Something went wrong!</span>;
@@ -82,23 +87,24 @@ export const Guidelines = () => {
         )}
       </div>
 
-      <p className={styles.infoLabel}>
-        {getInfoLabel(filteredGuidelines.length)}
-      </p>
-
-      <GuidelineList guidelines={filteredGuidelines} />
-
-      {filteredGuidelines.length === 0 && (
-        <Button
-          theme="outline"
-          onClick={() => {
-            setSearchString("");
-            removeAllFilters();
-          }}
-        >
-          Clear settings
-        </Button>
-      )}
+      <TabsRoot defaultValue="all">
+        <TabsList>
+          <TabsTrigger
+            label={`All (${filteredGuidelines.length})`}
+            value="all"
+          />
+          <TabsTrigger
+            label={`Bookmarks (${bookmarkGuidelines.length})`}
+            value="bookmarks"
+          />
+        </TabsList>
+        <TabsContent value="all">
+          <GuidelineList guidelines={filteredGuidelines} />
+        </TabsContent>
+        <TabsContent value="bookmarks">
+          <GuidelineList guidelines={bookmarkGuidelines} />
+        </TabsContent>
+      </TabsRoot>
     </>
   );
 };

@@ -11,12 +11,6 @@
   gap: 16px;
 }
 
-.infoLabel {
-  margin-bottom: 16px;
-  font-style: italic;
-  color: var(--neutral-11);
-}
-
 @media only screen and (max-width: 960px) {
   .settings {
     margin-bottom: 32px;
