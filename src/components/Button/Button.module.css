@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 8px 16px;
+  height: 40px;
+  padding: 0 16px;
   border-radius: 4px;
   font-family: var(--base-font);
   font-size: var(--font-size-x-small);
@@ -14,13 +15,8 @@
 }
 
 .button.outline {
-  background-color: var(--neutral-1);
   box-shadow: inset 0 0 0 1px var(--brand-7);
   color: var(--brand-11);
-}
-
-:global(body[data-theme="dark"]) .button.outline {
-  background-color: transparent;
 }
 
 .button.outline:hover,

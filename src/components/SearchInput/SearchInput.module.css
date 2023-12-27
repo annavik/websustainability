@@ -8,7 +8,8 @@
 
 .input {
   width: 100%;
-  padding: 12px 48px 12px 40px;
+  height: 40px;
+  padding: 0 48px 0 40px;
   margin: 0;
   background: transparent;
   color: var(--neutral-12);
