@@ -30,6 +30,7 @@ def create_wsg_json(wsg_json)
             category["guidelines"].each do |guideline|
                 topic = guideline["guideline"]
                 title = section_id + "." + guideline[Constant::ID].to_s + " " + topic
+                json_obj[Constant::ID] = guideline[Constant::ID]
                 json_obj[Constant::TITLE] = title
                 category =  {
                     Constant::ID => section_id,
@@ -37,7 +38,6 @@ def create_wsg_json(wsg_json)
                 }
                 json_obj[Constant::CATEGORY] = category
                 json_obj[Constant::DESCRIPTION] = guideline[Constant::DESCRIPTION]
-
 
                 json_obj[Constant::CRITERIA] = guideline[Constant::CRITERIA]
 
