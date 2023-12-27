@@ -7,13 +7,14 @@
 
 .label {
   display: block;
+  margin-right: 4px;
+  color: var(--neutral-11);
   font-size: var(--font-size-x-small);
   font-weight: var(--font-weight-bold);
-  margin-right: 4px;
 }
 
 .clearButton {
-  padding: 0 8px;
   height: 24px;
+  padding: 0 8px;
   font-size: var(--font-size-x-small);
 }
