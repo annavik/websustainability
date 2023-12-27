@@ -28,22 +28,21 @@ def create_wsg_json(wsg_json)
             section_id = category[Constant::ID]
             section_name = category[Constant::NAME]
             category["guidelines"].each do |guideline|
+                id = section_id + "." + guideline[Constant::ID].to_s
                 topic = guideline["guideline"]
-                title = section_id + "." + guideline[Constant::ID].to_s + " " + topic
-                json_obj[Constant::ID] = guideline[Constant::ID]
-                json_obj[Constant::TITLE] = title
+                title = id + " " + topic
                 category =  {
                     Constant::ID => section_id,
                     Constant::TITLE => section_name
                 }
+               
+                json_obj[Constant::ID] = id
+                json_obj[Constant::TITLE] = title
                 json_obj[Constant::CATEGORY] = category
                 json_obj[Constant::DESCRIPTION] = guideline[Constant::DESCRIPTION]
-
                 json_obj[Constant::CRITERIA] = guideline[Constant::CRITERIA]
-
                 json_obj[Constant::IMPACT] = generate_impact_effort_objects(guideline[Constant::IMPACT]) 
                 json_obj[Constant::EFFORT] = generate_impact_effort_objects(guideline[Constant::EFFORT]) 
-
                 json_obj[Constant::TAGS] = guideline[Constant::TAGS]
                 json_obj[Constant::URL] = generate_topic_links(topic)
 
