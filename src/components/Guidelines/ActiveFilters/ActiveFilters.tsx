@@ -13,7 +13,6 @@ export const ActiveFilters = ({
   removeAllFilters: () => void;
 }) => (
   <div className={styles.wrapper} style={{ gridColumn: "span 4" }}>
-    <span className={styles.label}>Active filters:</span>
     {activeFilters.map((filter) => (
       <Tag
         key={`${filter.type}-${filter.value}`}
