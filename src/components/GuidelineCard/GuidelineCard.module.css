@@ -21,8 +21,16 @@
 
 .actions {
   display: flex;
-  gap: 16px;
+  gap: 8px;
   margin-bottom: 32px;
+}
+
+.bookmarkButton {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 40px;
+  padding: 0;
 }
 
 .description {
@@ -37,10 +45,13 @@
 
 .extra {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 8px;
+  right: 8px;
   display: flex;
+  align-items: center;
   gap: 8px;
+  padding-right: 48px;
+  height: 40px;
 }
 
 @media only screen and (max-width: 960px) {
@@ -56,11 +67,11 @@
     margin-bottom: 24px;
   }
 
-  .extra {
-    display: contents;
-  }
-
   .description {
     margin-bottom: 24px;
+  }
+
+  .extra {
+    display: contents;
   }
 }

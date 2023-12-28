@@ -1,3 +1,9 @@
+.infoLabel {
+  margin-bottom: 16px;
+  font-style: italic;
+  color: var(--neutral-11);
+}
+
 .wrapper {
   display: grid;
   gap: 32px;

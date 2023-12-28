@@ -6,15 +6,24 @@ interface ButtonProps {
   children: ReactNode;
   className?: string;
   theme?: "outline" | "ghost" | "solid";
+  title?: string;
   onClick?: () => void;
 }
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ ...props }, forwardedRef) => {
-    const { children, className, theme = "outline", onClick, ...rest } = props;
+    const {
+      children,
+      className,
+      theme = "outline",
+      title,
+      onClick,
+      ...rest
+    } = props;
 
     return (
       <button
+        aria-label={title}
         ref={forwardedRef}
         className={classNames(
           styles.button,
@@ -25,6 +34,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           },
           className
         )}
+        title={title}
         onClick={onClick}
         {...rest}
       >
@@ -37,10 +47,12 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 export const LinkButton = ({
   children,
   className,
-  to,
   theme = "outline",
+  title,
+  to,
 }: Omit<ButtonProps, "onClick"> & { to: string }) => (
   <a
+    aria-label={title}
     className={classNames(
       styles.button,
       {
@@ -53,6 +65,7 @@ export const LinkButton = ({
     href={to}
     rel="noreferrer"
     target="_blank"
+    title={title}
   >
     {children}
   </a>

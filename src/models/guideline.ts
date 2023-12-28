@@ -1,6 +1,7 @@
 import { Level } from "./level";
 
 export interface ServerGuideline {
+  id: string;
   title: string;
   category: {
     id: string;
@@ -13,7 +14,7 @@ export interface ServerGuideline {
   };
   effort: {
     title: string;
-    value: number
+    value: number;
   };
   tags: string[];
   url: string;
