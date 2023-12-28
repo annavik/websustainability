@@ -2,6 +2,7 @@ import { TabsContent } from "@radix-ui/react-tabs";
 import { useState } from "react";
 import { useBookmarks } from "../../utils/bookmarks/useBookmarks";
 import { useGuidelines } from "../../utils/useGuidelines";
+import { BookmarkToast } from "../BookmarkToast/BookmarkToast";
 import { FilterPicker } from "../FilterPicker/FilterPicker";
 import { SearchInput } from "../SearchInput/SearchInput";
 import { TabsList, TabsRoot, TabsTrigger } from "../Tabs/Tabs";
@@ -105,6 +106,8 @@ export const Guidelines = () => {
           <GuidelineList guidelines={bookmarkGuidelines} />
         </TabsContent>
       </TabsRoot>
+
+      <BookmarkToast />
     </>
   );
 };

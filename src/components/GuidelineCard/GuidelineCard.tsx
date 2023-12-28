@@ -32,12 +32,12 @@ export const GuidelineCard = ({ guideline }: { guideline: Guideline }) => (
           label={`Impact ${levelToEmojis(guideline.impact.level, "impact")}`}
           title={guideline.impact.title}
         />
-        <BookmarkButton guidelineId={guideline.id} />
       </div>
       {guideline.tags.map((tag) => (
         <Tag key={tag} label={tag} title={tag} />
       ))}
     </div>
+    <BookmarkButton guidelineId={guideline.id} />
   </div>
 );
 

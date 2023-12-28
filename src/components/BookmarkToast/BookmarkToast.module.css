@@ -1,0 +1,45 @@
+.bookmarkToast {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, -32px);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background-color: var(--brand-3);
+  color: var(--brand-11);
+  border-radius: 4px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  font-size: var(--font-size-x-small);
+  font-weight: var(--font-weight-bold);
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.bookmarkToast[data-state="open"] {
+  animation: slideIn 150ms ease-out;
+}
+
+.bookmarkToast[data-state="closed"] {
+  opacity: 0;
+  animation: hide 150ms ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translate(-50%, 100%);
+  }
+  to {
+    transform: translate(-50%, -32px);
+  }
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
