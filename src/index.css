@@ -121,6 +121,12 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+}
+
 a {
   text-decoration: underline;
   color: inherit;
