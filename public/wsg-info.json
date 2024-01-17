@@ -492,6 +492,10 @@
         {
           "title": "Deliverables Documentation",
           "description": "Design functionality and technical specifications are documented so that deliverables are comprehensible by the project team and transferable to the development team."
+        },
+        {
+          "title": "Deliverables Readability",
+          "description": "Ensure that developers have access to code comments and other View Source affordances which can reduce the burden in order to access, understand, maintain, and utilize production ready code as this will reduce redundancy and foster an open source culture."
         }
       ],
       "impact": {
