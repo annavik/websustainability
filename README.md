@@ -1,4 +1,4 @@
-# Web Sustainability 4U
+# websustainability.io
 
 In October 2023, the [W3C Community](https://www.w3.org/groups/cg/sustyweb/) published the first draft of the [Web Sustainability Guidelines](https://w3c.github.io/sustyweb/) (WSG). This tool is an independent side project that offers a way to navigate and prioritize these guidelines. For the implementation we use TypeScript and React. Feel free to suggest features, report bugs or contribute!
 

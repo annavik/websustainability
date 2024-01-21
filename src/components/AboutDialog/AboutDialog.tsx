@@ -34,7 +34,7 @@ export const AboutDialog = ({ theme }: { theme: Theme }) => (
           </p>
         </div>
         <div className={styles.section}>
-          <h1>About Web Sustainability 4U</h1>
+          <h1>About websustainability.io</h1>
           <p>
             This tool is an independent side project that offers a way to
             navigate and prioritize the Web Sustainability Guidelines. When it
