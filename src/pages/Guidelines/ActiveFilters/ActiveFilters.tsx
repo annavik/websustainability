@@ -1,6 +1,6 @@
+import { Button } from "../../../components/Button/Button";
+import { Tag } from "../../../components/Tag/Tag";
 import { Filter } from "../../../models/filter";
-import { Button } from "../../Button/Button";
-import { Tag } from "../../Tag/Tag";
 import styles from "./ActiveFilters.module.css";
 
 export const ActiveFilters = ({

@@ -1,11 +1,11 @@
 import { TabsContent } from "@radix-ui/react-tabs";
 import { useState } from "react";
+import { BookmarkToast } from "../../components/BookmarkToast/BookmarkToast";
+import { FilterPicker } from "../../components/FilterPicker/FilterPicker";
+import { SearchInput } from "../../components/SearchInput/SearchInput";
+import { TabsList, TabsRoot, TabsTrigger } from "../../components/Tabs/Tabs";
 import { useBookmarks } from "../../utils/bookmarks/useBookmarks";
 import { useGuidelines } from "../../utils/useGuidelines";
-import { BookmarkToast } from "../BookmarkToast/BookmarkToast";
-import { FilterPicker } from "../FilterPicker/FilterPicker";
-import { SearchInput } from "../SearchInput/SearchInput";
-import { TabsList, TabsRoot, TabsTrigger } from "../Tabs/Tabs";
 import { ActiveFilters } from "./ActiveFilters/ActiveFilters";
 import { GuidelineList } from "./GuidelineList/GuidelineList";
 import styles from "./Guidelines.module.css";

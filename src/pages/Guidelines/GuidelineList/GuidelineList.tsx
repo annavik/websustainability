@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { Button } from "../../../components/Button/Button";
+import { GuidelineCard } from "../../../components/GuidelineCard/GuidelineCard";
 import { Guideline } from "../../../models/guideline";
-import { Button } from "../../Button/Button";
-import { GuidelineCard } from "../../GuidelineCard/GuidelineCard";
 import styles from "./GuidelineList.module.css";
 
 const LIMIT = 10;

@@ -1,5 +1,5 @@
 import styles from "./App.module.css";
-import { Guidelines } from "./components/Guidelines/Guidelines";
+import { Guidelines } from "./pages/Guidelines/Guidelines";
 import { Header } from "./components/Header/Header";
 import { BookmarksContextProvider } from "./utils/bookmarks/bookmarksContext";
 
