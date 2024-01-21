@@ -1,58 +1,34 @@
-import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
 import _ from "lodash";
-import { Guideline, ServerGuideline } from "../models/guideline";
-
-const QUERY_KEY = "guidelines";
-const URL = "/wsg-info.json";
+import { Guideline } from "../models/guideline";
+import wsgInfo from "../wsg-info.json";
 
 export const useGuidelines = (): {
-  guidelines?: Guideline[];
-  tags?: string[];
-  categories?: { id: string; title: string }[];
-  isLoading: boolean;
-  isError: boolean;
+  guidelines: Guideline[];
+  tags: string[];
+  categories: { id: string; title: string }[];
 } => {
-  const { data, isLoading, isError } = useQuery({
-    queryKey: [QUERY_KEY],
-    queryFn: () =>
-      axios
-        .get<{
-          tags: string[];
-          categories: {
-            id: string;
-            title: string;
-          }[];
-          data: ServerGuideline[];
-        }>(URL)
-        .then((res) => {
-          const { tags, categories, data } = res.data;
+  const { tags, categories, data } = wsgInfo;
 
-          return {
-            tags,
-            categories,
-            guidelines: data.map((serverGuideline, index) => {
-              const guideline: Guideline = {
-                ...serverGuideline,
-                id: serverGuideline.id,
-                index,
-                impact: {
-                  level: serverGuideline.impact.value,
-                  title: serverGuideline.impact.title,
-                },
-                effort: {
-                  level: serverGuideline.effort.value,
-                  title: serverGuideline.effort.title,
-                },
-                tags: _.uniq(serverGuideline.tags),
-                url: serverGuideline.url,
-              };
+  return {
+    tags,
+    categories,
+    guidelines: data.map((serverGuideline, index) => {
+      const guideline: Guideline = {
+        ...serverGuideline,
 
-              return guideline;
-            }),
-          };
-        }),
-  });
+        index,
+        impact: {
+          level: serverGuideline.impact.value,
+          title: serverGuideline.impact.title,
+        },
+        effort: {
+          level: serverGuideline.effort.value,
+          title: serverGuideline.effort.title,
+        },
+        tags: _.uniq(serverGuideline.tags),
+      };
 
-  return { ...data, isLoading, isError };
+      return guideline;
+    }),
+  };
 };
