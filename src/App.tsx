@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import styles from "./App.module.css";
 import { Header } from "./components/Header/Header";
+import { ScrollHandler } from "./components/ScrollHandler/ScrollHandler";
 import { Guideline } from "./pages/Guideline/Guideline";
 import { Guidelines } from "./pages/Guidelines/Guidelines";
 import { BookmarksContextProvider } from "./utils/bookmarks/bookmarksContext";
-import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           </div>
         </main>
       </BookmarksContextProvider>
-      <ScrollToTop />
+      <ScrollHandler />
     </BrowserRouter>
   );
 }
