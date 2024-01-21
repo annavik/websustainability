@@ -14,13 +14,7 @@ import { useFilteredGuidelines } from "./utils/useFilteredGuidelines";
 import { useFilters } from "./utils/useFilters";
 
 export const Guidelines = () => {
-  const {
-    guidelines = [],
-    tags = [],
-    categories = [],
-    isLoading,
-    isError,
-  } = useGuidelines();
+  const { guidelines, tags, categories } = useGuidelines();
   const { bookmarks } = useBookmarks();
   const filterPickerConfig = getFilterPickerConfig({ categories, tags });
   const [searchString, setSearchString] = useState("");
@@ -34,14 +28,6 @@ export const Guidelines = () => {
   const bookmarkGuidelines = filteredGuidelines.filter((guideline) =>
     bookmarks.includes(guideline.id)
   );
-
-  if (isError) {
-    return <span>Something went wrong!</span>;
-  }
-
-  if (isLoading) {
-    return <span>Loading...</span>;
-  }
 
   return (
     <>
