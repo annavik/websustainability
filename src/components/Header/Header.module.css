@@ -2,6 +2,10 @@
   margin: 72px 64px;
 }
 
+.logo {
+  vertical-align: middle;
+}
+
 .content {
   display: flex;
   align-items: center;

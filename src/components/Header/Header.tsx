@@ -3,6 +3,7 @@ import { useThemePreference } from "../../utils/useThemePreference";
 import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 import styles from "./Header.module.css";
 import { AboutDialog } from "../AboutDialog/AboutDialog";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const { theme, setTheme } = useThemePreference();
@@ -18,7 +19,15 @@ export const Header = () => {
           <AboutDialog theme={theme} />
           <ThemeToggle theme={theme} onThemeChange={setTheme} />
         </div>
-        <img src="/globe.svg" alt="" width={96} height={96} />
+        <Link to="/">
+          <img
+            src="/globe.svg"
+            alt="Web Sustainability 4U logo."
+            className={styles.logo}
+            width={96}
+            height={96}
+          />
+        </Link>
         <div>
           <h1>Web Sustainability 4U</h1>
           <h2>
