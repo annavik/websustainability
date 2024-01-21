@@ -5,19 +5,18 @@ export const ScrollHandler = () => {
   const location = useLocation();
 
   useEffect(() => {
-    let top = 0;
-
     if (location.hash) {
       const elementToScroll = document.getElementById(
         location.hash.replace("#", "")
       );
 
       if (elementToScroll) {
-        top = elementToScroll.offsetTop;
+        elementToScroll.scrollIntoView();
+        return;
       }
     }
 
-    document.getElementById("root")?.scrollTo({ top });
+    document.getElementById("root")?.scrollTo({ top: 0 });
   }, [location.pathname, location.hash]);
 
   return null;
