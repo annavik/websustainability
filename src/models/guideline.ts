@@ -8,6 +8,10 @@ export interface ServerGuideline {
     title: string;
   };
   description: string;
+  criteria: {
+    title: string;
+    description: string;
+  }[];
   impact: {
     title: string;
     value: number;

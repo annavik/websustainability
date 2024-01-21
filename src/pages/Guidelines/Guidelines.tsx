@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { BookmarkToast } from "../../components/BookmarkToast/BookmarkToast";
 import { FilterPicker } from "../../components/FilterPicker/FilterPicker";
 import { SearchInput } from "../../components/SearchInput/SearchInput";
 import {
@@ -96,8 +95,6 @@ export const Guidelines = () => {
           <GuidelineList guidelines={bookmarkGuidelines} />
         </TabsContent>
       </TabsRoot>
-
-      <BookmarkToast />
     </>
   );
 };
