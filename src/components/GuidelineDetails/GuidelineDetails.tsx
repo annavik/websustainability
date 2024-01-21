@@ -23,7 +23,7 @@ export const GuidelineDetails = ({ guideline }: { guideline: Guideline }) => (
     <div className={styles.section}>
       <h3 className={styles.title}>Success criteria</h3>
       {guideline.criteria.map((criterion, index) => {
-        const id = `criterion-${index + 1}`;
+        const id = `success-criterion-${index + 1}`;
 
         return (
           <div key={id} className={styles.criterion}>
