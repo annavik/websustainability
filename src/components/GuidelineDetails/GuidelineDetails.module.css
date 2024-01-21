@@ -26,6 +26,10 @@
   margin-bottom: 16px;
 }
 
+.subTitle {
+  margin-bottom: 4px;
+}
+
 .actions {
   display: flex;
   gap: 8px;
@@ -39,7 +43,13 @@
 }
 
 .criterion:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
+}
+
+.criterion a {
+  text-decoration: none;
+  color: var(--neutral-11);
+  margin-right: 12px;
 }
 
 .tags {
@@ -73,7 +83,7 @@
   }
 
   .criterion:not(:last-child) {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
   }
 
   .extra {

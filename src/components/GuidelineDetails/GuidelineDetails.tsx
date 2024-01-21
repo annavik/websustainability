@@ -23,11 +23,16 @@ export const GuidelineDetails = ({ guideline }: { guideline: Guideline }) => (
     <div className={styles.section}>
       <h3 className={styles.title}>Success criteria</h3>
       {guideline.criteria.map((criterion, index) => {
-        const id = `criterion-${index}`;
+        const id = `criterion-${index + 1}`;
 
         return (
           <div key={id} className={styles.criterion}>
-            <h4 id={id}>{criterion.title}</h4>
+            <h4 id={id} className={styles.subTitle}>
+              <Link to={`#${id}`} replace>
+                §{index + 1}
+              </Link>
+              {criterion.title}
+            </h4>
             <p>{criterion.description}</p>
           </div>
         );
