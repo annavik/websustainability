@@ -1,12 +1,8 @@
-import {
-  BookmarkFilledIcon,
-  BookmarkIcon,
-  ExternalLinkIcon,
-} from "@radix-ui/react-icons";
+import { ExternalLinkIcon } from "@radix-ui/react-icons";
 import { Guideline } from "../../models/guideline";
-import { useBookmarks } from "../../utils/bookmarks/useBookmarks";
 import { levelToEmojis } from "../../utils/levelToLabel";
-import { Button, LinkButton } from "../Button/Button";
+import { BookmarkButton } from "../BookmarkButton/BookmarkButton";
+import { LinkButton } from "../Button/Button";
 import { Tag } from "../Tag/Tag";
 import styles from "./GuidelineCard.module.css";
 
@@ -37,29 +33,8 @@ export const GuidelineCard = ({ guideline }: { guideline: Guideline }) => (
         <Tag key={tag} label={tag} title={tag} />
       ))}
     </div>
-    <BookmarkButton guidelineId={guideline.id} />
+    <div className={styles.bookmarkButton}>
+      <BookmarkButton guidelineId={guideline.id} />
+    </div>
   </div>
 );
-
-const BookmarkButton = ({ guidelineId }: { guidelineId: string }) => {
-  const { bookmarks, setBookmarks } = useBookmarks();
-  const bookmarked = bookmarks.includes(guidelineId);
-  const toggleBookmarked = () => {
-    if (bookmarked) {
-      setBookmarks(bookmarks.filter((id) => id !== guidelineId));
-    } else {
-      setBookmarks([...bookmarks, guidelineId]);
-    }
-  };
-
-  return (
-    <Button
-      className={styles.bookmarkButton}
-      theme="ghost"
-      title={bookmarked ? "Bookmarked" : "Bookmark"}
-      onClick={toggleBookmarked}
-    >
-      {bookmarked ? <BookmarkFilledIcon /> : <BookmarkIcon />}
-    </Button>
-  );
-};
