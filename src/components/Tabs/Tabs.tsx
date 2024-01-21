@@ -26,6 +26,10 @@ const TabsContent = ({
 }: {
   value: string;
   children: ReactNode;
-}) => <Tabs.Content value={value}>{children}</Tabs.Content>;
+}) => (
+  <Tabs.Content tabIndex={-1} value={value}>
+    {children}
+  </Tabs.Content>
+);
 
 export { TabsContent, TabsList, TabsRoot, TabsTrigger };
