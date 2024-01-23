@@ -14,7 +14,7 @@ export const GuidelineDetails = ({ guideline }: { guideline: Guideline }) => (
       <h2 className={styles.title}>{guideline.title}</h2>
       <div className={styles.actions}>
         <LinkButton to={guideline.url}>
-          To guideline <ExternalLinkIcon />
+          View the guideline <ExternalLinkIcon />
         </LinkButton>
       </div>
       <p>{guideline.description}</p>
