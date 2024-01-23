@@ -18,9 +18,9 @@ export const Header = () => {
           <AboutDialog theme={theme} />
           <ThemeToggle theme={theme} onThemeChange={setTheme} />
         </div>
-        <img src="./globe.svg" alt="" width={96} height={96} />
+        <img src="./globe.svg" alt="websustainability.io logo." width={96} height={96} />
         <div>
-          <h1>Web Sustainability 4U</h1>
+          <h1>websustainability.io</h1>
           <h2>
             An interactive version of{" "}
             <a href="https://w3c.github.io/sustyweb/">WSG 1.0</a>
