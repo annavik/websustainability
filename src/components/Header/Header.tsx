@@ -1,9 +1,9 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useThemePreference } from "../../utils/useThemePreference";
+import { AboutDialog } from "../AboutDialog/AboutDialog";
 import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 import styles from "./Header.module.css";
-import { AboutDialog } from "../AboutDialog/AboutDialog";
-import { Link } from "react-router-dom";
 
 export const Header = () => {
   const { theme, setTheme } = useThemePreference();
@@ -22,14 +22,14 @@ export const Header = () => {
         <Link to="/">
           <img
             src="/globe.svg"
-            alt="Web Sustainability 4U logo."
+            alt="websustainability.io logo."
             className={styles.logo}
             width={96}
             height={96}
           />
         </Link>
         <div>
-          <h1>Web Sustainability 4U</h1>
+          <h1>websustainability.io</h1>
           <h2>
             An interactive version of{" "}
             <a href="https://w3c.github.io/sustyweb/">WSG 1.0</a>
