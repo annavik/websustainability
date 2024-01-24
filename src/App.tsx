@@ -1,16 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import styles from "./App.module.css";
 import { Header } from "./components/Header/Header";
-import { ScrollHandler } from "./components/ScrollHandler/ScrollHandler";
 import { Guideline } from "./pages/Guideline/Guideline";
 import { Guidelines } from "./pages/Guidelines/Guidelines";
 import { BookmarksContextProvider } from "./utils/bookmarks/bookmarksContext";
+import { clearScrollPosition } from "./utils/scrollPosition";
 
 function App() {
   const [activeTab, setActiveTab] = useState("all");
   const [showAll, setShowAll] = useState(false);
   const [searchString, setSearchString] = useState("");
+
+  // Clear stored scroll position before leaving the page
+  useEffect(() => {
+    window.addEventListener("beforeunload", clearScrollPosition);
+
+    return () =>
+      window.removeEventListener("beforeunload", clearScrollPosition);
+  }, []);
 
   return (
     <BrowserRouter>
@@ -37,7 +45,6 @@ function App() {
           </div>
         </main>
       </BookmarksContextProvider>
-      <ScrollHandler />
     </BrowserRouter>
   );
 }

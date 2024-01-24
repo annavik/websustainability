@@ -1,3 +1,4 @@
+import { useLayoutEffect } from "react";
 import { FilterPicker } from "../../components/FilterPicker/FilterPicker";
 import { SearchInput } from "../../components/SearchInput/SearchInput";
 import {
@@ -7,6 +8,10 @@ import {
   TabsTrigger,
 } from "../../components/Tabs/Tabs";
 import { useBookmarks } from "../../utils/bookmarks/useBookmarks";
+import {
+  restoreScrollPosition,
+  storeScrollPosition,
+} from "../../utils/scrollPosition";
 import { useGuidelines } from "../../utils/useGuidelines";
 import { ActiveFilters } from "./ActiveFilters/ActiveFilters";
 import { GuidelineList } from "./GuidelineList/GuidelineList";
@@ -45,6 +50,14 @@ export const Guidelines = ({
   const bookmarkGuidelines = filteredGuidelines.filter((guideline) =>
     bookmarks.includes(guideline.id)
   );
+
+  useLayoutEffect(() => {
+    restoreScrollPosition();
+
+    return () => {
+      storeScrollPosition();
+    };
+  }, []);
 
   return (
     <>
