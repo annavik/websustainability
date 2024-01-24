@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { FilterPicker } from "../../components/FilterPicker/FilterPicker";
 import { SearchInput } from "../../components/SearchInput/SearchInput";
 import {
@@ -16,11 +15,26 @@ import { getFilterPickerConfig } from "./utils/getFilterPickerConfig";
 import { useFilteredGuidelines } from "./utils/useFilteredGuidelines";
 import { useFilters } from "./utils/useFilters";
 
-export const Guidelines = () => {
+interface GuidelinesProps {
+  activeTab: string;
+  setActiveTab: (activeTab: string) => void;
+  searchString: string;
+  setSearchString: (searchString: string) => void;
+  showAll: boolean;
+  setShowAll: (activeTab: boolean) => void;
+}
+
+export const Guidelines = ({
+  activeTab,
+  setActiveTab,
+  searchString,
+  setSearchString,
+  showAll,
+  setShowAll,
+}: GuidelinesProps) => {
   const { guidelines, tags, categories } = useGuidelines();
   const { bookmarks } = useBookmarks();
   const filterPickerConfig = getFilterPickerConfig({ categories, tags });
-  const [searchString, setSearchString] = useState("");
   const { activeFilters, addFilter, removeFilter, removeAllFilters } =
     useFilters(filterPickerConfig);
   const filteredGuidelines = useFilteredGuidelines({
@@ -76,8 +90,7 @@ export const Guidelines = () => {
           />
         )}
       </div>
-
-      <TabsRoot defaultValue="all">
+      <TabsRoot value={activeTab} onValueChange={setActiveTab}>
         <TabsList>
           <TabsTrigger
             label={`All (${filteredGuidelines.length})`}
@@ -89,10 +102,18 @@ export const Guidelines = () => {
           />
         </TabsList>
         <TabsContent value="all">
-          <GuidelineList guidelines={filteredGuidelines} />
+          <GuidelineList
+            guidelines={filteredGuidelines}
+            showAll={showAll}
+            setShowAll={setShowAll}
+          />
         </TabsContent>
         <TabsContent value="bookmarks">
-          <GuidelineList guidelines={bookmarkGuidelines} />
+          <GuidelineList
+            guidelines={bookmarkGuidelines}
+            showAll={showAll}
+            setShowAll={setShowAll}
+          />
         </TabsContent>
       </TabsRoot>
     </>

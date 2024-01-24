@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import styles from "./App.module.css";
 import { Header } from "./components/Header/Header";
@@ -7,6 +8,10 @@ import { Guidelines } from "./pages/Guidelines/Guidelines";
 import { BookmarksContextProvider } from "./utils/bookmarks/bookmarksContext";
 
 function App() {
+  const [activeTab, setActiveTab] = useState("all");
+  const [showAll, setShowAll] = useState(false);
+  const [searchString, setSearchString] = useState("");
+
   return (
     <BrowserRouter>
       <BookmarksContextProvider>
@@ -14,8 +19,20 @@ function App() {
         <main className={styles.main}>
           <div className={styles.content}>
             <Routes>
-              <Route path="/" Component={Guidelines} />
-              <Route path="/:id/:slug?" Component={Guideline} />
+              <Route
+                path="/"
+                element={
+                  <Guidelines
+                    activeTab={activeTab}
+                    setActiveTab={setActiveTab}
+                    searchString={searchString}
+                    setSearchString={setSearchString}
+                    showAll={showAll}
+                    setShowAll={setShowAll}
+                  />
+                }
+              />
+              <Route path="/:id/:slug?" element={<Guideline />} />
             </Routes>
           </div>
         </main>
