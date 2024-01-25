@@ -7,7 +7,7 @@ import { useThemePreference } from "../../utils/useThemePreference";
 
 function HeaderGuideline() {
   const { theme, setTheme } = useThemePreference();
-  const globeSize = 50;
+  const globeSize = 40;
 
   useEffect(() => {
     document.body.setAttribute("data-theme", theme);
