@@ -7,6 +7,7 @@ import { useThemePreference } from "../../utils/useThemePreference";
 
 function HeaderGuideline() {
   const { theme, setTheme } = useThemePreference();
+  const globeSize = 50;
 
   useEffect(() => {
     document.body.setAttribute("data-theme", theme);
@@ -21,8 +22,8 @@ function HeaderGuideline() {
               src="/globe.svg"
               alt="websustainability.io logo."
               className={styles.logo}
-              width={40}
-              height={40}
+              width={globeSize}
+              height={globeSize}
             />
           </Link>
           <AboutDialog theme={theme} />

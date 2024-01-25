@@ -3,7 +3,11 @@
   }
   
   .logo {
+    position: fixed;
     display: flex;
+    top: 16px;
+    left: 16px;
+    margin: 0 auto;
   }
   
   .content {
