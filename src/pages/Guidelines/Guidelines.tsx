@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { BookmarkToast } from "../../components/BookmarkToast/BookmarkToast";
+import { useLayoutEffect } from "react";
 import { FilterPicker } from "../../components/FilterPicker/FilterPicker";
 import { SearchInput } from "../../components/SearchInput/SearchInput";
 import {
@@ -9,6 +8,10 @@ import {
   TabsTrigger,
 } from "../../components/Tabs/Tabs";
 import { useBookmarks } from "../../utils/bookmarks/useBookmarks";
+import {
+  restoreScrollPosition,
+  storeScrollPosition,
+} from "../../utils/scrollPosition";
 import { useGuidelines } from "../../utils/useGuidelines";
 import { ActiveFilters } from "./ActiveFilters/ActiveFilters";
 import { GuidelineList } from "./GuidelineList/GuidelineList";
@@ -17,11 +20,26 @@ import { getFilterPickerConfig } from "./utils/getFilterPickerConfig";
 import { useFilteredGuidelines } from "./utils/useFilteredGuidelines";
 import { useFilters } from "./utils/useFilters";
 
-export const Guidelines = () => {
+interface GuidelinesProps {
+  activeTab: string;
+  setActiveTab: (activeTab: string) => void;
+  searchString: string;
+  setSearchString: (searchString: string) => void;
+  showAll: boolean;
+  setShowAll: (activeTab: boolean) => void;
+}
+
+export const Guidelines = ({
+  activeTab,
+  setActiveTab,
+  searchString,
+  setSearchString,
+  showAll,
+  setShowAll,
+}: GuidelinesProps) => {
   const { guidelines, tags, categories } = useGuidelines();
   const { bookmarks } = useBookmarks();
   const filterPickerConfig = getFilterPickerConfig({ categories, tags });
-  const [searchString, setSearchString] = useState("");
   const { activeFilters, addFilter, removeFilter, removeAllFilters } =
     useFilters(filterPickerConfig);
   const filteredGuidelines = useFilteredGuidelines({
@@ -32,6 +50,14 @@ export const Guidelines = () => {
   const bookmarkGuidelines = filteredGuidelines.filter((guideline) =>
     bookmarks.includes(guideline.id)
   );
+
+  useLayoutEffect(() => {
+    restoreScrollPosition();
+
+    return () => {
+      storeScrollPosition();
+    };
+  }, []);
 
   return (
     <>
@@ -77,8 +103,7 @@ export const Guidelines = () => {
           />
         )}
       </div>
-
-      <TabsRoot defaultValue="all">
+      <TabsRoot value={activeTab} onValueChange={setActiveTab}>
         <TabsList>
           <TabsTrigger
             label={`All (${filteredGuidelines.length})`}
@@ -90,14 +115,20 @@ export const Guidelines = () => {
           />
         </TabsList>
         <TabsContent value="all">
-          <GuidelineList guidelines={filteredGuidelines} />
+          <GuidelineList
+            guidelines={filteredGuidelines}
+            showAll={showAll}
+            setShowAll={setShowAll}
+          />
         </TabsContent>
         <TabsContent value="bookmarks">
-          <GuidelineList guidelines={bookmarkGuidelines} />
+          <GuidelineList
+            guidelines={bookmarkGuidelines}
+            showAll={showAll}
+            setShowAll={setShowAll}
+          />
         </TabsContent>
       </TabsRoot>
-
-      <BookmarkToast />
     </>
   );
 };

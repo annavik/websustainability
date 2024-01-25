@@ -1,8 +1,9 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useThemePreference } from "../../utils/useThemePreference";
+import { AboutDialog } from "../AboutDialog/AboutDialog";
 import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 import styles from "./Header.module.css";
-import { AboutDialog } from "../AboutDialog/AboutDialog";
 
 export const Header = () => {
   const { theme, setTheme } = useThemePreference();
@@ -18,7 +19,15 @@ export const Header = () => {
           <AboutDialog theme={theme} />
           <ThemeToggle theme={theme} onThemeChange={setTheme} />
         </div>
-        <img src="./globe.svg" alt="websustainability.io logo." width={96} height={96} />
+        <Link to="/">
+          <img
+            src="/globe.svg"
+            alt="websustainability.io logo."
+            className={styles.logo}
+            width={96}
+            height={96}
+          />
+        </Link>
         <div>
           <h1>websustainability.io</h1>
           <h2>

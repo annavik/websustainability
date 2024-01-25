@@ -4,11 +4,17 @@ import styles from "./Tabs.module.css";
 
 const TabsRoot = ({
   children,
-  defaultValue,
+  value,
+  onValueChange,
 }: {
   children: ReactNode;
-  defaultValue?: string;
-}) => <Tabs.Root defaultValue={defaultValue}>{children}</Tabs.Root>;
+  value: string;
+  onValueChange: (value: string) => void;
+}) => (
+  <Tabs.Root value={value} onValueChange={onValueChange}>
+    {children}
+  </Tabs.Root>
+);
 
 const TabsList = ({ children }: { children: ReactNode }) => (
   <Tabs.List className={styles.tabsList}>{children}</Tabs.List>

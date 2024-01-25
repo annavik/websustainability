@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Button } from "../../../components/Button/Button";
 import { GuidelineCard } from "../../../components/GuidelineCard/GuidelineCard";
 import { Guideline } from "../../../models/guideline";
@@ -6,8 +5,15 @@ import styles from "./GuidelineList.module.css";
 
 const LIMIT = 10;
 
-export const GuidelineList = ({ guidelines }: { guidelines: Guideline[] }) => {
-  const [showAll, setShowAll] = useState(false);
+export const GuidelineList = ({
+  guidelines,
+  showAll,
+  setShowAll,
+}: {
+  guidelines: Guideline[];
+  showAll: boolean;
+  setShowAll: (showAll: boolean) => void;
+}) => {
   const guidelinesToShow = showAll ? guidelines : guidelines.slice(0, LIMIT);
 
   if (guidelines.length === 0) {

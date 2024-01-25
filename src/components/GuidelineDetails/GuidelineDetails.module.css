@@ -1,16 +1,16 @@
-.card {
-  all: unset;
-  padding: 32px;
+.wrapper {
   background-color: var(--neutral-2);
   border: 1px solid var(--neutral-3);
   border-radius: 4px;
   position: relative;
-  cursor: pointer;
 }
 
-.card:hover,
-.card:focus-visible {
-  border-color: var(--neutral-6);
+.section {
+  padding: 32px;
+}
+
+.section:not(:last-child) {
+  border-bottom: 1px solid var(--neutral-3);
 }
 
 .category {
@@ -26,8 +26,34 @@
   margin-bottom: 16px;
 }
 
-.description {
+.subTitle {
+  margin-bottom: 4px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
   margin-bottom: 32px;
+}
+
+.bookmarkButton {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.criterion:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.criterion a {
+  text-decoration: none;
+  color: var(--neutral-11);
+  margin-right: 12px;
+}
+
+.criterion a:hover {
+  opacity: 0.7;
 }
 
 .tags {
@@ -43,10 +69,12 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  padding-right: 48px;
+  height: 40px;
 }
 
 @media only screen and (max-width: 960px) {
-  .card {
+  .section {
     padding: 16px;
   }
 
@@ -54,7 +82,11 @@
     margin-bottom: 12px;
   }
 
-  .description {
+  .actions {
+    margin-bottom: 24px;
+  }
+
+  .criterion:not(:last-child) {
     margin-bottom: 24px;
   }
 

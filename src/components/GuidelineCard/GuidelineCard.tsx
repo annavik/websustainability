@@ -1,21 +1,15 @@
-import { ExternalLinkIcon } from "@radix-ui/react-icons";
+import { Link } from "react-router-dom";
 import { Guideline } from "../../models/guideline";
+import { getPath } from "../../utils/guideline";
 import { levelToEmojis } from "../../utils/levelToLabel";
-import { BookmarkButton } from "../BookmarkButton/BookmarkButton";
-import { LinkButton } from "../Button/Button";
 import { Tag } from "../Tag/Tag";
 import styles from "./GuidelineCard.module.css";
 
 export const GuidelineCard = ({ guideline }: { guideline: Guideline }) => (
-  <div className={styles.wrapper}>
+  <Link to={getPath(guideline)} className={styles.card}>
     <span className={styles.category}>{guideline.category.title}</span>
     <div className={styles.title}>
       <h3>{guideline.title}</h3>
-    </div>
-    <div className={styles.actions}>
-      <LinkButton to={guideline.url}>
-        To guideline <ExternalLinkIcon />
-      </LinkButton>
     </div>
     <p className={styles.description}>{guideline.description}</p>
     <div className={styles.tags}>
@@ -33,8 +27,5 @@ export const GuidelineCard = ({ guideline }: { guideline: Guideline }) => (
         <Tag key={tag} label={tag} title={tag} />
       ))}
     </div>
-    <div className={styles.bookmarkButton}>
-      <BookmarkButton guidelineId={guideline.id} />
-    </div>
-  </div>
+  </Link>
 );
