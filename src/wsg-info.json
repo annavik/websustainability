@@ -250,10 +250,6 @@
       "description": "When providing the option to download, save, print, or access anything online, defaulting to the most lightweight, least featureful version will reduce emissions through passive browsing; with non-essential information removed from the screen either to be shown when it's required or eliminated.",
       "criteria": [
         {
-          "title": "Performance By Default",
-          "description": "Prioritize performance optimization as a product or service's default approach."
-        },
-        {
           "title": "Efficient Paths",
           "description": "The path taken to access the service (the initial contact with the website or service) should be as efficient and as simple as possible (time required to complete an action displayed, reducing too much choice, ensuring visitors know what's required at the start of a complex set of steps, etc)."
         },
@@ -450,6 +446,10 @@
         {
           "title": "Page Tracking",
           "description": "Remove unused and unconsented page tracking."
+        },
+        {
+          "title": "Search Engine Optimization",
+          "description": "Optimization for search engines, social networks, and third-party services should be organically led with good coding practices and user-experience being the focus, not manipulating the services to gain greater priority through obfuscating content, pages, websites, or applications with redundancy or non-useful and optimized (to the visitor) material."
         }
       ],
       "impact": {
@@ -1058,13 +1058,17 @@
     },
     {
       "id": "2.26",
-      "title": "2.26 Analyze the Performance of the Visitor Journey",
+      "title": "2.26 Incorporate Performance Testing Into Each Major Release-Cycle",
       "category": {
         "id": "2",
         "title": "User-Experience Design"
       },
-      "description": "Try to ethically measure how efficient a visitor's experience is, by doing so you might be able to reduce any issues they may have encountered previously and reduce the burden of loading unnecessary pages.",
+      "description": "Try to ethically measure how efficient a visitor's experience is by analyzing the performance of the website or application and how it has been constructed, by doing so you might be able to reduce any issues they may have encountered previously, decrease loading times, and reduce the burden of loading unnecessary pages.",
       "criteria": [
+        {
+          "title": "Performance Testing",
+          "description": "Regularly measure with each release-cycle (using tooling or through research and auditing) the performance of a website or application to identify and resolve bottlenecks or issues in the underlying code or infrastructure which could ultimately impact the sustainability of a website or application."
+        },
         {
           "title": "Measurement And Compliance",
           "description": "Only collect the data required to provide a streamlined and effective user-journey, put policies in place to ensure strict adherence, and comply with relevant accessibility policies and privacy laws, such as the General Data Protection Regulation (GDPR)."
@@ -1087,7 +1091,7 @@
         "Strategy",
         "KPIs"
       ],
-      "url": "https://w3c.github.io/sustyweb/#analyze-the-performance-of-the-visitor-journey"
+      "url": "https://w3c.github.io/sustyweb/#incorporate-performance-testing-into-each-major-release-cycle"
     },
     {
       "id": "2.27",
@@ -1215,7 +1219,11 @@
       "criteria": [
         {
           "title": "Performance Goals",
-          "description": "Set performance goals which impact the environment and performance of the service, for example HTTP requests, or the amount of DOM elements which need to be rendered."
+          "description": "Set goals which impact the environment and performance of the service, for example HTTP requests, or the amount of DOM elements which need to be rendered."
+        },
+        {
+          "title": "Accountancy Types",
+          "description": "Because the payload being delivered may not always be equal in terms of energy intensity, operators of websites and applications must ensure that consideration is given for the energy intensity (or unit being evaluated) of each component. For example, non-rendering text is less computational than CSS, which in turn is less process-heavy than JavaScript, which is less resource-heavy than WebGL."
         }
       ],
       "impact": {
@@ -1433,6 +1441,10 @@
         {
           "title": "Avoiding Dependency",
           "description": "Create your own clickable icons and widgets, rather than relying on third-party services to host or allow embedding within your product or service."
+        },
+        {
+          "title": "Third-party Preferences",
+          "description": "Third-party products, services, libraries, and frameworks are often a source of sustainability issues that cannot be controlled or managed by the first-party provider of a service. While many do provide benefits to a website, the need to justify their inclusion should be made not only by those creating the product or service but also be able to be controlled by the consumer. As showcased with cookies, websites or applications should provide a similar mechanism of disabling or refusing non-first-party features (with explanations of their purpose) - unless such features can be proven as critical for functionality."
         }
       ],
       "impact": {
@@ -1660,7 +1672,7 @@
       "criteria": [
         {
           "title": "Media and Preference Queries",
-          "description": "Apply the monochrome, prefers-contrast, prefers-color-scheme, prefers-reduced-data, and prefers-reduced-motion CSS preference queries if they will benefit your website or application. Also consider the print & scripting CSS media queries if they will improve the sustainability of your website."
+          "description": "Apply the monochrome, prefers-contrast, prefers-color-scheme, prefers-reduced-data, prefers-reduced-transparency, and prefers-reduced-motion CSS preference queries if they will benefit your website or application. Also consider the print & scripting CSS media queries if they will improve the sustainability of your website."
         }
       ],
       "impact": {
@@ -1801,7 +1813,7 @@
         },
         {
           "title": "Dependency Necessity",
-          "description": "Reduce the amount of JavaScript that has to be downloaded and parsed by the browser by only using libraries where necessary. Consider whether you can use a native JavaScript API instead. Check the package size using a tool like Bundlephobia, and whether individual modules can be installed and imported rather than the whole library."
+          "description": "Reduce the amount of JavaScript that has to be downloaded and parsed by the browser by only using libraries where necessary. Consider whether you can use a native JavaScript API instead. Check the package size, and whether individual modules can be installed and imported rather than the whole library."
         },
         {
           "title": "Dependency Updates",
@@ -1973,11 +1985,15 @@
         "id": "3",
         "title": "Web Development"
       },
-      "description": "Languages evolve regularly, and it's important for security and performance reasons to keep on-top of the technology stack you are using.",
+      "description": "Languages evolve regularly, and it's important for security and performance reasons to keep on top of the technology stack you are using. It's also important to consider whether the language you are using is appropriate or optimized for the task you wish to use it for.",
       "criteria": [
         {
           "title": "Versioning",
           "description": "Use the latest build of your chosen syntax language and its coupled framework."
+        },
+        {
+          "title": "Language Choice",
+          "description": "Many tools and programming languages are optimized for performing particular tasks, and utilizing those most appropriate to the problem, especially if there is a reasonable visitor base involved justifies the time and effort, as long as it doesn't impact ESG factors such as the well-being of those involved or become too cost prohibitive."
         }
       ],
       "impact": {
@@ -2038,7 +2054,7 @@
       "criteria": [
         {
           "title": "Database Queries",
-          "description": "If you need information that is stored in a database, and you require it more than once in your code, access the database only once, and store the data in a variable for subsequent processing."
+          "description": "If you need information that is stored in a database, and you require it (or its likely to be requested) more than once in your code, access the database only once, and store the data locally for subsequent processing. Also, avoid reliance on framework helpers that might defer filtering to later on in the process."
         }
       ],
       "impact": {
@@ -2111,7 +2127,7 @@
       "criteria": [
         {
           "title": "Server-side Caching",
-          "description": "If using a CMS, install an applicable plugin to enable on-the-fly server-side caching. Otherwise, use the provided server configuration files to include and tweak the file-type cache expiration using expires, bfcache, or cache-control HTTP header."
+          "description": "If using a CMS, install an applicable plugin to enable on-the-fly server-side caching. Otherwise, use the provided server configuration files to include and tweak the file-type cache expiration using expires, bfcache, or cache-control HTTP header. If using a language or framework that generates pages on request, cache responses for static pages so that they can be reused for future visitors."
         },
         {
           "title": "Offline Access",
@@ -2348,6 +2364,10 @@
         {
           "title": "Protocol Usage",
           "description": "Ensure the communication protocols are relevant to the visitor's needs and data transferred. Avoid using insecure protocols (HTTP, FTP), and prioritize more efficient and privacy-aware data routes for visitors (HTTPS, SSH)."
+        },
+        {
+          "title": "Event-Driven Architecture",
+          "description": "When creating products or services that utilize state changes (without triggering a complete refresh), consider if the utilization of Event-Driven Architecture and Microservices will be more environmentally friendly (based on the ESG variables involved) than traditional APIs in handling the server-side workload of your solution."
         }
       ],
       "impact": {
@@ -2389,6 +2409,10 @@
         {
           "title": "Avoid Caching Inappropriate Resources",
           "description": "Avoid using the service to host dynamic resources or JavaScript (unless through a first-party host) as due to cache partitioning, cross-origin resource sharing (CORS), and other browser mechanics, any benefits are negated by weaker performance, the inability to cache or interact, and the potential introduction of security and privacy issues to be introduced. This doesn't affect JSON or other static assets."
+        },
+        {
+          "title": "Process Data Close to the Source",
+          "description": "All information passed between the layers of an application incurs a cost, both in terms of data transferred, and CPU cycles for (de)serialization. Wherever possible, data transformations should be performed close to the source to reduce these costs and avoid processing data that will later be discarded."
         }
       ],
       "impact": {
@@ -2466,8 +2490,8 @@
           "description": "Optimize log collection, storage (off-site), and rotation; scheduling during low-activity hours and using carbon-neutral backup providers."
         },
         {
-          "title": "Compress Storage",
-          "description": "Enable storage compression both on the fly (Brotli or GZIP) and with long-term assets made available for download."
+          "title": "Asset Downloads",
+          "description": "Ensure long-term assets, especially those of a large size, are made available for download."
         }
       ],
       "impact": {
@@ -2648,6 +2672,10 @@
         {
           "title": "Competitor Analysis",
           "description": "Estimate the environmental impact of your or your competitor's current service to inform decision-making (as a potential target goal)."
+        },
+        {
+          "title": "Tooling Impact",
+          "description": "When identifying the environmental impact of your product or service, be sure to include the impact (or estimates of) of any tooling used to create the product or service along with any third-party solutions utilized in the pipeline. While not created by you, the emissions they generate from production to maintenance are considered integral to your overall solution."
         }
       ],
       "impact": {
@@ -3263,7 +3291,7 @@
         "id": "5",
         "title": "Business Strategy And Product Management"
       },
-      "description": "The organization has devised and implemented responsible policies related to artificial intelligence, Internet of Things (IoT), blockchain, and related emerging technologies.",
+      "description": "The organization has devised and implemented responsible policies related to artificial intelligence, Internet of Things (IoT), Web3 (Decentralized Web, blockchain, etc), and related emerging technologies.",
       "criteria": [
         {
           "title": "Emerging Technologies",
@@ -3276,6 +3304,14 @@
         {
           "title": "Technology Legislation",
           "description": "The organization supports responsible legislation related to automation and emerging technologies."
+        },
+        {
+          "title": "Environmental Responsibilities",
+          "description": "Organizations must consider, audit, and account for any environmental considerations that may derive from the use of emerging technologies they wish to either promote or implement within a chosen setting. Also note that this should include third-party choices, the \"expense\" (in terms of waste or emissions) of the utilization of the technology to create a desired result, and consequential issues to the environment that may arise from its deployment."
+        },
+        {
+          "title": "Quantum Resilience",
+          "description": "Don't roll out post-quantum encryption for high-traffic services that don't need resilience against harvest now, decrypt later."
         }
       ],
       "impact": {
@@ -3411,6 +3447,10 @@
         {
           "title": "Refurbishment Strategy",
           "description": "The organization buys refurbished equipment whenever possible."
+        },
+        {
+          "title": "Right-to-Repair",
+          "description": "The organization should allow consumers to repair (to the best of their ability) the consumables they purchase, offering (if possible at cost) replacement components and clear instructions to resolve faults that occur."
         }
       ],
       "impact": {
@@ -3447,6 +3487,10 @@
         {
           "title": "Performance Budget",
           "description": "Use tools such as a performance budget to determine the maximum size (goals) your app or website can weigh to reduce the data transfer and HTTP request impact (using metrics like Google Lighthouse)."
+        },
+        {
+          "title": "Human Budget",
+          "description": "Define KPIs around engineering hours, development time, or sprints keeping the health and wellbeing of your workers paramount. Consideration should be taken around optimizing your workflow sustainably to allow all tasks to be performed with care."
         },
         {
           "title": "Measurable Improvements",
