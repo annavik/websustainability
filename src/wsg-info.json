@@ -253,7 +253,7 @@
     },
     {
       "id": "2.6",
-      "title": "2.6 Create a Frictionless Lightweight Experience by Default",
+      "title": "2.6 Create a Lightweight Experience by Default",
       "category": {
         "id": "2",
         "title": "User-Experience Design"
@@ -302,7 +302,7 @@
         "Usability",
         "Performance"
       ],
-      "url": "https://w3c.github.io/sustyweb/#create-a-frictionless-lightweight-experience-by-default"
+      "url": "https://w3c.github.io/sustyweb/#create-a-lightweight-experience-by-default"
     },
     {
       "id": "2.7",
@@ -499,7 +499,6 @@
         "JavaScript",
         "Security",
         "JavaScript",
-        "Security",
         "Privacy"
       ],
       "url": "https://w3c.github.io/sustyweb/#avoid-manipulative-patterns"
@@ -2275,7 +2274,7 @@
         {
           "title": "Offline Access",
           "testable": "[Machine Testable](https://w3c.github.io/sustyweb/star.html#HIS02-2)",
-          "description": "Client-side JavaScript uses a combination of ServiceWorkers, WebWorkers, storage Application Programming Interfaces (APIs), or cookies (if necessary) to reduce friction in the user-journey. For example, through the use of a PWA (Progressive Web Application) to ensure that an offline version is available and accessible at all times to reduce inequality and improve accessibility."
+          "description": "Client-side JavaScript uses a combination of ServiceWorkers, WebWorkers, storage Application Programming Interfaces (APIs), or cookies (if necessary) to streamline the user-journey. For example, through the use of a PWA (Progressive Web Application) to ensure that an offline version is available and accessible at all times to reduce inequality and improve accessibility."
         }
       ],
       "impact": {
