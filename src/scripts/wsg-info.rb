@@ -3,7 +3,7 @@ require 'nokogiri'
 require 'json'
 
 def get_wsg_info
-    url = "https://raw.githubusercontent.com/w3c/sustyweb/main/guidelines.json"
+    url = "https://raw.githubusercontent.com/w3c/sustainableweb-wsg/main/guidelines.json"
     response = HTTParty.get(url)
     result = ""
 
