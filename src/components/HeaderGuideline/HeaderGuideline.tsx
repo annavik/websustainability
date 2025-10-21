@@ -14,22 +14,20 @@ function HeaderGuideline() {
   }, [theme]);
 
   return (
-    <header className={styles.header}>
-      <div className={styles.content}>
-        <div className={styles.topBar}>
-          <Link to="/">
-            <img
-              src="/globe.svg"
-              alt="websustainability.io logo."
-              className={styles.logo}
-              width={globeSize}
-              height={globeSize}
-            />
-          </Link>
-          <AboutDialog theme={theme} />
-          <ThemeToggle theme={theme} onThemeChange={setTheme} />
-        </div>
+    <header>
+      <div className={styles.topBar}>
+        <AboutDialog theme={theme} />
+        <ThemeToggle theme={theme} onThemeChange={setTheme} />
       </div>
+      <Link to="/">
+        <img
+          src="/globe.svg"
+          alt="websustainability.io logo."
+          className={styles.logo}
+          width={globeSize}
+          height={globeSize}
+        />
+      </Link>
     </header>
   );
 }
