@@ -10,7 +10,7 @@ const TOAST_TIMEOUT = 2000;
 const TOAST_MESSAGE = "Bookmarks updated";
 
 export const BookmarkToast = () => {
-  const toastTimeoutRef = useRef<number>();
+  const toastTimeoutRef = useRef<NodeJS.Timeout>();
   const [toastVisible, setToastVisible] = useState<boolean>();
   const { bookmarks } = useBookmarks();
   const previousBookmarks = usePrevious(bookmarks);
