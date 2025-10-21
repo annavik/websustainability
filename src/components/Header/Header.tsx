@@ -7,6 +7,7 @@ import styles from "./Header.module.css";
 
 export const Header = () => {
   const { theme, setTheme } = useThemePreference();
+  const globeSize = 96;
 
   useEffect(() => {
     document.body.setAttribute("data-theme", theme);
@@ -24,8 +25,8 @@ export const Header = () => {
             src="/globe.svg"
             alt="websustainability.io logo."
             className={styles.logo}
-            width={96}
-            height={96}
+            width={globeSize}
+            height={globeSize}
           />
         </Link>
         <div>
