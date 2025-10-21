@@ -1,7 +1,7 @@
 import * as Dialog from "@radix-ui/react-dialog";
-import { Cross2Icon, GitHubLogoIcon } from "@radix-ui/react-icons";
+import { Cross2Icon } from "@radix-ui/react-icons";
 import { Theme } from "../../models/theme";
-import { Button, LinkButton } from "../Button/Button";
+import { Button } from "../Button/Button";
 import { IconButton } from "../IconButton/IconButton";
 import styles from "./AboutDialog.module.css";
 import { Badges } from "./Badges/Badges";
