@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react-hooks/exhaustive-deps */
 
 import { CheckIcon } from "@radix-ui/react-icons";
@@ -10,7 +11,7 @@ const TOAST_TIMEOUT = 2000;
 const TOAST_MESSAGE = "Bookmarks updated";
 
 export const BookmarkToast = () => {
-  const toastTimeoutRef = useRef<number>();
+  const toastTimeoutRef = useRef<any>();
   const [toastVisible, setToastVisible] = useState<boolean>();
   const { bookmarks } = useBookmarks();
   const previousBookmarks = usePrevious(bookmarks);

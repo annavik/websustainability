@@ -3,7 +3,7 @@ require 'nokogiri'
 require 'json'
 
 def get_wsg_info
-    url = "https://raw.githubusercontent.com/w3c/sustainableweb-wsg/main/guidelines.json"
+    url = "https://raw.githubusercontent.com/w3c/sustainableweb-wsg/faea2fbe743c938068c4fa96f31bcc30dc5fc139/guidelines.json" # Freeze version after impact and effort was removed in https://github.com/w3c/sustainableweb-wsg/pull/125
     response = HTTParty.get(url)
     result = ""
 
@@ -39,12 +39,12 @@ def create_wsg_json(wsg_json)
                 json_obj[Constant::ID] = id
                 json_obj[Constant::TITLE] = title
                 json_obj[Constant::CATEGORY] = category
-                json_obj[Constant::DESCRIPTION] = guideline[Constant::DESCRIPTION]
+                json_obj[Constant::DESCRIPTION] = guideline[Constant::SUBHEADING]
                 json_obj[Constant::CRITERIA] = guideline[Constant::CRITERIA]
                 json_obj[Constant::IMPACT] = generate_impact_effort_objects(guideline[Constant::IMPACT]) 
                 json_obj[Constant::EFFORT] = generate_impact_effort_objects(guideline[Constant::EFFORT]) 
                 json_obj[Constant::TAGS] = guideline[Constant::TAGS]
-                json_obj[Constant::URL] = generate_topic_links(topic)
+                json_obj[Constant::URL] = guideline[Constant::URL]
 
                 categories.append(json_obj[Constant::CATEGORY])
                 tags.concat(json_obj[Constant::TAGS])
@@ -68,13 +68,6 @@ def create_wsg_json(wsg_json)
     wsg_data
 end
 
-def generate_topic_links(topic)
-    base_url = Constant::BASEURL
-
-    topic_anchor = "#" + topic.downcase.gsub(/,|'|\s|\(|\)/, '' => '', '\'' => '-', ' ' => '-')
-    topic_link = base_url + topic_anchor
-end
-
 def generate_impact_effort_objects(title)
     effort_impact_object = {
         Constant::TITLE => title,
@@ -91,7 +84,7 @@ def convert_title_to_value(title)
         2
     when "high"
         3
-    else # something's wrong
+    else # Something is wrong
         -1
     end
 end
@@ -109,8 +102,8 @@ class Constant
     EFFORT = "effort"
     TAGS = "tags"
     FILENAME = "wsg-info"
-    BASEURL = "https://w3c.github.io/sustyweb/"
     URL = "url"
     VALUE = "value"
     CRITERIA = "criteria"
+    SUBHEADING = "subheading"
 end
