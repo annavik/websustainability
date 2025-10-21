@@ -16,7 +16,7 @@ export const AboutDialog = ({ theme }: { theme: Theme }) => (
       <Dialog.Overlay className={styles.dialogOverlay} />
       <Dialog.Content className={styles.dialogContent}>
         <div className={styles.section}>
-          <h1>About WSG 1.0</h1>
+          <h1>About WSG</h1>
           <p>
             In October 2023, the{" "}
             <a href="https://www.w3.org/groups/cg/sustyweb/">W3C Community</a>{" "}
@@ -61,12 +61,8 @@ export const AboutDialog = ({ theme }: { theme: Theme }) => (
             </p>
             <p>
               Do you want to get involved, suggest a feature or report a bug?
-              Come visit us on GitHub!
-            </p>
-            <p className={styles.gitHubLinks}>
-              <LinkButton to="https://github.com/annavik/websustainability">
-                GitHub project <GitHubLogoIcon />
-              </LinkButton>
+              Come visit us on{" "}
+              <a href="https://github.com/annavik/websustainability">GitHub</a>!
             </p>
           </div>
           <div className={styles.section}>

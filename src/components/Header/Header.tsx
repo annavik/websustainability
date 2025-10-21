@@ -32,7 +32,7 @@ export const Header = () => {
           <h1>websustainability.io</h1>
           <h2>
             An interactive version of{" "}
-            <a href="https://w3c.github.io/sustyweb/">WSG 1.0</a>
+            <a href="https://w3c.github.io/sustyweb/">WSG</a>
           </h2>
         </div>
       </div>

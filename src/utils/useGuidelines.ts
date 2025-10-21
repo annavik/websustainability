@@ -15,7 +15,6 @@ export const useGuidelines = (): {
       data.map((serverGuideline, index) => {
         const guideline: Guideline = {
           ...serverGuideline,
-
           index,
           impact: {
             level: serverGuideline.impact.value,

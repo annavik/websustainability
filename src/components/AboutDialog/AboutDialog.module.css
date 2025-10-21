@@ -58,13 +58,6 @@
   gap: 32px;
 }
 
-.gitHubLinks {
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  gap: 8px;
-}
-
 @media only screen and (max-width: 960px) {
   .dialogContent {
     width: 100%;
